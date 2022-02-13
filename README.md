@@ -12,6 +12,7 @@ This project has just begun, the content of this document will be added as the p
 
 - [User Stories](#user-stories)
 - [Design](#design)
+- [Wireframes](#wireframes)
 
 <br>
 
@@ -97,4 +98,36 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
   ![Logo](readme-images/logo-trading-paradise.jpeg)  
+    
+  <br>
+
+## Wireframes / Mockups
+- Mobile Wireframes
+  - [View Landing Page](readme-images/mobile-wireframes/landing.jpeg)
+  - [View About Page](readme-images/mobile-wireframes/about.jpeg)
+  - [View Trade Page](readme-images/mobile-wireframes/trade.jpeg)
+  - [View Contact Page](readme-images/mobile-wireframes/contact.jpeg)
+  - [View Success Page](readme-images/mobile-wireframes/success.jpeg)
+  - [View Error Page](readme-images/mobile-wireframes/error.jpeg)
+- Mobile Mockups
+  - [View Landing Page](readme-images/mobile-mockup/landing.jpeg)
+  - [View About Page](readme-images/mobile-mockup/about.jpeg)
+  - [View Trade Page](readme-images/mobile-mockup/trade.jpeg)
+  - [View Contact Page](readme-images/mobile-mockup/contact.jpeg)
+  - [View Success Page](readme-images/mobile-mockup/success.jpeg)
+  - [View Error Page](readme-images/mobile-mockup/error.jpeg)
+- Tablet Wireframes
+  - [View Landing Page](readme-images/tablet-wireframes/landing.jpeg)
+  - [View About Page](readme-images/tablet-wireframes/about.jpeg)
+  - [View Trade Page](readme-images/tablet-wireframes/trade.jpeg)
+  - [View Contact Page](readme-images/tablet-wireframes/contact.jpeg)
+  - [View Success Page](readme-images/tablet-wireframes/success.jpeg)
+  - [View Error Page](readme-images/tablet-wireframes/error.jpeg)
+- Desktop Wireframes
+  - [View Landing Page](readme-images/desktop-wireframes/landing.jpeg)
+  - [View About Page](readme-images/desktop-wireframes/about.jpeg)
+  - [View Trade Page](readme-images/desktop-wireframes/trade.jpeg)
+  - [View Contact Page](readme-images/desktop-wireframes/contact.jpeg)
+  - [View Success Page](readme-images/desktop-wireframes/success.jpeg)
+  - [View Error Page](readme-images/desktop-wireframes/error.jpeg)
     
