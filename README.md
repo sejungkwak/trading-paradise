@@ -63,11 +63,14 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     2.  Go to [HTML Color Codes](https://html-color-codes.info/colors-from-image/)
     3.  Place the mouse cursor where desired colours are.
     <br>
+
     ![speech bubble](readme-images/speech-bubble.jpg)
+
     4.  Get hex codes.
     5.  Go to [WebAIM](https://webaim.org/resources/contrastchecker/).
     6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
     <br>
+    
     ![Contrast Checker](readme-images/contrast-checker.jpeg)
 
     <br>
@@ -97,6 +100,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - The user will recognise the console in the logo by its shape and colour.
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
+  
   ![Logo](readme-images/logo-trading-paradise.jpeg)  
     
   <br>
