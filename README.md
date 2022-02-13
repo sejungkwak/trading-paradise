@@ -11,6 +11,7 @@ This project has just begun, the content of this document will be added as the p
 #### [User Experience (UX)](<#user-experience-(ux)>)
 
 - [User Stories](#user-stories)
+- [Design](#design)
 
 <br>
 
@@ -39,3 +40,61 @@ This project has just begun, the content of this document will be added as the p
   - I want to be friends with them, so that I can participate in more events and shooting star wishes.
   - I want to get notified when there are updates on available items, so that I can get them before someone else.
   - I want to be able to add items to my wish list, so that I can find them faster at a later date.
+
+  <br>
+
+## Design
+
+The site is designed to look familiar to ACNH. Users can be more comfortable with familiar environments, which will let them stay on the site longer and be more likely to end up trading. Colours, typography and images are chosen with that in mind.
+
+- Colour Scheme
+  - Colours are adopted from speech bubbles in the game.
+  ![Colour Scheme](readme-images/colour-scheme.jpg)
+    - Background colours: #fffae4(Cornsilk), #feed9f(Green Yellow Crayola)
+    - Text colour: #5e5450(Umber)
+    - Accent colour: #fea600(Chrome Yellow)
+
+    <br>
+
+  - Each hex colour code was found the following steps:
+
+    1.  Take a screenshot on the game screen.
+    2.  Go to [HTML Color Codes](https://html-color-codes.info/colors-from-image/)
+    3.  Place the mouse cursor where desired colours are.
+    <br>
+    ![speech bubble](readme-images/speech-bubble.jpg)
+    4.  Get hex codes.
+    5.  Go to [WebAIM](https://webaim.org/resources/contrastchecker/).
+    6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
+    <br>
+    ![Contrast Checker](readme-images/contrast-checker.jpeg)
+
+    <br>
+
+- Typography
+
+  - Fonts are adopted from the [ACNH official website](https://www.animal-crossing.com/new-horizons/) instead of in-game fonts due to licence fee.
+    - Headings: [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab) is used with Serif as the fallback font. It is characterised by bold appearance and smooth curves, so it looks more contemporary and joyful than other serif types.
+    - Paragraph: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) is used in body text with Sans Serif as the fall back. It is often perceived as more friendly and warmer than other sans serif types.
+  - Fonts on the ACNH official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and Chrome developer tool.
+
+    <br>
+
+- Imagery
+
+  - Using ACNH imagery is important to make users comfortable by being similar to ACNH, whereas having unrelated imagery would be confusing.
+  - ACNH logo is used on the landing page to let users immediately know that this site is about ACNH.
+  - Game Characters are used on the landing, about, success and error page.
+  - Item images are used on the trade page to help users recognise items easily even if they don't know the exact name.
+  - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
+
+    <br>
+
+- Logo
+
+  - The logo has the website name 'Trading Paradise' inside the Nintendo Switch console image.
+  - The user will recognise the console in the logo by its shape and colour.
+  - [Canva](https://www.canva.com/) was used to design the logo.
+  <br>
+  ![Logo](readme-images/logo-trading-paradise.jpeg)  
+    
