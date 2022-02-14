@@ -12,7 +12,7 @@ This project has just begun, the content of this document will be added as the p
 
 - [User Stories](#user-stories)
 - [Design](#design)
-- [Wireframes](#wireframes)
+- [Wireframes / Mockups](#wireframes--mockups)
 
 <br>
 
@@ -96,11 +96,11 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Logo
 
-  - The logo has the website name 'Trading Paradise' inside the Nintendo Switch console image.
+  - The logo has the website name "Trading Paradise" inside the Nintendo Switch console image.
   - The user will recognise the console in the logo by its shape and colour.
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
-  
+
   ![Logo](readme-images/logo-trading-paradise.jpeg)  
     
   <br>
