@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Zilla+Slab:wght@400;700&display=swap');
+
+/* custom property */
+
+:root {
+  --main-bg-color: #fffae4;
+  --header-bg-color: #feed9f;
+  --text-color: #5e5450;
+  --accent-color: #fea600;
+}
+
+/* basic styling */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+}
