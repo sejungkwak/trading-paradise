@@ -93,3 +93,33 @@ body {
   transform: scale(1);
   transition: transform .5s ease;
 }
+
+/* navigation menu hidden by default */
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--header-bg-color);
+  left: 0;
+  line-height: 2;
+  list-style: none;
+  margin: 0;
+  padding: .7em;
+  text-transform: uppercase;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform .5s ease-out;
+}
+
+.nav-menu a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav-toggle-input:checked~.nav-menu {
+  transform: scale(1, 1);
+  transition: transform .5s ease-in;
+}
