@@ -272,3 +272,33 @@ main {
 }
 
 /* reasons section ends here */
+
+/* footer style starts here */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--header-bg-color);
+  width: 100%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: .5rem;
+  padding: 0;
+  width: 100%;
+}
+
+.social-media a {
+  color: var(--text-color);
+  margin: 0 1rem;
+}
+
+.disclaimer {
+  margin-bottom: 1rem;
+}
+
+/* footer style ends here */
