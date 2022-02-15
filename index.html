@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="A marketplace for Animal Crossing: New Horizons (ACNH) items. Trading Paradise is a fan-made website and is not affiliated with Nintendo.">
+  <meta name="description" content="A marketplace for Animal Crossing: New Horizons (ACNH) items.">
   <meta name="keywords" content="animal crossing, animal crossing new horizons, acnh, acnh trading, acnh items">
   <meta name="author" content="Sejung Kwak">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -15,24 +14,28 @@
 
 <body>
   <header class="header">
+    <!-- logo -->
     <a href="index.html">
       <img class="logo" src="assets/images/logo-trading-paradise.png" alt="Trading Paradise Logo">
     </a>
     <nav class="nav">
+      <!-- collapsible navigation icons -->
       <input class="nav-toggle-input" type="checkbox" id="nav-toggle">
       <label class="nav-toggle-label" for="nav-toggle">
         <i class="fa-solid fa-bars fa-xl"></i>
         <i class="fa-solid fa-xmark fa-xl"></i>
       </label>
+      <!-- navigation menu -->
       <ul class="nav-menu">
         <li><a href="index.html">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">trade</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="trade.html">trade</a></li>
+        <li><a href="contact.html">contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
+    <!-- Hero section: ACNH logo, welcome message, greeting video -->
     <section class="hero-section">
       <img class="acnh-logo" src="assets/images/logo-acnh.png" alt="ACNH Logo">
       <h1 class="hero-title">Welcome To
@@ -42,6 +45,7 @@
       <video src="assets/images/greetings.mp4" width="300" autoplay controls loop muted>Your browser does not support
         the video tag.</video>
     </section>
+    <!-- 3 key points of Trading Paradise -->
     <section class="reasons-trading-section">
       <h2 class="reasons-title">Why Trading with Us?</h2>
       <ul class="reasons-container">
@@ -76,12 +80,14 @@
           </div>
         </li>
       </ul>
+      <!-- button to the trade page -->
       <form class="btn-form" action="#" method="get">
         <input class="btn" type="submit" value="View Items">
       </form>
     </section>
   </main>
   <footer class="footer">
+    <!-- social media links -->
     <ul class="social-media">
       <li><a href="https://discord.com/" target="_blank" rel="noopener"
           aria-label="Visit our Discord Channel (opens in a new tab)"><i class="fa-brands fa-discord"></i></a></li>
@@ -92,8 +98,10 @@
       <li><a href="https://twitter.com/" target="_blank" rel="noopener"
           aria-label="Visit our Twitter Page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
+    <!-- disclaimer -->
     <small class="disclaimer">The site is for educational purposes only.</small>
   </footer>
+  <!-- font awesome cdn used in the header and footer -->
   <script src="https://kit.fontawesome.com/da018941f6.js" crossorigin="anonymous"></script>
 </body>
 

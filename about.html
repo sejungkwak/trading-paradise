@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="A marketplace for Animal Crossing: New Horizons (ACNH) items. Trading Paradise is a fan-made website and is not affiliated with Nintendo.">
+  <meta name="description" content="A marketplace for Animal Crossing: New Horizons (ACNH) items.">
   <meta name="keywords" content="animal crossing, animal crossing new horizons, acnh, acnh trading, acnh items">
   <meta name="author" content="Sejung Kwak">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -15,15 +14,18 @@
 
 <body>
   <header class="header">
+    <!-- logo -->
     <a href="index.html">
       <img class="logo" src="assets/images/logo-trading-paradise.png" alt="Trading Paradise Logo">
     </a>
     <nav class="nav">
+      <!-- collapsible navigation icons -->
       <input class="nav-toggle-input" type="checkbox" id="nav-toggle">
       <label class="nav-toggle-label" for="nav-toggle">
         <i class="fa-solid fa-bars fa-xl"></i>
         <i class="fa-solid fa-xmark fa-xl"></i>
       </label>
+      <!-- navigation menu -->
       <ul class="nav-menu">
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about</a></li>
@@ -34,7 +36,8 @@
   </header>
   <main>
     <h1 class="about-title">Paradise Stories</h1>
-    <div class="stories-container">
+    <article class="stories-container">
+      <!-- introduction -->
       <section class="story-container">
         <div class="story-img">
           <img class="main-villager-passport" src="assets/images/passport/passport-doritos.png" alt="Doritos' Passport">
@@ -46,6 +49,7 @@
           I picked it as my name.
         </p>
       </section>
+      <!-- status -->
       <section class="story-container">
         <div class="story-img">
           <img class="sub-villager-passport" src="assets/images/passport/passport-maltesers.png"
@@ -62,6 +66,7 @@
           genuine artworks that I need.
         </p>
       </section>
+      <!-- villagers and NPC -->
       <section class="story-container">
         <div class="story-img">
           <img class="animal-villager-img" src="assets/images/animal-villagers/filbert.webp" alt="Filbert">
@@ -81,6 +86,7 @@
           taken from me.
         </p>
       </section>
+      <!-- island design -->
       <section class="story-container">
         <div class="story-img">
           <img class="island-img" src="assets/images/island.png" alt="A flyover shot of Paradise">
@@ -92,18 +98,21 @@
           <strong>DA-1234-5678-9012</strong>
         </p>
       </section>
-    </div>
+    </article>
+    <!-- asking for trading items and sending their friend code -->
     <p class="about-cta-text">
       I sell, buy and giveaway items. If you're interested in trading items with me, have a look at the list on the
       trade page.
       <br>I'm also looking for friends. If you fancy being friends with me, drop me your Friend Code!
     </p>
+    <!-- buttons to the trade and contact page -->
     <form class="btn-form" action="trade.html" method="get">
       <input class="btn" type="submit" value="View Items">
       <input class="btn btn-share" type="submit" value="Share Friend Code" formaction="contact.html">
     </form>
   </main>
   <footer class="footer">
+    <!-- social media links -->
     <ul class="social-media">
       <li><a href="https://discord.com/" target="_blank" rel="noopener"
           aria-label="Visit our Discord Channel (opens in a new tab)"><i class="fa-brands fa-discord"></i></a></li>
@@ -114,8 +123,10 @@
       <li><a href="https://twitter.com/" target="_blank" rel="noopener"
           aria-label="Visit our Twitter Page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
+    <!-- disclaimer -->
     <small class="disclaimer">The site is for educational purposes only.</small>
   </footer>
+  <!-- font awesome cdn used in the header and footer -->
   <script src="https://kit.fontawesome.com/da018941f6.js" crossorigin="anonymous"></script>
 </body>
 
