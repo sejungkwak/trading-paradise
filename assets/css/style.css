@@ -128,14 +128,13 @@ body {
 /* header style ends here */
 
 main {
+  background: url("../images/leaf-pattern.png") top center / cover;
   margin-top: 4rem;
 }
 
 /* hero section starts here */
 
 .hero-section {
-  background: url("../images/leaf-pattern.png") top center / cover;
-  height: 600px;
   padding: 2rem auto;
   text-align: center;
 }
@@ -158,4 +157,11 @@ main {
   100% {
     transform: rotate(15deg);
   }
+}
+
+.hero-title {
+  font-family: 'Zilla Slab';
+  font-size: 2rem;
+  font-weight: 700;
+  margin: .5rem 0 1rem;
 }
