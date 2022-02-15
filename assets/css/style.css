@@ -225,7 +225,7 @@ main {
   border: 2px solid var(--header-bg-color);
   border-radius: 50px;
   bottom: 0;
-  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
   margin-bottom: 1rem;
   padding: .5rem 3rem;
 }
@@ -245,3 +245,30 @@ main {
   line-height: 1.5;
   text-align: center;
 }
+
+/* view items button */
+
+.btn {
+  background-color: var(--header-bg-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+  color: inherit;
+  cursor: pointer;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  margin-bottom: 2rem;
+  padding: .7rem 2rem;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+  transition: all 1s;
+}
+
+/* reasons section ends here */
