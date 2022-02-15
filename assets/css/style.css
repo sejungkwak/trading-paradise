@@ -340,3 +340,24 @@ main {
 .main-villager-passport {
   width: 100%;
 }
+
+/* second image */
+.story-container:nth-child(2)>.story-img {
+  height: 200px;
+  position: relative;
+}
+
+.sub-villager-passport {
+  position: absolute;
+  width: 70%;
+}
+
+.sub-villager-passport:nth-child(1) {
+  bottom: 0;
+  left: 1.1rem;
+}
+
+.sub-villager-passport:nth-child(2) {
+  right: 1.1rem;
+  top: 0;
+}
