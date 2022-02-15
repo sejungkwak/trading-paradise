@@ -246,7 +246,13 @@ main {
   text-align: center;
 }
 
-/* view items button */
+/* buttons - landing, about page */
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+  margin: 1.1rem 1.1rem 0;
+}
 
 .btn {
   background-color: var(--header-bg-color);
@@ -259,10 +265,13 @@ main {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 1.7px;
-  margin-bottom: 2rem;
+  margin: auto .2rem 2rem;
+  min-width: 50%;
   padding: .7rem 2rem;
   text-transform: uppercase;
   transition: all 1s;
+  flex: 1;
+  white-space: normal;
 }
 
 .btn:hover {
@@ -365,7 +374,7 @@ main {
 
 /* third image section */
 .story-container:nth-child(3)>.story-img {
-  margin: auto 1.1rem;
+  margin: auto;
 }
 
 .animal-villager-img {
@@ -373,3 +382,22 @@ main {
   height: 15%;
   margin: auto .2rem;
 }
+
+/* fourth image section */
+.island-img {
+  width: 90%;
+}
+
+/* about page last pharagraph */
+.about-cta-text {
+  margin: auto 1.1rem;
+  text-align: justify;
+}
+
+/* share friend code button */
+.btn-share {
+  letter-spacing: .7px;
+  padding: .7rem .2rem;
+}
+
+/* about page ends here */
