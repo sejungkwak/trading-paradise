@@ -5,6 +5,7 @@
 :root {
   --main-bg-color: #fffae4;
   --header-bg-color: #feed9f;
+  --trade-bg-color: #feed9f80;
   --text-color: #5e5450;
   --accent-color: #fea600;
 }
@@ -101,13 +102,12 @@ body {
   transition: transform .5s ease-in .3s;
 }
 
-/* navigation menu hidden by default */
+/* navigation menu (hidden by default) */
 
 .nav-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-color: var(--header-bg-color);
   left: 0;
   line-height: 2;
@@ -156,6 +156,8 @@ main {
   margin-top: 2rem;
   animation: swing 2s linear infinite;
 }
+
+/* creates swinging effect for ACNH logo */
 
 @keyframes swing {
   0% {
@@ -259,7 +261,7 @@ main {
   text-align: center;
 }
 
-/* buttons - landing, about page */
+/* buttons used in landing, about page */
 
 .btn-form {
   display: flex;
@@ -459,20 +461,74 @@ main {
   transition: color .5s ease-in-out;
 }
 
+.update-date {
+  position: absolute;
+  right: 1.1rem;
+  top: 8.5rem;
+}
+
 /* trading guide style */
 
 .trading-guide {
-  padding: 5rem 1.1rem 2rem;
+  padding: 5rem 1.1rem 1.5rem;
   position: relative;
-}
-
-.trading-guide>small {
-  position: absolute;
-  right: 1.1rem;
-  top: 4.5rem;
 }
 
 .trading-guide>ol {
   padding: 0 1.1rem 1.1rem;
   margin: 0;
+}
+
+/* item list(sell, buy, trade) style */
+
+.trade-type-container {
+  background-color: var(--trade-bg-color);
+  padding: 1.1rem;
+  width: 100%;
+}
+
+.trade-type {
+  font-family: 'Zilla Slab', serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* individual item style */
+
+.item-list {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(135px, 1fr)) / repeat(auto-fit, minmax(135px, 1fr));
+  gap: .7rem;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.item {
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  padding: .5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.item-img {
+  width: 70%;
+}
+
+.item-name {
+  margin: 0 auto .5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.bell-img,
+.ticket-img {
+  width: 1.5rem;
 }
