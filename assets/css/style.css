@@ -301,9 +301,15 @@ main {
   width: 100%;
 }
 
-.social-media a {
+.fa-brands {
   color: var(--text-color);
   margin: 0 1rem;
+  transition: color .5s ease-in-out;
+}
+
+.fa-brands:hover {
+  color: var(--accent-color);
+  transition: color .5s ease-in-out;
 }
 
 .disclaimer {
@@ -401,3 +407,48 @@ main {
 }
 
 /* about page ends here */
+
+/* trade page starts here */
+
+.trade-title {
+  background-color: var(--main-bg-color);
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.5rem;
+  position: fixed;
+  margin-top: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+}
+
+.trade-title a {
+  color: var(--text-color);
+  cursor: pointer;
+  margin: 2rem .5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .5s ease-in-out;
+}
+
+.trade-title a:hover {
+  color: var(--accent-color);
+  transition: color .5s ease-in-out;
+}
+
+/* trading guide style */
+
+.trading-guide {
+  padding: 5rem 1.1rem 2rem;
+  position: relative;
+}
+
+.trading-guide>small {
+  position: absolute;
+  right: 1.1rem;
+  top: 4rem;
+}
+
+.trading-guide>ol {
+  padding: 0 1.1rem 1.1rem;
+  margin: 0;
+}
