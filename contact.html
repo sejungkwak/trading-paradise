@@ -45,8 +45,8 @@
     </nav>
   </header>
   <main>
-    <h1>Want to be Friends with Doritos?</h1>
-    <p>
+    <h1 class="contact-title">Want to be Friends with Doritos?</h1>
+    <p class="contact-text">
       Simply drop your Friend Code!
       <br>I’ll send you a friend request!
     </p>
@@ -54,7 +54,7 @@
       This is a dummy form.
       To give the user feedback, Success page is linked to the action attribute and "GET" value is added to the method attribute.
     -->
-    <form action="success.html" method="GET">
+    <form class="contact-form" action="success.html" method="GET">
       <small>* These field are required.</small>
       <!-- Player's name can be up to 10 characters. -->
       <label for="name">Your Villager's Name*</label>
@@ -68,11 +68,13 @@
         placeholder="e.g. 0000-0000-0000" required>
       <label for="email">Email Address</label>
       <input type="email" name="email" id="email">
-      <small>Please leave us your email address
-        if you’d like to receive our monthly updates.</small>
+      <small>
+        Please leave us your email address
+        <br>if you’d like to receive our monthly updates.
+      </small>
       <label for="msg">Your Message</label>
       <textarea name="msg" id="msg" rows="5"></textarea>
-      <input type="submit" value="Let's be Friends!">
+      <input class="btn" type="submit" value="Let's be Friends!">
     </form>
   </main>
   <footer class="footer">

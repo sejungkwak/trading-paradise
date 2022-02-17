@@ -551,7 +551,7 @@ main {
   text-align: center;
 }
 
-form {
+.contact-form {
   background-color: var(--main-bg-color);
   display: flex;
   padding: 1.1rem;
