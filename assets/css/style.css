@@ -24,6 +24,11 @@ body {
   height: 100vh;
 }
 
+h1,
+h2 {
+  font-family: 'Zilla Slab', serif;
+}
+
 /* header style starts here */
 
 .header {
@@ -174,7 +179,6 @@ main {
 }
 
 .hero-title {
-  font-family: 'Zilla Slab', serif;
   font-size: 2rem;
   font-weight: 700;
   margin: .5rem 0 1rem;
@@ -192,7 +196,6 @@ main {
 }
 
 .reasons-title {
-  font-family: 'Zilla Slab', serif;
   font-size: 1.7rem;
   font-weight: 700;
   margin: 2rem auto;
@@ -340,7 +343,6 @@ main {
 /* about page starts here */
 
 .about-title {
-  font-family: 'Zilla Slab', serif;
   font-size: 2rem;
   font-weight: 700;
   padding: 2rem 0;
@@ -437,7 +439,6 @@ main {
 
 .trade-title {
   background-color: var(--main-bg-color);
-  font-family: 'Zilla Slab', serif;
   font-size: 1.5rem;
   position: fixed;
   margin-top: 0;
@@ -484,11 +485,11 @@ main {
 .trade-type-container {
   background-color: var(--trade-bg-color);
   padding: 1.1rem;
+  scroll-margin-top: 7rem;
   width: 100%;
 }
 
 .trade-type {
-  font-family: 'Zilla Slab', serif;
   margin: 0;
   text-transform: uppercase;
 }
@@ -532,3 +533,54 @@ main {
 .ticket-img {
   width: 1.5rem;
 }
+
+/* trade page ends here */
+
+/* contact page starts here */
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 2rem 0;
+  text-align: center;
+}
+
+.contact-text {
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+
+form {
+  background-color: var(--main-bg-color);
+  display: flex;
+  padding: 1.1rem;
+  flex-direction: column;
+}
+
+label {
+  margin: 1rem 0 .3rem;
+}
+
+input {
+  background-color: inherit;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  padding: .5rem;
+}
+
+textarea {
+  background-color: inherit;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  padding: .5rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--accent-color);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
+}
+
+/* contact page ends here */
