@@ -37,9 +37,30 @@ h2 {
   display: flex;
   flex-direction: column;
   position: fixed;
+  margin: auto;
+  max-width: 1400px;
   width: 100%;
   z-index: 100;
+  left: 0;
+  right: 0;
   top: 0;
+}
+
+/* for background colour to be wider than maximum width of the header */
+/* code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/) */
+
+.header::before,
+.header::after {
+  content: "";
+  background-color: var(--header-bg-color);
+  position: absolute;
+  right: 100%;
+  height: 100%;
+  width: 9999rem;
+}
+
+.header::after {
+  left: 100%;
 }
 
 .logo {
@@ -115,6 +136,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: var(--header-bg-color);
+  font-weight: 700;
   left: 0;
   line-height: 2;
   list-style: none;
@@ -609,7 +631,7 @@ textarea:focus {
   width: 50%;
 }
 
-/* set the image on the 404 page seperately due to the original image size. */
+/* set the image on the 404 page smaller due to the original image size. */
 
 .feedback-img.redd {
   transform: translateX(90%);
@@ -624,4 +646,41 @@ textarea:focus {
 
 .feedback-footer {
   justify-self: flex-end;
+}
+
+/* Media queries */
+
+/* Medium screen size devices from 48rem width  */
+
+@media screen and (min-width: 48rem) {
+
+  /* Header: hide collapsible navigation and bring the menu on the right side */
+
+  .header {
+    flex-direction: row;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav-toggle-input,
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: unset;
+    transform: unset;
+    width: unset;
+  }
+
+  .nav-menu>li {
+    margin: auto 1rem;
+  }
+
 }
