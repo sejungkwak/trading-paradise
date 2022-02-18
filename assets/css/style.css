@@ -578,7 +578,7 @@ textarea:focus {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
 }
 
-/* feedback page */
+/* feedback(success, 404) page */
 /* The method of using flexbox for sticky footer is from Kevin powell's video(https://www.youtube.com/watch?v=yc2olxLgKLk) and the comment from Gábor Móczik */
 
 .feedback-body {
@@ -607,6 +607,13 @@ textarea:focus {
 .feedback-img {
   transform: translateX(80%);
   width: 50%;
+}
+
+/* set the image on the 404 page seperately due to the original image size. */
+
+.feedback-img.redd {
+  transform: translateX(90%);
+  width: 42%;
 }
 
 .feedback-speech-bubble {
