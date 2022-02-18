@@ -17,6 +17,7 @@
 }
 
 body {
+  background: url("../images/leaf-pattern.png") top center / cover;
   color: var(--text-color);
   font-family: 'Libre Franklin', sans-serif;
   margin: 0;
@@ -29,7 +30,7 @@ h2 {
   font-family: 'Zilla Slab', serif;
 }
 
-/* header style starts here */
+/* header */
 
 .header {
   background-color: var(--header-bg-color);
@@ -141,14 +142,13 @@ h2 {
   transition: transform .5s ease-in;
 }
 
-/* header style ends here */
+/* main part */
 
 main {
-  background: url("../images/leaf-pattern.png") top center / cover;
-  margin-top: 4rem;
+  padding-top: 4rem;
 }
 
-/* hero section starts here */
+/* hero section */
 
 .hero-section {
   padding: 2rem auto;
@@ -157,7 +157,7 @@ main {
 }
 
 .acnh-logo {
-  width: 30%;
+  width: 10rem;
   margin-top: 2rem;
   animation: swing 2s linear infinite;
 }
@@ -184,9 +184,7 @@ main {
   margin: .5rem 0 1rem;
 }
 
-/* hero section ends here */
-
-/* reasons section starts here */
+/* reasons section */
 
 .reasons-trading-section {
   background-color: var(--main-bg-color);
@@ -210,7 +208,10 @@ main {
   width: 100%;
 }
 
-.reason-container {
+/* NPC and speech bubble - used on the landing and feedback page */
+
+.reason-container,
+.feedback-container {
   height: 250px;
   max-width: 350px;
   width: 100%;
@@ -222,7 +223,7 @@ main {
   position: absolute;
 }
 
-/* positioning 1st + 3rd animal villager images */
+/* positioning 1st + 3rd NPC images on the right side */
 
 .reason-container:nth-child(2n+1)>.reason-villager-img {
   right: 1.1rem;
@@ -232,23 +233,24 @@ main {
   height: 70%;
 }
 
-/* positioning 2nd animal villager's speech bubble */
+/* positioning 2nd NPC speech bubble on the right side */
 
-.reason-container:nth-child(2n)>.reason-speech-bubble {
+.reason-container:nth-child(2)>.reason-speech-bubble {
   right: 1.1rem;
 }
 
-.reason-speech-bubble {
+.reason-speech-bubble,
+.feedback-speech-bubble {
   background-color: var(--main-bg-color);
   border: 2px solid var(--header-bg-color);
   border-radius: 50px;
-  bottom: 0;
+  bottom: 1rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
-  margin-bottom: 1rem;
-  padding: .5rem 3rem;
+  padding: .5rem 2rem;
 }
 
-.reason-villager-name {
+.reason-villager-name,
+.feedback-villager-name {
   position: absolute;
   bottom: 80%;
   left: 10%;
@@ -258,13 +260,14 @@ main {
   padding: .5rem;
 }
 
-.reason-text {
+.reason-text,
+.feedback-text {
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
 }
 
-/* buttons used in landing, about page */
+/* buttons - used on the landing, about, contact, feedback page */
 
 .btn-form {
   display: flex;
@@ -279,6 +282,7 @@ main {
   box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
   color: inherit;
   cursor: pointer;
+  flex: 1;
   font-family: 'Zilla Slab', serif;
   font-size: 1.2rem;
   font-weight: 700;
@@ -288,7 +292,6 @@ main {
   padding: .7rem 2rem;
   text-transform: uppercase;
   transition: all 1s;
-  flex: 1;
   white-space: normal;
 }
 
@@ -298,9 +301,7 @@ main {
   transition: all 1s;
 }
 
-/* reasons section ends here */
-
-/* footer style starts here */
+/* footer */
 
 .footer {
   display: flex;
@@ -338,9 +339,7 @@ main {
   margin-bottom: 1rem;
 }
 
-/* footer style ends here */
-
-/* about page starts here */
+/* about page */
 
 .about-title {
   font-size: 2rem;
@@ -433,9 +432,7 @@ main {
   padding: .7rem .2rem;
 }
 
-/* about page ends here */
-
-/* trade page starts here */
+/* trade page */
 
 .trade-title {
   background-color: var(--main-bg-color);
@@ -468,7 +465,7 @@ main {
   top: 8.5rem;
 }
 
-/* trading guide style */
+/* trading guide */
 
 .trading-guide {
   padding: 5rem 1.1rem 1.5rem;
@@ -480,7 +477,7 @@ main {
   margin: 0;
 }
 
-/* item list(sell, buy, trade) style */
+/* item list(sell, buy, trade) */
 
 .trade-type-container {
   background-color: var(--trade-bg-color);
@@ -494,7 +491,7 @@ main {
   text-transform: uppercase;
 }
 
-/* individual item style */
+/* individual item */
 
 .item-list {
   display: grid;
@@ -534,9 +531,7 @@ main {
   width: 1.5rem;
 }
 
-/* trade page ends here */
-
-/* contact page starts here */
+/* contact page */
 
 .contact-title {
   font-size: 2rem;
@@ -583,4 +578,43 @@ textarea:focus {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
 }
 
-/* contact page ends here */
+/* feedback page */
+/* The method of using flexbox for sticky footer is from Kevin powell's video(https://www.youtube.com/watch?v=yc2olxLgKLk) and the comment from Gábor Móczik */
+
+.feedback-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.feedback-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NPC and speech bubble selectors are added to the landing page NPC styling - line 211 and below */
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  margin: 2rem;
+}
+
+.feedback-img {
+  transform: translateX(80%);
+  width: 50%;
+}
+
+.feedback-speech-bubble {
+  position: relative;
+}
+
+/* place footer at the bottom of the page */
+
+.feedback-footer {
+  justify-self: flex-end;
+}
