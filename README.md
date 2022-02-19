@@ -114,8 +114,8 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [View Success Page](readme-images/mobile-wireframes/success.jpeg)
   - [View Error Page](readme-images/mobile-wireframes/error.jpeg)
 - Mobile Mockups
-  - [View Landing Page](readme-images/mobile-mockup/landing.jpeg)
-  - [View About Page](readme-images/mobile-mockup/about.jpeg)
+  - [View Landing Page](readme-images/mobile-mockup/landing.jpg)
+  - [View About Page](readme-images/mobile-mockup/about.jpg)
   - [View Trade Page](readme-images/mobile-mockup/trade.jpeg)
   - [View Contact Page](readme-images/mobile-mockup/contact.jpeg)
   - [View Success Page](readme-images/mobile-mockup/success.jpeg)
