@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700&family=Zilla+Slab:wght@400;700&display=swap');
 
-/* custom property */
+/*--------------- Custom properties ---------------*/
 
 :root {
   --main-bg-color: #fffae4;
@@ -10,7 +10,7 @@
   --accent-color: #fea600;
 }
 
-/* basic styling */
+/*--------------- Basic styling ---------------*/
 
 * {
   box-sizing: border-box;
@@ -30,7 +30,9 @@ h2 {
   font-family: 'Zilla Slab', serif;
 }
 
-/* header */
+/*=============== Landing Page ===============*/
+
+/*--------------- Header ---------------*/
 
 .header {
   background-color: var(--header-bg-color);
@@ -46,8 +48,10 @@ h2 {
   top: 0;
 }
 
-/* for background colour to be wider than maximum width of the header */
-/* code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/) */
+/* 
+For background colour to be wider than maximum width of the header:
+The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/) 
+*/
 
 .header::before,
 .header::after {
@@ -129,7 +133,7 @@ h2 {
   transition: transform .5s ease-in .3s;
 }
 
-/* navigation menu (hidden by default) */
+/*--------------- Navigation menu (hidden on mobile) ---------------*/
 
 .nav-menu {
   display: flex;
@@ -164,13 +168,13 @@ h2 {
   transition: transform .5s ease-in;
 }
 
-/* main part */
+/*--------------- Main ---------------*/
 
 main {
   padding-top: 4rem;
 }
 
-/* hero section */
+/*--------------- Hero section ---------------*/
 
 .hero-section {
   padding: 2rem auto;
@@ -184,7 +188,7 @@ main {
   animation: swing 2s linear infinite;
 }
 
-/* creates swinging effect for ACNH logo */
+/* Creates swinging effect for ACNH logo */
 
 @keyframes swing {
   0% {
@@ -201,12 +205,18 @@ main {
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   margin: .5rem 0 1rem;
 }
 
-/* reasons section */
+.hero-description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/*--------------- Reasons section ---------------*/
 
 .reasons-trading-section {
   background-color: var(--main-bg-color);
@@ -245,7 +255,7 @@ main {
   position: absolute;
 }
 
-/* positioning 1st + 3rd NPC images on the right side */
+/* Positioning 1st + 3rd NPC's images on the right side */
 
 .reason-container:nth-child(2n+1)>.reason-villager-img {
   right: 1.1rem;
@@ -255,7 +265,7 @@ main {
   height: 70%;
 }
 
-/* positioning 2nd NPC speech bubble on the right side */
+/* Positioning 2nd NPC's speech bubble on the right side */
 
 .reason-container:nth-child(2)>.reason-speech-bubble {
   right: 1.1rem;
@@ -289,7 +299,7 @@ main {
   text-align: center;
 }
 
-/* buttons - used on the landing, about, contact, feedback page */
+/* Buttons - used on the landing, about, contact and feedback pages */
 
 .btn-form {
   display: flex;
@@ -323,7 +333,7 @@ main {
   transition: all 1s;
 }
 
-/* footer */
+/*--------------- Footer ---------------*/
 
 .footer {
   display: flex;
@@ -361,7 +371,7 @@ main {
   margin-bottom: 1rem;
 }
 
-/* about page */
+/*=============== About page ===============*/
 
 .about-title {
   font-size: 2rem;
@@ -380,10 +390,14 @@ main {
   margin-bottom: 1rem;
 }
 
-.story-img {
+.story-img-container {
   max-width: 320px;
   margin: auto;
   text-align: center;
+}
+
+.story-img {
+  width: 100%;
 }
 
 .story-text {
@@ -394,67 +408,11 @@ main {
   width: 100%;
 }
 
-/* first image section */
-
-.main-villager-passport {
-  width: 100%;
+iframe {
+  border: none;
 }
 
-/* second image section */
-
-.story-container:nth-child(2)>.story-img {
-  height: 200px;
-  position: relative;
-}
-
-.sub-villager-passport {
-  position: absolute;
-  width: 70%;
-}
-
-.sub-villager-passport:nth-child(1) {
-  bottom: 0;
-  left: 1.1rem;
-}
-
-.sub-villager-passport:nth-child(2) {
-  right: 1.1rem;
-  top: 0;
-}
-
-/* third image section */
-
-.story-container:nth-child(3)>.story-img {
-  margin: auto;
-}
-
-.animal-villager-img {
-  width: 15%;
-  height: 15%;
-  margin: auto .2rem;
-}
-
-/* fourth image section */
-
-.island-img {
-  width: 90%;
-}
-
-/* about page last pharagraph */
-
-.about-cta-text {
-  margin: auto 1.1rem;
-  text-align: justify;
-}
-
-/* share friend code button */
-
-.btn-share {
-  letter-spacing: .7px;
-  padding: .7rem .2rem;
-}
-
-/* trade page */
+/*=============== Trade page ===============*/
 
 .trade-title {
   background-color: var(--main-bg-color);
@@ -487,7 +445,7 @@ main {
   top: 8.5rem;
 }
 
-/* trading guide */
+/*--------------- Trading guide ---------------*/
 
 .trading-guide {
   padding: 5rem 1.1rem 1.5rem;
@@ -499,7 +457,7 @@ main {
   margin: 0;
 }
 
-/* item list(sell, buy, trade) */
+/*--------------- Item list(sell, buy, trade) section ---------------*/
 
 .trade-type-container {
   background-color: var(--trade-bg-color);
@@ -513,7 +471,7 @@ main {
   text-transform: uppercase;
 }
 
-/* individual item */
+/* Individual item */
 
 .item-list {
   display: grid;
@@ -553,7 +511,7 @@ main {
   width: 1.5rem;
 }
 
-/* contact page */
+/*=============== Contact page ===============*/
 
 .contact-title {
   font-size: 2rem;
@@ -600,8 +558,8 @@ textarea:focus {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
 }
 
-/* feedback(success, 404) page */
-/* The method of using flexbox for sticky footer is from Kevin powell's video(https://www.youtube.com/watch?v=yc2olxLgKLk) and the comment from Gábor Móczik */
+/*=============== Feedback(success, 404) page ===============*/
+/* The method of using flexbox for sticky footer is from Kevin powell's video(https://www.youtube.com/watch?v=yc2olxLgKLk) and Gábor Móczik's comment */
 
 .feedback-body {
   display: flex;
@@ -617,7 +575,7 @@ textarea:focus {
   justify-content: center;
 }
 
-/* NPC and speech bubble selectors are added to the landing page NPC styling - line 211 and below */
+/* NPC and speech bubble selectors are added to the landing page NPC styling */
 
 .feedback-container {
   display: flex;
@@ -631,7 +589,7 @@ textarea:focus {
   width: 50%;
 }
 
-/* set the image on the 404 page smaller due to the original image size. */
+/* Set the image on the 404 page smaller due to the original image size. */
 
 .feedback-img.redd {
   transform: translateX(90%);
@@ -642,19 +600,21 @@ textarea:focus {
   position: relative;
 }
 
-/* place footer at the bottom of the page */
+/* Place footer at the bottom of the page */
 
 .feedback-footer {
   justify-self: flex-end;
 }
 
-/* Media queries */
+/****************************************************************
+Media queries 
+*****************************************************************/
 
-/* Medium screen size devices from 48rem width  */
+/*=============== Medium screen size devices from 48rem width  ===============*/
 
 @media screen and (min-width: 48rem) {
 
-  /* Header: hide collapsible navigation and bring the menu on the right side */
+  /*--------------- Header ---------------*/
 
   .header {
     flex-direction: row;
@@ -665,6 +625,8 @@ textarea:focus {
     align-items: center;
     justify-content: flex-end;
   }
+
+  /* Hide checkbox and collapsible navigation icons */
 
   .nav-toggle-input,
   .nav-toggle-label {
