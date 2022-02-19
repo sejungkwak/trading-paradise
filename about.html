@@ -46,80 +46,54 @@
   </header>
   <main>
     <h1 class="about-title">Paradise Stories</h1>
-    <article class="stories-container">
+    <section class="stories-container">
       <!-- introduction -->
-      <section class="story-container">
-        <div class="story-img">
-          <img class="main-villager-passport" src="assets/images/passport/passport-doritos.png" alt="Doritos' Passport">
-        </div>
+      <article class="story-container">
+        <figure class="story-img-container">
+          <!-- GIF converted from a video on GIPHY(https://giphy.com/)-->
+          <iframe class="story-img" title="A human villager is greeting"
+            src="https://giphy.com/embed/Uko0zsXN1u3Y4JhlSX"></iframe>
+          <figcaption>Greetings from Paradise</figcaption>
+        </figure>
         <p class="story-text">
-          Hi, there! I'm Sejung. I love playing ACNH and my villager's name is Doritos. My island is called Paradise
-          and is in the Northern Hemisphere.
-          <br>Doritos is one of my favourite chips and the packet was just on the table when I created my villager so
-          I picked it as my name.
+          Trading Paradise is an ACNH-fan-made marketplace for in-game items.
+          <br>We are selling a variety of items to make your island more beautiful and would like to buy some artworks
+          to donate to the museum.
         </p>
-      </section>
-      <!-- status -->
-      <section class="story-container">
-        <div class="story-img">
-          <img class="sub-villager-passport" src="assets/images/passport/passport-maltesers.png"
-            alt="Maltesers' Passport">
-          <img class="sub-villager-passport" src="assets/images/passport/passport-curlywurly.png"
-            alt="CurlyWurly's Passport">
-        </div>
+      </article>
+      <!-- History of Trading Paradise -->
+      <article class="story-container">
+        <figure class="story-img-container">
+          <img class="story-img" src="assets/images/logo-trading-paradise.png" alt="Trading Paradise Logo">
+          <figcaption>Trading Paradise Logo</figcaption>
+        </figure>
         <p class="story-text">
-          There are two more villagers, CurlyWurly and Maltesers.
-          <br>I spent most of my time fishing, catching bugs and swimming when I first started playing. I've donated
-          all the fish, bugs and deep
-          sea creatures to Blathers in the Museum. But I haven't collected all the artworks yet because Redd rarely
-          brings
-          genuine artworks that I need.
+          We first bought a couple of items from a Korean Nintendo community in 2021 and found meeting other
+          players is one of the most fun parts of ACNH.
+          <br>We opened our own marketplace in 2022 named after our northern hemisphere located island Paradise.
         </p>
-      </section>
-      <!-- villagers and NPC -->
-      <section class="story-container">
-        <div class="story-img">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/filbert.webp" alt="Filbert">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/diana.webp" alt="Diana">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/lolly.webp" alt="Lolly">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/marty.webp" alt="Marty">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/sprinkle.webp" alt="Sprinkle">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/dom.webp" alt="Dom">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/shari.webp" alt="Shari">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/hamlet.webp" alt="Hamlet">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/whitney.webp" alt="Whitney">
-          <img class="animal-villager-img" src="assets/images/animal-villagers/shino.webp" alt="Shino">
-        </div>
+      </article>
+      <!-- button to the trade page -->
+      <form class="btn-form" action="trade.html" method="get">
+        <input class="btn" type="submit" value="View Items">
+      </form>
+      <!-- Friend request -->
+      <article class="story-container">
+        <figure class="story-img-container">
+          <img class="story-img" src="assets/images/event.JPG"
+            alt="A human villager is sitting on a bench with a bunch of nook miles tickets in front">
+          <figcaption>On a maze island</figcaption>
+        </figure>
         <p class="story-text">
-          Filbert, Diana, Lolly, Marty, Sprinkle, Dom, Shari, Hamlet, Whitney and Shino live in Paradise with me.
-          <br>And my favourite NPC is Pascal. I think he is so funny and cute when he is eating the scallops that he’s
-          taken from me.
+          We also hold events like Island Maze, Treasure Hunt, and Hide and Seek. If you would like us to notify you
+          about upcoming events, leave us your Friend Code and email address!
         </p>
-      </section>
-      <!-- island design -->
-      <section class="story-container">
-        <div class="story-img">
-          <img class="island-img" src="assets/images/island.png" alt="A flyover shot of Paradise">
-        </div>
-        <p class="story-text">
-          Paradise is a Japanese themed island. I started building Japanese style, but as I was building it, it got
-          mixed up and now I am trying to change it to a European
-          style. If you wish to check it out yourself, feel free to visit Paradise! My dream address is:
-          <strong>DA-1234-5678-9012</strong>
-        </p>
-      </section>
-    </article>
-    <!-- asking for trading items and sending their friend code -->
-    <p class="about-cta-text">
-      I sell, buy and giveaway items. If you're interested in trading items with me, have a look at the list on the
-      trade page.
-      <br>I'm also looking for friends. If you fancy being friends with me, drop me your Friend Code!
-    </p>
-    <!-- buttons to the trade and contact page -->
-    <form class="btn-form" action="trade.html" method="get">
-      <input class="btn" type="submit" value="View Items">
-      <input class="btn btn-share" type="submit" value="Share Friend Code" formaction="contact.html">
-    </form>
+      </article>
+      <!-- button to the contact page -->
+      <form class="btn-form" action="trade.html" method="get">
+        <input class="btn" type="submit" value="Share Friend Code" formaction="contact.html">
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <!-- social media links -->
