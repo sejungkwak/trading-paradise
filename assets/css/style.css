@@ -40,7 +40,7 @@ h2 {
   flex-direction: column;
   position: fixed;
   margin: auto;
-  max-width: 1400px;
+  max-width: 87.5rem;
   width: 100%;
   z-index: 100;
   left: 0;
@@ -677,6 +677,36 @@ Media queries
 
   #giveaway .item:nth-child(2) {
     grid-row: span 2;
+  }
+
+}
+
+/*=============== Large screen size devices from 80rem width  ===============*/
+
+@media screen and (min-width: 80rem) {
+
+  /*--------------- Landing page ---------------*/
+
+  .reasons-container {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem auto;
+    max-width: 87.5rem;
+  }
+
+  .reason-container {
+    height: 400px;
+    margin: auto 2rem;
+  }
+
+  .reason-container:nth-child(2n+1)>.reason-villager-img,
+  .reason-villager-img {
+    right: 0;
+  }
+
+  .reason-container:nth-child(2)>.reason-speech-bubble,
+  .reason-speech-bubble {
+    right: unset;
   }
 
 }
