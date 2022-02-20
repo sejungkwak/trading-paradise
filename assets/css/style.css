@@ -133,7 +133,7 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
   transition: transform .5s ease-in .3s;
 }
 
-/*--------------- Navigation menu (hidden on mobile) ---------------*/
+/*--------------- Navigation menu (hidden by default on mobile) ---------------*/
 
 .nav-menu {
   display: flex;
@@ -314,13 +314,11 @@ main {
   box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
   color: inherit;
   cursor: pointer;
-  flex: 1;
   font-family: 'Zilla Slab', serif;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 1.7px;
   margin: auto .2rem 2rem;
-  min-width: 50%;
   padding: .7rem 2rem;
   text-transform: uppercase;
   transition: all 1s;
@@ -380,32 +378,28 @@ main {
   text-align: center;
 }
 
-.stories-container {
+.story-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.story-container {
-  margin-bottom: 1rem;
+  padding: 1.1rem;
 }
 
 .story-img-container {
-  max-width: 320px;
-  margin: auto;
+  max-width: 20rem;
   text-align: center;
+  margin: auto;
 }
 
 .story-img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .story-text {
   background-color: var(--main-bg-color);
   line-height: 2;
+  max-width: 100%;
   padding: 1.1rem;
   text-align: justify;
-  width: 100%;
 }
 
 iframe {
@@ -643,6 +637,24 @@ Media queries
 
   .nav-menu>li {
     margin: auto 1rem;
+  }
+
+  /*--------------- About Page ---------------*/
+
+  .stories-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .story-container:first-child {
+    grid-column: span 2;
+    flex-direction: row;
+  }
+
+  .story-container:first-child>* {
+    flex: 1;
   }
 
 }
