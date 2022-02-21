@@ -15,6 +15,7 @@
 
 * {
   box-sizing: border-box;
+  color: var(--text-color);
 }
 
 html {
@@ -23,7 +24,6 @@ html {
 
 body {
   background: url("../images/leaf-pattern.png") top center / cover;
-  color: var(--text-color);
   display: flex;
   flex-direction: column;
   font-family: 'Libre Franklin', sans-serif;
@@ -51,6 +51,10 @@ footer {
 h1,
 h2 {
   font-family: 'Zilla Slab', serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*=============== Landing Page ===============*/
@@ -176,14 +180,17 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
   transition: transform .5s ease-out;
 }
 
-.nav-menu a {
-  color: var(--text-color);
-  text-decoration: none;
+.menu-item {
   transition: color .5s ease-out;
 }
 
-.nav-menu a:hover {
+.menu-item:hover {
   color: var(--accent-color);
+}
+
+.menu-item.active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .nav-toggle-input:checked~.nav-menu {
@@ -396,9 +403,12 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
 }
 
 .story-container {
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  padding: 1.1rem;
+  margin: 2rem 1.1rem;
+  padding: 2rem 1.1rem;
 }
 
 .story-img-container {
@@ -412,10 +422,9 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
 }
 
 .story-text {
-  background-color: var(--main-bg-color);
   line-height: 2;
   max-width: 100%;
-  padding: 1.1rem;
+  padding: 0 1.1rem 1.1rem;
   text-align: justify;
 }
 
@@ -437,10 +446,8 @@ iframe {
 }
 
 .trade-title a {
-  color: var(--text-color);
   cursor: pointer;
   margin: 2rem .5rem;
-  text-decoration: none;
   text-transform: uppercase;
   transition: color .5s ease-in-out;
 }
@@ -655,17 +662,18 @@ Media queries
     margin: auto;
   }
 
-  .story-container:first-child {
+  .about-title,
+  .story-container:nth-child(2) {
     grid-column: span 2;
     flex-direction: row;
   }
 
-  .story-container:first-child>* {
+  .story-text {
     flex: 1;
   }
 
-  .story-container:first-child>.story-text {
-    margin-top: 0;
+  .story-container:nth-child(2) .story-text {
+    margin-left: 2rem;
   }
 
   /*--------------- Trade page ---------------*/
@@ -737,7 +745,7 @@ Media queries
 
   /*--------------- About Page ---------------*/
 
-  .story-container:first-child {
+  .story-container:nth-child(2) {
     max-width: 70%;
     margin: auto;
   }
