@@ -50,7 +50,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Colour Scheme
   - Colours are adopted from speech bubbles in the game.
-  ![Colour Scheme](readme-images/colour-scheme.jpg)
+  ![Colour Scheme](readme-images/colour-scheme.png)
     - Background colours: #fffae4(Cornsilk), #feed9f(Green Yellow Crayola)
     - Text colour: #5e5450(Umber)
     - Accent colour: #fea600(Chrome Yellow)
@@ -64,14 +64,14 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     3.  Place the mouse cursor where desired colours are.
     <br>
 
-    ![speech bubble](readme-images/speech-bubble.jpg)
+    ![speech bubble](readme-images/speech-bubble.png)
 
     4.  Get hex codes.
     5.  Go to [WebAIM](https://webaim.org/resources/contrastchecker/).
     6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
     <br>
     
-    ![Contrast Checker](readme-images/contrast-checker.jpeg)
+    ![Contrast Checker](readme-images/contrast-checker.png)
 
     <br>
 
@@ -101,37 +101,37 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
 
-  ![Logo](readme-images/logo-trading-paradise.jpeg)  
+  ![Logo](readme-images/logo.png)  
     
   <br>
 
 ## Wireframes / Mockups
 - Mobile Wireframes
-  - [View Landing Page](readme-images/mobile-wireframes/landing.jpeg)
-  - [View About Page](readme-images/mobile-wireframes/about.jpeg)
-  - [View Trade Page](readme-images/mobile-wireframes/trade.jpeg)
-  - [View Contact Page](readme-images/mobile-wireframes/contact.jpeg)
-  - [View Success Page](readme-images/mobile-wireframes/success.jpeg)
-  - [View Error Page](readme-images/mobile-wireframes/error.jpeg)
+  - [View Landing Page](readme-images/mobile-wireframes/landing.png)
+  - [View About Page](readme-images/mobile-wireframes/about.png)
+  - [View Trade Page](readme-images/mobile-wireframes/trade.png)
+  - [View Contact Page](readme-images/mobile-wireframes/contact.png)
+  - [View Success Page](readme-images/mobile-wireframes/success.png)
+  - [View Error Page](readme-images/mobile-wireframes/error.png)
 - Mobile Mockups
-  - [View Landing Page](readme-images/mobile-mockup/landing.jpg)
-  - [View About Page](readme-images/mobile-mockup/about.jpg)
-  - [View Trade Page](readme-images/mobile-mockup/trade.jpeg)
-  - [View Contact Page](readme-images/mobile-mockup/contact.jpeg)
-  - [View Success Page](readme-images/mobile-mockup/success.jpeg)
-  - [View Error Page](readme-images/mobile-mockup/error.jpeg)
+  - [View Landing Page](readme-images/mobile-mockup/landing.png)
+  - [View About Page](readme-images/mobile-mockup/about.png)
+  - [View Trade Page](readme-images/mobile-mockup/trade.png)
+  - [View Contact Page](readme-images/mobile-mockup/contact.png)
+  - [View Success Page](readme-images/mobile-mockup/success.png)
+  - [View Error Page](readme-images/mobile-mockup/404.png)
 - Tablet Wireframes
-  - [View Landing Page](readme-images/tablet-wireframes/landing.jpeg)
-  - [View About Page](readme-images/tablet-wireframes/about.jpeg)
-  - [View Trade Page](readme-images/tablet-wireframes/trade.jpeg)
-  - [View Contact Page](readme-images/tablet-wireframes/contact.jpeg)
-  - [View Success Page](readme-images/tablet-wireframes/success.jpeg)
-  - [View Error Page](readme-images/tablet-wireframes/error.jpeg)
+  - [View Landing Page](readme-images/tablet-wireframes/landing.png)
+  - [View About Page](readme-images/tablet-wireframes/about.png)
+  - [View Trade Page](readme-images/tablet-wireframes/trade.png)
+  - [View Contact Page](readme-images/tablet-wireframes/contact.png)
+  - [View Success Page](readme-images/tablet-wireframes/success.png)
+  - [View Error Page](readme-images/tablet-wireframes/error.png)
 - Desktop Wireframes
-  - [View Landing Page](readme-images/desktop-wireframes/landing.jpeg)
-  - [View About Page](readme-images/desktop-wireframes/about.jpeg)
-  - [View Trade Page](readme-images/desktop-wireframes/trade.jpeg)
-  - [View Contact Page](readme-images/desktop-wireframes/contact.jpeg)
-  - [View Success Page](readme-images/desktop-wireframes/success.jpeg)
-  - [View Error Page](readme-images/desktop-wireframes/error.jpeg)
+  - [View Landing Page](readme-images/desktop-wireframes/landing.png)
+  - [View About Page](readme-images/desktop-wireframes/about.png)
+  - [View Trade Page](readme-images/desktop-wireframes/trade.png)
+  - [View Contact Page](readme-images/desktop-wireframes/contact.png)
+  - [View Success Page](readme-images/desktop-wireframes/success.png)
+  - [View Error Page](readme-images/desktop-wireframes/error.png)
     
