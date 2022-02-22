@@ -467,6 +467,7 @@ iframe {
   border-radius: 5px;
   padding: 1rem;
   text-align: center;
+  z-index: 50;
 }
 
 .update-date {
@@ -499,6 +500,17 @@ iframe {
 .trade-type {
   margin: 0;
   text-transform: uppercase;
+}
+
+#sell {
+  position: relative;
+}
+
+#sell::after {
+  content: "Last Update: 21 Feb. 2022";
+  position: absolute;
+  bottom: 100%;
+  right: 1.1rem;
 }
 
 /* Individual item */
@@ -694,6 +706,10 @@ Media queries
   }
 
   /*--------------- Trade page ---------------*/
+
+  .trade-title {
+    margin-top: .7rem;
+  }
 
   .item-list {
     grid-template-columns: repeat(3, 1fr);
