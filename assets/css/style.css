@@ -46,6 +46,12 @@ The method of using flexbox for sticky footer is from Kevin powell's YouTube vid
 
 footer {
   justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--header-bg-color);
+  width: 100%;
+  padding: 1.2rem 0;
 }
 
 h1,
@@ -59,6 +65,16 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+path {
+  fill: var(--text-color);
+  transition: fill .5s ease-in;
+}
+
+*:hover>path {
+  fill: var(--accent-color);
+  transition: fill .5s ease-in;
 }
 
 /*=============== Landing Page ===============*/
@@ -136,16 +152,6 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
   width: 2rem;
   right: .3rem;
   bottom: 100%;
-}
-
-.nav-toggle-icon path {
-  fill: var(--text-color);
-  transition: fill .5s ease-in;
-}
-
-.nav-toggle-icon:hover path {
-  fill: var(--accent-color);
-  transition: fill .5s ease-in;
 }
 
 .nav-toggle-icon.open {
@@ -361,38 +367,15 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
 
 /*--------------- Footer ---------------*/
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--header-bg-color);
-  width: 100%;
-}
-
 .social-media {
   display: flex;
-  justify-content: center;
-  margin-bottom: .5rem;
-  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 15rem;
 }
 
 .social-icon {
-  margin: 0 1rem;
-  height: 1rem;
-}
-
-.social-icon path {
-  fill: var(--text-color);
-  transition: fill .5s ease-in;
-}
-
-.social-icon:hover>path {
-  fill: var(--accent-color);
-  transition: fill .5s ease-in;
-}
-
-.disclaimer {
-  margin-bottom: 1rem;
+  height: 1.3rem;
 }
 
 /*=============== About page ===============*/
