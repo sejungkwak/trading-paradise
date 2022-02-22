@@ -462,24 +462,6 @@ iframe {
   transition: color .5s ease-in-out;
 }
 
-.popup {
-  position: fixed;
-  bottom: 5%;
-  right: 20%;
-  background-color: var(--header-bg-color);
-  border: 1px solid var(--accent-color);
-  border-radius: 5px;
-  padding: 1rem;
-  text-align: center;
-  z-index: 50;
-}
-
-.update-date {
-  position: absolute;
-  right: 1.1rem;
-  top: 8.5rem;
-}
-
 /*--------------- Trading guide ---------------*/
 
 .trading-guide {
@@ -537,6 +519,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .item-img {
@@ -560,6 +543,43 @@ iframe {
 .bell-img,
 .ticket-img {
   width: 1.5rem;
+}
+
+/* Popup message when clicked */
+
+.popup {
+  position: absolute;
+  opacity: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: var(--header-bg-color);
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 1rem;
+  text-align: center;
+  z-index: 50;
+}
+
+.item:focus>.popup {
+  animation: popup 5s;
+}
+
+/* Creates transition to invisible */
+
+@keyframes popup {
+  15% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 /*=============== Contact page ===============*/
