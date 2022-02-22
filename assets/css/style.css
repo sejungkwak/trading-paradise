@@ -98,6 +98,10 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
   left: 100%;
 }
 
+.header a {
+  align-self: flex-start;
+}
+
 .logo {
   width: 6rem;
   margin: .5rem 1rem;
