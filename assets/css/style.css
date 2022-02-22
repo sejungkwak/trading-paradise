@@ -836,7 +836,31 @@ Media queries
     max-width: 87.5rem;
     margin: auto;
     position: relative;
-    width: 30%;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form small,
+  .contact-form details {
+    grid-column: 1;
+  }
+
+  .contact-form label[for="msg"],
+  .contact-form textarea {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .contact-form textarea {
+    grid-row: 3 / 14;
+  }
+
+  .contact-form input[type="submit"] {
+    grid-column: span 2;
+    margin-top: 2rem;
   }
 
   .contact-form::after,
