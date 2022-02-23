@@ -213,8 +213,7 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
 /*--------------- Hero section ---------------*/
 
 .hero-section {
-  padding: 2rem auto;
-  margin-bottom: 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -276,47 +275,44 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
 
 /* NPC and speech bubble - used on the landing and feedback page */
 
-.reason-container,
-.feedback-container {
-  height: 250px;
-  max-width: 350px;
+.npc-container {
+  height: 20rem;
+  max-width: 21.875rem;
   width: 100%;
   padding: 1.1rem;
   position: relative;
 }
 
-.reason-container>* {
+.npc-container>* {
   position: absolute;
 }
 
 /* Positioning 1st + 3rd NPC's images on the right side */
 
-.reason-container:nth-child(2n+1)>.reason-villager-img {
+.npc-container:nth-child(2n+1)>.npc-img {
   right: 1.1rem;
 }
 
-.reason-villager-img {
-  height: 70%;
+.npc-img {
+  height: 80%;
 }
 
 /* Positioning 2nd NPC's speech bubble on the right side */
 
-.reason-container:nth-child(2)>.reason-speech-bubble {
+.npc-container:nth-child(2)>.speech-bubble {
   right: 1.1rem;
 }
 
-.reason-speech-bubble,
-.feedback-speech-bubble {
+.speech-bubble {
   background-color: var(--main-bg-color);
   border: 2px solid var(--header-bg-color);
   border-radius: 50px;
-  bottom: 1rem;
+  bottom: 2rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
-  padding: .5rem 2rem;
+  padding: 1rem 3rem;
 }
 
-.reason-villager-name,
-.feedback-villager-name {
+.npc-name {
   position: absolute;
   bottom: 80%;
   left: 10%;
@@ -326,8 +322,7 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
   padding: .5rem;
 }
 
-.reason-text,
-.feedback-text {
+.npc-speech {
   font-weight: 500;
   line-height: 1.5;
   text-align: center;
@@ -617,31 +612,6 @@ textarea:focus {
   justify-content: center;
 }
 
-/* NPC and speech bubble selectors are added to the landing page NPC styling */
-
-.feedback-container {
-  display: flex;
-  flex-direction: column;
-  height: 20rem;
-  margin: 2rem;
-}
-
-.feedback-img {
-  transform: translateX(80%);
-  width: 50%;
-}
-
-/* Set the image on the 404 page smaller due to the original image size. */
-
-.feedback-img.redd {
-  transform: translateX(90%);
-  width: 42%;
-}
-
-.feedback-speech-bubble {
-  position: relative;
-}
-
 /****************************************************************
 Media queries 
 *****************************************************************/
@@ -767,18 +737,16 @@ Media queries
     max-width: 87.5rem;
   }
 
-  .reason-container {
-    height: 400px;
-    margin: auto 2rem;
+  .npc-container {
+    height: 25rem;
   }
 
-  .reason-container:nth-child(2n+1)>.reason-villager-img,
-  .reason-villager-img {
+  .npc-container:nth-child(2n+1)>.npc-img,
+  .npc-img {
     right: 0;
   }
 
-  .reason-container:nth-child(2)>.reason-speech-bubble,
-  .reason-speech-bubble {
+  .npc-container:nth-child(2)>.speech-bubble {
     right: unset;
   }
 
