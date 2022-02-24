@@ -398,18 +398,13 @@ The method / Code from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars
 }
 
 .story-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .story-text {
   line-height: 2;
-  max-width: 100%;
+  width: 100%;
   padding: 0 1.1rem 1.1rem;
-  text-align: justify;
-}
-
-iframe {
-  border: none;
 }
 
 /*=============== Trade page ===============*/
@@ -440,12 +435,36 @@ iframe {
 /*--------------- Trading guide ---------------*/
 
 .trading-guide {
-  padding: 5rem 1.1rem 1.5rem;
+  background-color: var(--main-bg-color);
+  padding: 8rem 1.1rem 1.5rem;
   position: relative;
+  width: 100%;
+}
+
+.trading-guide::after,
+.trading-guide::before {
+  content: "";
+  background-color: var(--main-bg-color);
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: 9999rem;
+}
+
+.trading-guide::after {
+  left: 100%;
 }
 
 .trading-guide>ol {
   padding: 0 1.1rem 1.1rem;
+  line-height: 1.5;
+}
+
+.date {
+  position: absolute;
+  right: 1.1rem;
+  top: 90%;
 }
 
 /*--------------- Item list(sell, buy, trade) section ---------------*/
@@ -461,23 +480,13 @@ iframe {
   text-transform: uppercase;
 }
 
-#sell {
-  position: relative;
-}
-
-#sell::after {
-  content: "Last Update: 21 Feb. 2022";
-  position: absolute;
-  bottom: 100%;
-  right: 1.1rem;
-}
-
 /* Individual item */
 
 .item-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
   gap: .7rem;
+  margin-top: 1.5rem;
   width: 100%;
 }
 
@@ -491,7 +500,6 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .item-img {
@@ -517,41 +525,20 @@ iframe {
   width: 1.5rem;
 }
 
-/* Popup message when clicked */
+/* Popup message */
 
 .popup {
   position: absolute;
-  opacity: 0;
-  bottom: 50%;
-  left: 0;
+  bottom: 10%;
   right: 0;
   background-color: var(--header-bg-color);
   border-radius: 5px;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
   padding: 1rem;
   text-align: center;
   z-index: 50;
-}
-
-.item:focus>.popup {
-  animation: popup 5s;
-}
-
-/* Creates transition to invisible */
-
-@keyframes popup {
-  15% {
-    opacity: 1;
-  }
-
-  85% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }
 
 /*=============== Contact page ===============*/
@@ -684,6 +671,10 @@ Media queries
 
   .trade-title {
     margin-top: .7rem;
+  }
+
+  .trade-title a {
+    margin: 2rem;
   }
 
   .item-list {
