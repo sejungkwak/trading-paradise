@@ -70,14 +70,20 @@ a {
   text-decoration: none;
 }
 
+a:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: .3em;
+  border-radius: 5px;
+}
+
 path {
   fill: var(--text-color);
-  transition: fill .5s ease-in;
+  transition: fill .5s ease-in-out;
 }
 
 *:hover>path {
   fill: var(--accent-color);
-  transition: fill .5s ease-in;
+  transition: fill .5s ease-in-out;
 }
 
 /*=============== Landing Page ===============*/
@@ -92,10 +98,8 @@ path {
   margin: auto;
   max-width: 87.5rem;
   width: 100%;
-  z-index: 100;
-  left: 0;
-  right: 0;
   top: 0;
+  z-index: 100;
 }
 
 /* This method is on CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/). I have learned from this tutorial how to make background colour wider than maximum width of the elements.  */
@@ -116,11 +120,18 @@ path {
 
 .header a {
   align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header>a:focus {
+  outline-offset: -0.5em;
 }
 
 .logo {
-  width: 6rem;
-  margin: .5rem 1rem;
+  width: 7em;
+  margin: .5em 0 .5em 1em;
 }
 
 .nav {
@@ -135,43 +146,43 @@ path {
 .nav-toggle-input,
 .nav-toggle-label {
   bottom: 100%;
-  right: 1rem;
-  margin-bottom: 1rem;
+  right: 1em;
+  margin-bottom: 1.2em;
 }
 
 .nav-toggle-input {
-  width: 2rem;
-  height: 2rem;
+  width: 2em;
+  height: 2em;
   opacity: 0;
 }
 
 .nav-toggle-icon {
   cursor: pointer;
   position: absolute;
-  height: 2rem;
-  width: 2rem;
-  right: .3rem;
+  height: 2em;
+  width: 2em;
+  right: .3em;
   bottom: 100%;
 }
 
 .nav-toggle-icon.open {
   transform: scale(1, 1);
-  transition: transform .5s ease-in .3s;
+  transition: transform .5s ease-in-out .3s;
 }
 
 .nav-toggle-icon.close {
   transform: scale(1, 0);
-  transition: transform .5s ease-out;
+  transition: transform .5s ease-in-out;
 }
 
 .nav-toggle-input:checked~.nav-toggle-label>.nav-toggle-icon {
   transform: scale(1, 0);
-  transition: transform .5s ease-out;
+  transition: transform .5s ease-in-out;
 }
 
 .nav-toggle-input:checked~.nav-toggle-label>.nav-toggle-icon.close {
   transform: scale(1);
-  transition: transform .5s ease-in .3s;
+  transition: transform .5s ease-in-out .3s;
 }
 
 /*--------------- Navigation menu (hidden by default on mobile) ---------------*/
@@ -181,23 +192,24 @@ path {
   flex-direction: column;
   align-items: center;
   background-color: var(--header-bg-color);
+  font-size: 1.2rem;
   font-weight: 700;
   left: 0;
-  line-height: 2;
-  padding: .7em;
   text-transform: uppercase;
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
-  transition: transform .5s ease-out;
+  transition: transform .5s ease-in-out;
 }
 
 .menu-item {
-  transition: color .5s ease-out;
+  margin-bottom: 1.5em;
+  transition: color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .menu-item:hover {
   color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 .menu-item.active {
@@ -207,7 +219,7 @@ path {
 
 .nav-toggle-input:checked~.nav-menu {
   transform: scale(1, 1);
-  transition: transform .5s ease-in;
+  transition: transform .5s ease-in-out;
 }
 
 /*--------------- Hero section ---------------*/
@@ -622,7 +634,8 @@ textarea:focus {
   }
 
   .logo {
-    width: 60%;
+    width: 9em;
+    margin: .5em 1em;
   }
 
   .nav {
@@ -631,7 +644,7 @@ textarea:focus {
     justify-content: flex-end;
   }
 
-  /* Hide checkbox and collapsible navigation icons */
+  /* Hide checkbox and collapsible navigation open/close icons */
 
   .nav-toggle-input,
   .nav-toggle-label {
@@ -641,13 +654,18 @@ textarea:focus {
   .nav-menu {
     display: flex;
     flex-direction: row;
+    font-size: 1.5rem;
     position: unset;
     transform: unset;
     width: unset;
   }
 
   .nav-menu>li {
-    margin: auto 1rem;
+    margin: auto 1em;
+  }
+
+  .menu-item {
+    margin-bottom: unset;
   }
 
   /*--------------- Hero Section ---------------*/
