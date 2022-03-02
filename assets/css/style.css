@@ -48,7 +48,7 @@ footer {
   align-items: center;
   background-color: var(--header-bg-color);
   width: 100%;
-  padding: 1.2rem 0;
+  padding: 1.2em 0;
 }
 
 h1,
@@ -83,7 +83,8 @@ path {
 
 *:hover>path {
   fill: var(--accent-color);
-  transition: fill .5s ease-in-out;
+  transform: scale(1.2);
+  transition: fill .5s ease-in-out, transform .5s ease-in-out;
 }
 
 /*=============== Landing Page ===============*/
@@ -102,7 +103,7 @@ path {
   z-index: 100;
 }
 
-/* This method is on CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/). I have learned from this tutorial how to make background colour wider than maximum width of the elements.  */
+/* I have learned the method of using before and after pseudo properties for making background colour wider than maximum width of the elements from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/). */
 
 .header::before,
 .header::after {
@@ -225,7 +226,7 @@ path {
 /*--------------- Hero section ---------------*/
 
 .hero-section {
-  background: url("../images/hero-image.webp") center bottom/cover no-repeat;
+  background: url("../images/hero-image-mobile.webp") center bottom/cover no-repeat;
   padding: 2em;
   height: 40em;
   width: 100%;
@@ -271,7 +272,7 @@ path {
 
 .reasons-title {
   font-weight: 700;
-  margin: 2rem auto;
+  margin: 1.5em auto;
 }
 
 .reasons-container {
@@ -287,7 +288,7 @@ path {
   height: 20rem;
   max-width: 21.875rem;
   width: 100%;
-  padding: 1.1rem;
+  padding: 1.1em;
   position: relative;
 }
 
@@ -317,7 +318,7 @@ path {
   border-radius: 50px;
   bottom: 2rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
-  padding: 1rem 3rem;
+  padding: 1em 3em;
 }
 
 .npc-name {
@@ -327,7 +328,7 @@ path {
   background-color: var(--header-bg-color);
   border-radius: 50px;
   font-weight: 700;
-  padding: .5rem;
+  padding: .5em;
 }
 
 .npc-speech {
@@ -341,7 +342,7 @@ path {
 .btn-form {
   display: flex;
   justify-content: center;
-  margin: 1.1rem 1.1rem 0;
+  margin: 1.1em 1.1em 0;
 }
 
 .btn {
@@ -355,8 +356,8 @@ path {
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 1.7px;
-  margin: auto .2rem 2rem;
-  padding: .7rem 2rem;
+  margin: auto .2em 2em;
+  padding: .7em 2em;
   text-transform: uppercase;
   transition: all 1s;
   white-space: normal;
@@ -373,12 +374,16 @@ path {
 .social-media {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  width: 15rem;
+  margin-bottom: 1em;
+  width: 15em;
+}
+
+.social-media svg {
+  overflow: visible;
 }
 
 .social-icon {
-  height: 1.3rem;
+  height: 1.5em;
 }
 
 /*=============== About page ===============*/
@@ -386,7 +391,7 @@ path {
 .about-title {
   font-size: 2rem;
   font-weight: 700;
-  padding: 2rem 0;
+  padding: 2em 0;
   text-align: center;
 }
 
@@ -395,8 +400,8 @@ path {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin: 2rem 1.1rem;
-  padding: 2rem 1.1rem;
+  margin: 2em 1.1em;
+  padding: 2em 1.1em;
 }
 
 .story-img-container {
@@ -412,7 +417,7 @@ path {
 .story-text {
   line-height: 2;
   width: 100%;
-  padding: 0 1.1rem 1.1rem;
+  padding: 0 1.1em 1.1em;
 }
 
 /*=============== Trade page ===============*/
@@ -425,12 +430,12 @@ path {
   text-align: center;
   width: 100%;
   z-index: 5;
-  padding: 1rem;
+  padding: 1em;
 }
 
 .trade-title a {
   cursor: pointer;
-  margin: 2rem .5rem;
+  margin: 2em .5em;
   text-transform: uppercase;
   transition: color .5s ease-in-out;
 }
@@ -444,7 +449,7 @@ path {
 
 .trading-guide {
   background-color: var(--main-bg-color);
-  padding: 8rem 1.1rem 1.5rem;
+  padding: 8em 1.1em 1.5em;
   position: relative;
   width: 100%;
 }
@@ -465,7 +470,7 @@ path {
 }
 
 .trading-guide>ol {
-  padding: 0 1.1rem 1.1rem;
+  padding: 0 1.1em 1.1em;
   line-height: 1.5;
 }
 
@@ -479,7 +484,7 @@ path {
 
 .trade-type-container {
   background-color: var(--trade-bg-color);
-  padding: 1.1rem;
+  padding: 1.1em;
   scroll-margin-top: 7rem;
   width: 100%;
 }
@@ -494,14 +499,14 @@ path {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
   gap: .7rem;
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
   width: 100%;
 }
 
 .item {
   background-color: var(--main-bg-color);
   border-radius: 5px;
-  padding: .5rem;
+  padding: .5em;
   text-align: center;
   width: 100%;
   display: flex;
@@ -512,13 +517,13 @@ path {
 
 .item-img {
   width: 70%;
-  max-width: 13rem;
+  max-width: 13em;
 }
 
 .item-name {
   font-size: .9rem;
   font-weight: 400;
-  margin: 0 auto .5rem;
+  margin: 0 auto .5em;
 }
 
 .price {
@@ -544,7 +549,7 @@ path {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
-  padding: 1rem;
+  padding: 1em;
   text-align: center;
   z-index: 50;
 }
@@ -554,7 +559,7 @@ path {
 .contact-title {
   font-size: 2rem;
   font-weight: 700;
-  padding: 2rem 2rem 0;
+  padding: 2em 2em 0;
   text-align: center;
 }
 
@@ -567,27 +572,27 @@ path {
 .contact-form {
   background-color: var(--main-bg-color);
   display: flex;
-  padding: 1.1rem;
+  padding: 1.1em;
   flex-direction: column;
 }
 
 label {
-  margin: 1rem 0 .3rem;
+  margin: 1em 0 .3em;
 }
 
 input {
   background-color: inherit;
   border: 1px solid var(--accent-color);
   border-radius: 3px;
-  padding: .5rem;
+  padding: .5em;
 }
 
 textarea {
   background-color: inherit;
   border: 1px solid var(--accent-color);
   border-radius: 3px;
-  margin-bottom: 2rem;
-  padding: .5rem;
+  margin-bottom: 2em;
+  padding: .5em;
 }
 
 input:focus,
@@ -624,7 +629,7 @@ textarea:focus {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   /*--------------- Header ---------------*/
@@ -705,17 +710,17 @@ textarea:focus {
   }
 
   .story-container:nth-child(2) .story-text {
-    margin-left: 2rem;
+    margin-left: 2em;
   }
 
   /*--------------- Trade page ---------------*/
 
   .trade-title {
-    margin-top: .7rem;
+    margin-top: .7em;
   }
 
   .trade-title a {
-    margin: 2rem;
+    margin: 2em;
   }
 
   .item-list {
@@ -724,7 +729,7 @@ textarea:focus {
   }
 
   .item {
-    padding: 2rem 0;
+    padding: 2em 0;
   }
 
   .item:first-child {
@@ -743,7 +748,7 @@ textarea:focus {
   .item-name {
     font-size: 1.3rem;
     font-weight: 700;
-    margin: 1rem auto;
+    margin: 1em auto;
   }
 
   .price {
@@ -751,7 +756,7 @@ textarea:focus {
   }
 
   .price-bell {
-    margin-right: 1rem;
+    margin-right: 1em;
   }
 
 }
@@ -762,10 +767,14 @@ textarea:focus {
 
   /*--------------- Landing page ---------------*/
 
+  .hero-section {
+    background: url("../images/hero-image.webp") center bottom/cover no-repeat;
+  }
+
   .reasons-container {
     flex-direction: row;
     justify-content: space-around;
-    margin: 2rem auto;
+    margin-bottom: 3em;
     max-width: 87.5rem;
   }
 
@@ -780,6 +789,20 @@ textarea:focus {
 
   .npc-container:nth-child(2)>.speech-bubble {
     right: unset;
+  }
+
+  .speech-bubble {
+    bottom: 0;
+    left: 0;
+    padding: 1.5em 3.2em;
+  }
+
+  .npc-name {
+    font-size: 1.4rem;
+  }
+
+  .npc-speech {
+    font-size: 1.3rem;
   }
 
   /*--------------- About Page ---------------*/
@@ -861,7 +884,7 @@ textarea:focus {
 
   .contact-form input[type="submit"] {
     grid-column: span 2;
-    margin-top: 2rem;
+    margin-top: 2em;
   }
 
   .contact-form::after,
@@ -872,7 +895,7 @@ textarea:focus {
     bottom: 0;
     right: 100%;
     height: 100%;
-    width: 9999rem;
+    width: 9999em;
   }
 
   .contact-form::after {
