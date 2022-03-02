@@ -389,9 +389,8 @@ path {
 /*=============== About page ===============*/
 
 .about-title {
-  font-size: 2rem;
   font-weight: 700;
-  padding: 2em 0;
+  padding: 1em 0;
   text-align: center;
 }
 
@@ -400,7 +399,7 @@ path {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  margin: 2em 1.1em;
+  margin: 1em 1.1em 2em;
   padding: 2em 1.1em;
 }
 
@@ -418,6 +417,10 @@ path {
   line-height: 2;
   width: 100%;
   padding: 0 1.1em 1.1em;
+}
+
+.story-text h2 {
+  font-size: 1.5rem;
 }
 
 /*=============== Trade page ===============*/
@@ -713,6 +716,18 @@ textarea:focus {
     margin-left: 2em;
   }
 
+  .story-container:nth-child(2) .story-text h2 {
+    margin-top: 0;
+  }
+
+  .story-text h2 {
+    margin-top: 1em;
+  }
+
+  .story-text p {
+    font-size: 1.1rem;
+  }
+
   /*--------------- Trade page ---------------*/
 
   .trade-title {
@@ -810,6 +825,10 @@ textarea:focus {
   .story-container:nth-child(2) {
     max-width: 70%;
     margin: auto;
+  }
+
+  .story-text p {
+    letter-spacing: .8px;
   }
 
   /*--------------- Trade Page ---------------*/
