@@ -31,6 +31,7 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* I have learned the method of using flex(to the main) and justify-self property(to the footer) for fixing footer from Kevin powell's YouTube video(https://www.youtube.com/watch?v=yc2olxLgKLk) and Gábor Móczik's comment. */
@@ -58,6 +59,10 @@ h2 {
   letter-spacing: 2px;
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   font-size: 1.7rem;
 }
@@ -67,7 +72,9 @@ ul {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
+  transition: color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 a:focus {
@@ -76,18 +83,29 @@ a:focus {
   border-radius: 5px;
 }
 
+a:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+  transition: color .5s ease-in-out, transform .5s ease-in-out;
+}
+
+svg {
+  overflow: visible;
+}
+
 path {
   fill: var(--text-color);
-  transition: fill .5s ease-in-out;
+  transition: fill .5s ease-in-out, transform .5s ease-in-out;
 }
 
 *:hover>path {
   fill: var(--accent-color);
   transform: scale(1.2);
+  transform-origin: center;
   transition: fill .5s ease-in-out, transform .5s ease-in-out;
 }
 
-/*=============== Landing Page ===============*/
+/*=============== Home Page ===============*/
 
 /*--------------- Header ---------------*/
 
@@ -205,12 +223,6 @@ path {
 
 .menu-item {
   margin-bottom: 1.5em;
-  transition: color .5s ease-in-out, transform .5s ease-in-out;
-}
-
-.menu-item:hover {
-  color: var(--accent-color);
-  transform: scale(1.1);
 }
 
 .menu-item.active {
@@ -282,7 +294,7 @@ path {
   width: 100%;
 }
 
-/* NPC and speech bubble - used on the landing and feedback page */
+/* NPC and speech bubble - used on the Home and Feedback page */
 
 .npc-container {
   height: 20rem;
@@ -337,7 +349,7 @@ path {
   text-align: center;
 }
 
-/* Buttons - used on the landing, about, contact and feedback pages */
+/* Buttons - used on the Home, About, Contact and Feedback pages */
 
 .btn-form {
   display: flex;
@@ -359,14 +371,15 @@ path {
   margin: auto .2em 2em;
   padding: .7em 2em;
   text-transform: uppercase;
-  transition: all 1s;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
   white-space: normal;
 }
 
 .btn:hover {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
-  transition: all 1s;
+  transform: scale(1.1);
+  transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 /*--------------- Footer ---------------*/
@@ -378,12 +391,8 @@ path {
   width: 15em;
 }
 
-.social-media svg {
-  overflow: visible;
-}
-
 .social-icon {
-  height: 1.5em;
+  height: 1.5rem;
 }
 
 /*=============== About page ===============*/
@@ -423,36 +432,66 @@ path {
   font-size: 1.5rem;
 }
 
-/*=============== Trade page ===============*/
+/*=============== Items page ===============*/
+
+.trade-header {
+  max-width: 87.5rem;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
 
 .trade-title {
-  background-color: var(--main-bg-color);
-  font-size: 1.5rem;
+  margin: 2em auto .5em;
+}
+
+.trade-menu {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  margin-top: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 5;
-  padding: 1em;
+  max-width: 87.5rem;
+  width: 90%;
+  z-index: 2;
 }
 
-.trade-title a {
-  cursor: pointer;
-  margin: 2em .5em;
+.trade-menu li {
+  flex-grow: 1;
+}
+
+.trade-menu li:nth-child(2) {
+  margin: 0 .2em;
+}
+
+.trade-menu a {
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: .3em 0;
+  margin: 0;
   text-transform: uppercase;
-  transition: color .5s ease-in-out;
+  transition: border .5s ease-in-out, box-shadow .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
-.trade-title a:hover {
-  color: var(--accent-color);
-  transition: color .5s ease-in-out;
+.trade-menu a:hover {
+  border: 2px solid var(--accent-color);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+  transform-origin: top;
+  transition: border .5s ease-in-out, box-shadow .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
+}
+
+.trade-menu img {
+  width: 1.5rem;
 }
 
 /*--------------- Trading guide ---------------*/
 
 .trading-guide {
   background-color: var(--main-bg-color);
-  padding: 8em 1.1em 1.5em;
+  padding: 1.1em;
   position: relative;
   width: 100%;
 }
@@ -480,7 +519,7 @@ path {
 .date {
   position: absolute;
   right: 1.1rem;
-  top: 90%;
+  top: 100%;
 }
 
 /*--------------- Item list(sell, buy, trade) section ---------------*/
@@ -488,7 +527,7 @@ path {
 .trade-type-container {
   background-color: var(--trade-bg-color);
   padding: 1.1em;
-  scroll-margin-top: 7rem;
+  scroll-margin-top: 7em;
   width: 100%;
 }
 
@@ -516,6 +555,13 @@ path {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
+}
+
+.item:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transform: translateY(-1rem);
+  transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .item-img {
@@ -546,15 +592,19 @@ path {
 .popup {
   position: absolute;
   bottom: 10%;
-  right: 0;
+  right: 5%;
   background-color: var(--header-bg-color);
-  border-radius: 5px;
-  font-size: 1.3rem;
+  border-radius: 10px;
   font-weight: 500;
   line-height: 1.5;
   padding: 1em;
   text-align: center;
-  z-index: 50;
+  z-index: 3;
+}
+
+.social-icon.small {
+  height: 1rem;
+  vertical-align: text-top;
 }
 
 /*=============== Contact page ===============*/
@@ -662,7 +712,7 @@ textarea:focus {
   .nav-menu {
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: unset;
     transform: unset;
     width: unset;
@@ -728,14 +778,23 @@ textarea:focus {
     font-size: 1.1rem;
   }
 
-  /*--------------- Trade page ---------------*/
+  /*--------------- Items page ---------------*/
 
-  .trade-title {
-    margin-top: .7em;
+  .trade-header,
+  .trade-menu {
+    width: 45rem;
   }
 
-  .trade-title a {
-    margin: 2em;
+  .trade-title {
+    margin-top: 1em;
+  }
+
+  .trading-guide h2 {
+    font-size: 1.5rem;
+  }
+
+  .trade-type-container {
+    scroll-margin-top: 8em;
   }
 
   .item-list {
@@ -780,7 +839,7 @@ textarea:focus {
 
 @media screen and (min-width: 64rem) {
 
-  /*--------------- Landing page ---------------*/
+  /*--------------- Home page ---------------*/
 
   .hero-section {
     background: url("../images/hero-image.webp") center bottom/cover no-repeat;
@@ -831,7 +890,7 @@ textarea:focus {
     letter-spacing: .8px;
   }
 
-  /*--------------- Trade Page ---------------*/
+  /*--------------- Items Page ---------------*/
 
   .trading-guide,
   .trade-type-container {
