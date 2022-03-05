@@ -360,19 +360,20 @@ path {
 .btn {
   background-color: var(--header-bg-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
   color: inherit;
   cursor: pointer;
   font-family: 'Zilla Slab', serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1.7px;
-  margin: auto .2em 2em;
-  padding: .7em 2em;
+  margin: auto;
+  padding: 1em 1.8em;
   text-transform: uppercase;
   transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
   white-space: normal;
+  width: fit-content;
 }
 
 .btn:hover {
