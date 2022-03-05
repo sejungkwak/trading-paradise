@@ -15,6 +15,11 @@
   - [Implemented Features](#implemented-features)
   - [Features Left to Implement](#features-left-to-implement)
 
+[Technologies Used](#technologies-used)
+
+- [Languages](#languages)
+- [Programs](#programs)
+
 <br>
 
 # User Experience (UX)
@@ -169,6 +174,7 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   - The fields for the name, email address, in-game information (the user's character name, island name and friend code) are not required and show feedback if empty or invalid.
     > As a Frequent User, I want to be friends with them, so that I can participate in more events and shooting star wishes.
     <br>
+
     > As a Frequent User, I want to get notified when there are updates on available items, so that I can get them before someone else.
   - Upon clicking the button 'Send Message', the user is redirected to the Success page.
 
@@ -187,10 +193,45 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - The form on the Contact page
   <br>
     The form does not send the user data anywhere since I assigned `success.html` to the `action` attribute. The form is a placeholder until the back-end is implemented.
+
   - Adding items into a user's wish list
-  <br>
+<br>
+
     Users can not store their data at this stage. This feature is unavailable until the back-end is implemented.
+<br>
+
     > As a Frequent User, I want to be able to add items to my wish list, so that I can find them faster at a later date.
+
   - Internal chat system
   <br>
+  
     Users are invited to the Discord channel to communicate in real-time with "Trading Paradise" at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
+<br>
+
+# Technologies Used
+
+## Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to present and structure content.
+- [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style content.
+
+## Programs
+
+- [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the image showing a responsive design.
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
+- [Canva](https://www.canva.com/en_gb/) was used to create the logo.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to view the site's styling during development and to check runtime performance.
+- [Figma](https://www.figma.com/) was used to create the mockups.
+- [Font Awesome](https://fontawesome.com/) was used for the responsive hamburger menu icons as well as social media icons in the footer.
+- [Git](https://git-scm.com/) was used for version control.
+- [GitHub](https://github.com/) was used to store and deploy the project's code.
+- [Google Fonts](https://fonts.google.com/) was used to import Zilla Slab and Libre Franklin into the style.css file.
+- [Pixlr](https://pixlr.com/e/) was used to create the hero image on the Home page.
+- [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to generate the privacy policy.
+- [Removebg](https://www.remove.bg/) was used to remove the background of the ACNH characters image for the hero image on the Home page.
+- [TinyPNG](https://tinypng.com/) was used to compress the leaf pattern background images.
+- [Upscalepics](https://upscalepics.com/) was used to enhance the quality of the ACNH characters image for the hero image on the Home page.
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS validity.
+- [W3C Markup Validation Service](https://validator.w3.org/) was used to check the HTML markup validity.
+- [WAVE](https://wave.webaim.org/) was used to evaluate the accessibility.
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check the contrast ratio between the background colour and the font colour.
