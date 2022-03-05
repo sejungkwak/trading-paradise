@@ -6,8 +6,6 @@
 
 # Table of Contents
 
-This project has just begun, the content of this document will be added as the project is progressing.
-
 #### [User Experience (UX)](<#user-experience-(ux)>)
 
 - [User Stories](#user-stories)
@@ -50,7 +48,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Colour Scheme
   - Colours are adopted from speech bubbles in the game.
-  ![Colour Scheme](readme-images/colour-scheme.png)
+  ![Colour Scheme](documentation/colour-scheme.png)
     - Background colours: #fffae4(Cornsilk), #feed9f(Green Yellow Crayola)
     - Text colour: #5e5450(Umber)
     - Accent colour: #fea600(Chrome Yellow)
@@ -64,14 +62,14 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     3.  Place the mouse cursor where desired colours are.
     <br>
 
-    ![speech bubble](readme-images/speech-bubble.png)
+    ![speech bubble](documentation/speech-bubble.png)
 
     4.  Get hex codes.
     5.  Go to [WebAIM](https://webaim.org/resources/contrastchecker/).
     6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
     <br>
     
-    ![Contrast Checker](readme-images/contrast-checker.png)
+    ![Contrast Checker](documentation/contrast-checker.png)
 
     <br>
 
@@ -87,8 +85,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 - Imagery
 
   - Using ACNH imagery is important to make users comfortable by being similar to ACNH, whereas having unrelated imagery would be confusing.
-  - ACNH logo is used on the landing page to let users immediately know that this site is about ACNH.
-  - Game Characters are used on the landing, about, success and error page.
+  - Game Characters are used on the Home, About, Success and Error page.
   - Item images are used on the trade page to help users recognise items easily even if they don't know the exact name.
   - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
 
@@ -101,37 +98,27 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
 
-  ![Logo](readme-images/logo.png)  
+  ![Logo](documentation/logo.png)  
     
   <br>
 
 ## Wireframes / Mockups
-- Mobile Wireframes
-  - [View Landing Page](readme-images/mobile-wireframes/landing.png)
-  - [View About Page](readme-images/mobile-wireframes/about.png)
-  - [View Trade Page](readme-images/mobile-wireframes/trade.png)
-  - [View Contact Page](readme-images/mobile-wireframes/contact.png)
-  - [View Success Page](readme-images/mobile-wireframes/success.png)
-  - [View Error Page](readme-images/mobile-wireframes/error.png)
-- Mobile Mockups
-  - [View Landing Page](readme-images/mobile-mockup/landing.png)
-  - [View About Page](readme-images/mobile-mockup/about.png)
-  - [View Trade Page](readme-images/mobile-mockup/trade.png)
-  - [View Contact Page](readme-images/mobile-mockup/contact.png)
-  - [View Success Page](readme-images/mobile-mockup/success.png)
-  - [View Error Page](readme-images/mobile-mockup/404.png)
-- Tablet Wireframes
-  - [View Landing Page](readme-images/tablet-wireframes/landing.png)
-  - [View About Page](readme-images/tablet-wireframes/about.png)
-  - [View Trade Page](readme-images/tablet-wireframes/trade.png)
-  - [View Contact Page](readme-images/tablet-wireframes/contact.png)
-  - [View Success Page](readme-images/tablet-wireframes/success.png)
-  - [View Error Page](readme-images/tablet-wireframes/error.png)
-- Desktop Wireframes
-  - [View Landing Page](readme-images/desktop-wireframes/landing.png)
-  - [View About Page](readme-images/desktop-wireframes/about.png)
-  - [View Trade Page](readme-images/desktop-wireframes/trade.png)
-  - [View Contact Page](readme-images/desktop-wireframes/contact.png)
-  - [View Success Page](readme-images/desktop-wireframes/success.png)
-  - [View Error Page](readme-images/desktop-wireframes/error.png)
+- Mobile
+  - [View Home Page Wireframe](documentation/wireframes/mobile/home.png) / [View Home Page Mockup](documentation/mockups/mobile/home.png)
+  - [View About Page Wireframe](documentation/wireframes/mobile/about.png) / [View About Page Mockup](documentation/mockups/mobile/about.png)
+  - [View Items Page Wireframe](documentation/wireframes/mobile/items.png) / [View Items Page Mockup](documentation/mockups/mobile/items.png)
+  - [View Contact Page Wireframe](documentation/wireframes/mobile/contact.png) / [View Contact Page Mockup](documentation/mockups/mobile/contact.png)
+  - [View Success/Error Page Wireframe](documentation/wireframes/mobile/success+error.png) / [View Success Page Mockup](documentation/mockups/mobile/success.png) / [View Error Page Mockup](documentation/mockups/mobile/error.png)
+- Tablet
+  - [View Home Page Wireframe](documentation/wireframes/tablet/home.png) / [View Home Page Mockup](documentation/mockups/tablet/home.png)
+  - [View About Page Wireframe](documentation/wireframes/tablet/about.png) / [View About Page Mockup](documentation/mockups/tablet/about.png)
+  - [View Items Page Wireframe](documentation/wireframes/tablet/items.png) / [View Items Page Mockup](documentation/mockups/tablet/items.png)
+  - [View Contact Page Wireframe](documentation/wireframes/tablet/contact.png) / [View Contact Page Mockup](documentation/mockups/tablet/contact.png)
+  - [View Success/Error Page Wireframe](documentation/wireframes/tablet/success+error.png) / [View Success Page Mockup](documentation/mockups/tablet/success.png) / [View Error Page Mockup](documentation/mockups/tablet/error.png)
+- Desktop
+  - [View Home Page Wireframe](documentation/wireframes/desktop/home.png) / [View Home Page Mockup](documentation/mockups/desktop/home.png)
+  - [View About Page Wireframe](documentation/wireframes/desktop/about.png) / [View About Page Mockup](documentation/mockups/desktop/about.png)
+  - [View Items Page Wireframe](documentation/wireframes/desktop/items.png) / [View Items Page Mockup](documentation/mockups/desktop/items.png)
+  - [View Contact Page Wireframe](documentation/wireframes/desktop/contact.png) / [View Contact Page Mockup](documentation/mockups/desktop/contact.png)
+  - [View Success/Error Page Wireframe](documentation/wireframes/desktop/success+error.png) / [View Success Page Mockup](documentation/mockups/desktop/success.png) / [View Error Page Mockup](documentation/mockups/desktop/error.png)
     
