@@ -1,16 +1,19 @@
 # Trading Paradise Website
 
-"Trading Paradise" is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted toward other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact "Trading Paradise" for trading in-game items.
+"Trading Paradise" is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact "Trading Paradise" for trading in-game items.
 
 <br>
 
 # Table of Contents
 
-#### [User Experience (UX)](<#user-experience-(ux)>)
+[User Experience (UX)](#user-experience-ux)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+  - [Wireframes / Mockups](#wireframes--mockups)
 
-- [User Stories](#user-stories)
-- [Design](#design)
-- [Wireframes / Mockups](#wireframes--mockups)
+[Features](#features)
+  - [Implemented Features](#implemented-features)
+  - [Features Left to Implement](#features-left-to-implement)
 
 <br>
 
@@ -86,7 +89,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
   - Using ACNH imagery is important to make users comfortable by being similar to ACNH, whereas having unrelated imagery would be confusing.
   - Game Characters are used on the Home, About, Success and Error page.
-  - Item images are used on the trade page to help users recognise items easily even if they don't know the exact name.
+  - Item images are used on the Items page to help users recognise items easily even if they don't know the exact name.
   - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
 
     <br>
@@ -121,4 +124,73 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [View Items Page Wireframe](documentation/wireframes/desktop/items.png) / [View Items Page Mockup](documentation/mockups/desktop/items.png)
   - [View Contact Page Wireframe](documentation/wireframes/desktop/contact.png) / [View Contact Page Mockup](documentation/mockups/desktop/contact.png)
   - [View Success/Error Page Wireframe](documentation/wireframes/desktop/success+error.png) / [View Success Page Mockup](documentation/mockups/desktop/success.png) / [View Error Page Mockup](documentation/mockups/desktop/error.png)
-    
+
+  <br>
+
+# Features
+
+## Implemented Features
+
+The site features a fully responsive design and contains 4 main pages(Home, About, Items, Contact) and 2 supporting pages(Success, Error). The header and footer are identical across the site.
+  > As a Returning Visitor, I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
+
+- Header
+  - The logo is linked to the Home page and the menu is linked to the Home, About, Items and Contact pages. The user can navigate easily from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
+  - The header stays at the top of the screen even when the user is scrolling down the page.
+    > As a First Time Visitor, I want to be able to navigate pages easily, so that I don't have to waste my time.
+  - The navigation menu collapses on small devices less than 768px/48rem width.
+
+- Footer
+  - The footer includes links to the relevant social media sites such as Discord, Facebook, Instagram, Twitter.
+  - The links open in a new tab to allow easy navigation.
+    > As a First Time Visitor, I want to check their social media, so that I can determine whether they are trustworthy.
+
+- Home page
+  - The Home page includes the header, hero section, feature section and footer.
+  - The hero section contains a screenshot of ACNH characters' greetings with text overlay to allow the user to understand the purpose of the site at a glance.
+    > As a First Time Visitor, I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
+  - The feature section includes three key marketing points of "Trading Paradise".
+
+- About page
+  - The About page provides information about "Trading Paradise": Who we are, How we started, and What else we do.
+  - Two buttons are positioned in optimal locations to catch the user's attention as the content flows. A button that links to the Items page appears after the 'How we started' section and another button that links to the Contact page appears after the 'What else we do' section.
+
+- Items page
+  - The Items page includes 3 options for the user to choose: Buy, Sell, Giveaway. The user is directed to one of these sections by clicking the menu at the top without having to scroll down.
+    > As a Returning Visitor, I want to know easily if items that I want to buy are available, so that I don't have to browse the whole page.
+  - The menu links(Buy, Sell, Giveaway) for the page stay at the top to allow easier navigation.
+  - The page includes each items’ image, name and price.
+
+- Contact page
+  - The Contact page allows the user to submit their name, email address, in-game information and message.
+    > As a Returning Visitor, I want to be able to contact them, so that I can ask questions before trading.
+  - The user can view the privacy policy in a small window inside the form.
+  - The message field and the checkbox for privacy policy are required and show feedback if empty or unchecked.
+  - The fields for the name, email address, in-game information (the user's character name, island name and friend code) are not required and show feedback if empty or invalid.
+    > As a Frequent User, I want to be friends with them, so that I can participate in more events and shooting star wishes.
+    <br>
+    > As a Frequent User, I want to get notified when there are updates on available items, so that I can get them before someone else.
+  - Upon clicking the button 'Send Message', the user is redirected to the Success page.
+
+- Success page
+  - The success page was created to give feedback to the user when they have successfully submitted their information via the contact form.
+  - The page includes a button that links to the Home page.
+
+- Error page
+  - The Error page was created to give feedback to the user when there is an error.
+  - The page includes a button that links to the Home page.
+
+## Features Left to Implement
+
+This project is written in HTML5 and CSS3, so it does not have all the features that I would like to include.
+
+  - The form on the Contact page
+  <br>
+    The form does not send the user data anywhere since I assigned `success.html` to the `action` attribute. The form is a placeholder until the back-end is implemented.
+  - Adding items into a user's wish list
+  <br>
+    Users can not store their data at this stage. This feature is unavailable until the back-end is implemented.
+    > As a Frequent User, I want to be able to add items to my wish list, so that I can find them faster at a later date.
+  - Internal chat system
+  <br>
+    Users are invited to the Discord channel to communicate in real-time with "Trading Paradise" at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
