@@ -15,21 +15,27 @@
 <body>
   <header class="header">
     <!-- Logo -->
-    <a href="index.html">
-      <img class="logo" src="assets/images/logo-trading-paradise.png" alt="Trading Paradise Logo">
+    <a href="index.html" aria-label="Go to the Home page">
+      <img class="logo" src="assets/images/logo-trading-paradise.png"
+        alt="Trading Paradise Logo, consisting of the words 'Trading Paradise' inside a Nintendo Switch console">
     </a>
     <!-- Collapsible navigation bar -->
-    <nav class="nav">
-      <input class="nav-toggle-input" type="checkbox" id="nav-toggle">
+    <nav class="nav" aria-label="Website menu">
+      <!-- The method of using checkbox input for resiponsive navigation bar is from Kevin Powell's YouTube video 'Create a responsive navigation nav with no JS!'(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) -->
+      <input class="nav-toggle-input" type="checkbox" role="button" aria-pressed="true" id="nav-toggle">
       <label class="nav-toggle-label" for="nav-toggle">
         <!-- Open icon (three bars) -->
-        <svg class="nav-toggle-icon open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <svg class="nav-toggle-icon open" aria-labelledby="open" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512">
+          <title id="open">Open the navigation menu</title>
           <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
           <path
             d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
         </svg>
         <!-- Close icon (xmark) -->
-        <svg class="nav-toggle-icon close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <svg class="nav-toggle-icon close" aria-labelledby="close" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512">
+          <title id="close">Close the navigation menu</title>
           <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
           <path
             d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
@@ -37,10 +43,10 @@
       </label>
       <!-- Navigation menu -->
       <ul class="nav-menu">
-        <li><a href="index.html" class="menu-item">home</a></li>
-        <li><a href="about.html" class="menu-item active">about</a></li>
-        <li><a href="items.html" class="menu-item">items</a></li>
-        <li><a href="contact.html" class="menu-item">contact</a></li>
+        <li><a href="index.html" aria-label="Go to the Home page" class="menu-item">home</a></li>
+        <li><a href="about.html" aria-label="Go to the About page" class="menu-item active">about</a></li>
+        <li><a href="items.html" aria-label="Go to the Items page" class="menu-item">items</a></li>
+        <li><a href="contact.html" aria-label="Go to the Contact page" class="menu-item">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -50,16 +56,15 @@
       <!-- Who we are -->
       <article class="story-container">
         <figure class="story-img-container">
-          <img class="story-img" alt="A human villager is greeting" src="assets/images/greetings.jpg">
+          <img class="story-img" alt="A human villager is greeting in front of the 2022 Celebratory Arch"
+            src="assets/images/greetings.jpg">
           <figcaption>Greetings from Paradise</figcaption>
         </figure>
         <div class="story-text">
           <h2>Who we are</h2>
-          <p>
-            Trading Paradise is an ACNH-fan-made marketplace for in-game items.
-            <br>We are selling a variety of items to make your island more beautiful and would like to buy some artworks
-            to donate to the museum.
-          </p>
+          <p>Trading Paradise is an ACNH-fan-made marketplace for in-game items.</p>
+          <p>We are selling a variety of items to make your island more beautiful and would like to buy some artworks to
+            donate to the museum.</p>
         </div>
       </article>
       <!-- How we started -->
@@ -70,36 +75,30 @@
         </figure>
         <div class="story-text">
           <h2>How we started</h2>
-          <p>
-            We first bought a couple of items from a Korean Nintendo community in 2021 and found meeting other
-            players is one of the most fun parts of ACNH.
-            <br>We opened our own marketplace in 2022 named after our northern hemisphere located island Paradise.
-          </p>
+          <p>We first bought a couple of items from a Korean Nintendo community in 2021 and found meeting other
+            players is one of the most fun parts of ACNH.</p>
+          <p>We opened our own marketplace in 2022 named after our northern hemisphere located island Paradise.</p>
         </div>
         <!-- Button to the Items page -->
-        <form class="btn-form" action="items.html" method="get">
-          <input class="btn" type="submit" value="View Items">
-        </form>
+        <a href="items.html" role="button" aria-label="View items, Click the button to go to the Items page"
+          class="btn">View Items</a>
       </article>
       <!-- What else we do -->
       <article class="story-container">
         <figure class="story-img-container">
           <img class="story-img" src="assets/images/event.jpg"
             alt="A human villager is sitting on a bench with a bunch of nook miles tickets in front">
-          <figcaption>On a maze island</figcaption>
+          <figcaption>After solving a maze on a maze island</figcaption>
         </figure>
         <div class="story-text">
           <h2>What else we do</h2>
-          <p>
-            We also hold events like Island Maze, Treasure Hunt, and Hide and Seek. If you would like to receive
+          <p>We also hold events like Island Maze, Treasure Hunt, and Hide and Seek. If you would like to receive
             notifications
-            about upcoming events, leave us your email address!
-          </p>
+            about upcoming events, leave us your email address!</p>
         </div>
         <!-- Button to the Contact page -->
-        <form class="btn-form" action="contact.html" method="get">
-          <input class="btn" type="submit" value="contact us">
-        </form>
+        <a href="contact.html" role="button" aria-label="Contact us, Click the button to go to the Contact page"
+          class="btn">Contact us</a>
       </article>
     </section>
   </main>
