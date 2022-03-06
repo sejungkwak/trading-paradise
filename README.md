@@ -1,6 +1,6 @@
 # Trading Paradise Website
 
-"Trading Paradise" is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact "Trading Paradise" for trading in-game items.
+<cite>Trading Paradise</cite> is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact <cite>Trading Paradise</cite> for trading in-game items.
 
 <br>
 
@@ -19,6 +19,10 @@
 
 - [Languages](#languages)
 - [Programs](#programs)
+
+[Deployment](#deployment)
+
+- [Github Pages](#github-pages)
 
 [Credits](#credits)
 
@@ -108,7 +112,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Logo
 
-  - The logo has the website name "Trading Paradise" inside the Nintendo Switch console image.
+  - The logo has the website name <cite>Trading Paradise</cite> inside the Nintendo Switch console image.
   - The user will recognise the console in the logo by its shape and colour.
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
@@ -161,10 +165,10 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   - The Home page includes the header, hero section, feature section and footer.
   - The hero section contains a screenshot of ACNH characters' greetings with text overlay to allow the user to understand the purpose of the site at a glance.
     > As a First Time Visitor, I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
-  - The feature section includes three key marketing points of "Trading Paradise".
+  - The feature section includes three key marketing points of <cite>Trading Paradise</cite>.
 
 - About page
-  - The About page provides information about "Trading Paradise": Who we are, How we started, and What else we do.
+  - The About page provides information about <cite>Trading Paradise</cite>: Who we are, How we started, and What else we do.
   - Two buttons are positioned in optimal locations to catch the user's attention as the content flows. A button that links to the Items page appears after the 'How we started' section and another button that links to the Contact page appears after the 'What else we do' section.
 
 - Items page
@@ -209,7 +213,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
   - Internal chat system
   
-    Users are invited to the Discord channel to communicate in real-time with "Trading Paradise" at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
+    Users are invited to the Discord channel to communicate in real-time with <cite>Trading Paradise</cite> at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
 <br>
 
 # Technologies Used
@@ -239,6 +243,35 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [W3C Markup Validation Service](https://validator.w3.org/) was used to check the HTML markup validity.
 - [WAVE](https://wave.webaim.org/) was used to evaluate the accessibility.
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check the contrast ratio between the background colour and the font colour.
+<br>
+
+# Deployment
+
+## GitHub Pages
+
+The site was deployed to GitHub Pages using the following steps:
+
+  1. Navigate to [my GitHub Repository](https://github.com/sejungkwak/trading-paradise).
+  2. Locate the "Settings" button on the menu.
+  3. Select "Pages" from the left side vertical menu.
+  4. Under "Source", click the dropdown called "None" and select "main".
+
+  ![Deployment Step 1 to 4](documentation/deployment/deployment-step1-4.png)
+
+  5. Click the "Save" button.
+
+  ![Deployment Step 5](documentation/deployment/deployment-step5.png)
+
+  6. The page is automatically refreshed with a bar which shows the status and live link.
+
+  ![Deployment Step 6](documentation/deployment/deployment-step6.png)
+
+  7. Refresh the page. The bar turns green to indicate the successful deployment.
+
+  ![Deployment Step 7](documentation/deployment/deployment-step7.png)
+
+The live link can be found here - https://sejungkwak.github.io/trading-paradise/
+
 <br>
 
 # Credits
