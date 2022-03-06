@@ -85,7 +85,6 @@ a:focus-visible,
 }
 
 a:hover {
-  color: var(--accent-color);
   transform: scale(1.1);
   transition: color .5s ease-in-out, transform .5s ease-in-out;
 }
@@ -96,14 +95,13 @@ svg {
 
 path {
   fill: var(--text-color);
-  transition: fill .5s ease-in-out, transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
 }
 
 *:hover>path {
-  fill: var(--accent-color);
   transform: scale(1.2);
   transform-origin: center;
-  transition: fill .5s ease-in-out, transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
 }
 
 /* Buttons - used on the Home, About, Contact and Feedback pages */
@@ -128,7 +126,7 @@ path {
 }
 
 .btn:hover {
-  background-color: var(--accent-color);
+  background-color: var(--text-color);
   color: var(--main-bg-color);
   transform: scale(1.1);
   transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
@@ -268,11 +266,18 @@ path {
 
 .menu-item {
   margin-bottom: 1.5em;
+  padding: .6em 1em;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--main-bg-color);
+  border-radius: 35%;
 }
 
 .menu-item.active {
-  color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
+  text-decoration: underline var(--text-color) solid 2px;
+  text-underline-offset: 5px;
 }
 
 .nav-toggle-input:checked~.nav-menu {
@@ -750,7 +755,7 @@ textarea:focus {
   }
 
   .nav-menu>li {
-    margin: auto 1em;
+    margin-left: 1em;
   }
 
   .menu-item {
