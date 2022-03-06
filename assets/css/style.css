@@ -540,14 +540,14 @@ path {
 .item-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
-  gap: .7rem;
+  gap: 1rem;
   margin-top: 1.5em;
   width: 100%;
 }
 
 .item {
   background-color: var(--main-bg-color);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: .5em;
   text-align: center;
   width: 100%;
@@ -566,13 +566,13 @@ path {
 
 .item-img {
   width: 70%;
-  max-width: 13em;
+  max-width: 10em;
 }
 
 .item-name {
   font-size: .9rem;
   font-weight: 400;
-  margin: 0 auto .5em;
+  margin: 0 auto .2em;
 }
 
 .price {
@@ -830,7 +830,6 @@ textarea:focus {
 
   .item-list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
   }
 
   .item {
@@ -853,7 +852,6 @@ textarea:focus {
   .item-name {
     font-size: 1.3rem;
     font-weight: 700;
-    margin: 1em auto;
   }
 
   .price {
@@ -930,7 +928,11 @@ textarea:focus {
   }
 
   .item-list {
-    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+    grid-template: repeat(3, 250px) / repeat(5, 1fr);
+  }
+
+  .item-list:last-child {
+    grid-template-rows: repeat(2, 250px);
   }
 
   .item:first-child {
