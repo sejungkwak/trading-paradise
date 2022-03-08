@@ -157,7 +157,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 ## Implemented Features
 
-The site features a fully responsive design and contains 4 main pages(Home, About, Items, Contact) and 2 supporting pages(Success, Error). The header and footer are identical across the site.
+The site features a fully responsive design and contains 4 main pages(Home, About, Items, Contact) and 2 supporting pages(Success, 404). The header and footer are identical across the site.
   > As a Returning Visitor, I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
 
 - Header
@@ -271,6 +271,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - The Header on small devices less than 768px/48rem width
 
   - Error: I was redirected to the Home page when clicking in the middle of the header bar.
+  
     ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
   - Reason: The `header` element has two child elements: `a`(the logo) and `nav`(the navigation menu). A flex layout is used for the `header` and the `column` value is set to the `flex-direction`. The `a` element was taking up the whole header bar except the toggle button space. 
   - Fix: I Added an `align-self: flex-start` declaration to the `a` element.
@@ -279,15 +280,18 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - Colour Contrast on the Header
 	
   - Error: [WAVE](https://wave.webaim.org/) detected a colour contrast error on the header between the background colour and the accent colour that indicated the current page.
+
     ![Colour Contrast error](documentation/contrast-error.png)
   - Reason: I only checked the contrast ratio of the main background colour and text colour when I commenced this project. The header background colour(#FEED9F) and the accent colour(#FEA600) had a very low colour contrast ratio of 1.67:1.
   - Fix: I changed the style of the menu item that indicates the current page to a background colour with greater contrast. I also removed the accent colour for the hover effect to ensure the best accessibility.
+
     ![Colour Contrast fix](documentation/contrast-fix.png)
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/5e268d1149cb078aebffd727755775481047b976)
 
 - Jump links on the Items page
 
 	- Error: The trading type headings(“Sell”/”Buy”/”Giveaway”) went behind the header when clicking the trading type menu button.
+
     ![Items Menu Error GIF](https://media.giphy.com/media/YZG33qybs7Sy30PurT/giphy.gif)
 	- Reason: I did not consider the height of the header and the menu for the Items page.
 	- Fix: I added the `scroll-margin-top` property to the trading type container.
@@ -360,7 +364,7 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
   - I have used this technique for the menu buttons on the Items page.
 
 - 404 page
-  - Resource: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
+  - Resource: GitHub Docs(https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
     - Using a filename `404.html` makes a 404 error page display when the user tries to access nonexistent pages on my site.
 
 
