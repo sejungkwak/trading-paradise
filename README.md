@@ -1,6 +1,9 @@
 # Trading Paradise Website
 
-<cite>Trading Paradise</cite> is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact <cite>Trading Paradise</cite> for trading in-game items.
+_Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact _Trading Paradise_ for trading in-game items.
+
+
+[View the live project here](https://sejungkwak.github.io/trading-paradise/)
 
 <br>
 
@@ -19,6 +22,10 @@
 
 - [Languages](#languages)
 - [Programs](#programs)
+
+[Testing](#testing)
+
+- [Bugs](#bugs)
 
 [Deployment](#deployment)
 
@@ -112,7 +119,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Logo
 
-  - The logo has the website name <cite>Trading Paradise</cite> inside the Nintendo Switch console image.
+  - The logo has the website name _Trading Paradise_ inside the Nintendo Switch console image.
   - The user will recognise the console in the logo by its shape and colour.
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
@@ -141,7 +148,9 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [View Contact Page Wireframe](documentation/wireframes/desktop/contact.png) / [View Contact Page Mockup](documentation/mockups/desktop/contact.png)
   - [View Success/Error Page Wireframe](documentation/wireframes/desktop/success+error.png) / [View Success Page Mockup](documentation/mockups/desktop/success.png) / [View Error Page Mockup](documentation/mockups/desktop/error.png)
 
-  <br>
+
+[Back To **Table of Contents**](#table-of-contents)
+<br>
 
 # Features
 
@@ -165,10 +174,10 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   - The Home page includes the header, hero section, feature section and footer.
   - The hero section contains a screenshot of ACNH characters' greetings with text overlay to allow the user to understand the purpose of the site at a glance.
     > As a First Time Visitor, I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
-  - The feature section includes three key marketing points of <cite>Trading Paradise</cite>.
+  - The feature section includes three key marketing points of _Trading Paradise_.
 
 - About page
-  - The About page provides information about <cite>Trading Paradise</cite>: Who we are, How we started, and What else we do.
+  - The About page provides information about _Trading Paradise_: Who we are, How we started, and What else we do.
   - Two buttons are positioned in optimal locations to catch the user's attention as the content flows. A button that links to the Items page appears after the 'How we started' section and another button that links to the Contact page appears after the 'What else we do' section.
 
 - Items page
@@ -213,7 +222,9 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
   - Internal chat system
   
-    Users are invited to the Discord channel to communicate in real-time with <cite>Trading Paradise</cite> at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
+    Users are invited to the Discord channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
+
+[Back To **Table of Contents**](#table-of-contents)
 <br>
 
 # Technologies Used
@@ -231,18 +242,60 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to view the site's styling during development and to check runtime performance.
 - [Figma](https://www.figma.com/) was used to create the mockups.
 - [Font Awesome](https://fontawesome.com/) was used for the responsive hamburger menu icons as well as social media icons in the footer.
+- [GIPHY](https://giphy.com/) was used to convert video files to gifs for the README.
 - [Git](https://git-scm.com/) was used for version control.
 - [GitHub](https://github.com/) was used to store and deploy the project's code.
+- [Gitpod](https://www.gitpod.io/) was used to develop and test my code.
 - [Google Fonts](https://fonts.google.com/) was used to import Zilla Slab and Libre Franklin into the style.css file.
 - [Pixlr](https://pixlr.com/e/) was used to create the hero image on the Home page.
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to generate the privacy policy.
 - [Removebg](https://www.remove.bg/) was used to remove the background of the ACNH characters image for the hero image on the Home page.
 - [TinyPNG](https://tinypng.com/) was used to compress the leaf pattern background images.
 - [Upscalepics](https://upscalepics.com/) was used to enhance the quality of the ACNH characters image for the hero image on the Home page.
+- [Visual Studio Code](https://code.visualstudio.com/) was used to edit my code.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS validity.
 - [W3C Markup Validation Service](https://validator.w3.org/) was used to check the HTML markup validity.
 - [WAVE](https://wave.webaim.org/) was used to evaluate the accessibility.
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check the contrast ratio between the background colour and the font colour.
+
+[Back To **Table of Contents**](#table-of-contents)
+<br>
+
+# Testing
+
+## Bugs
+
+### Fixed Bugs
+
+- The Header on small devices less than 768px/48rem width
+
+  - Error: I was redirected to the Home page when clicking in the middle of the header bar.
+    ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
+  - Reason: The `header` element has two child elements: `a`(the logo) and `nav`(the navigation menu). A flex layout is used for the `header` and the `column` value is set to the `flex-direction`. The `a` element was taking up the whole header bar except the toggle button space. 
+  - Fix: I Added an `align-self: flex-start` declaration to the `a` element.
+  - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/70640afad5c6fb76f477b9d511fcd0cde9eb9106)
+
+- Colour Contrast on the Header
+	
+  - Error: [WAVE](https://wave.webaim.org/) detected a colour contrast error on the header between the background colour and the accent colour that indicated the current page.
+    ![Colour Contrast error](documentation/contrast-error.png)
+  - Reason: I only checked the contrast ratio of the main background colour and text colour when I commenced this project. The header background colour(#FEED9F) and the accent colour(#FEA600) had a very low colour contrast ratio of 1.67:1.
+  - Fix: I changed the style of the menu item that indicates the current page to a background colour with greater contrast. I also removed the accent colour for the hover effect to ensure the best accessibility.
+    ![Colour Contrast fix](documentation/contrast-fix.png)
+  - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/5e268d1149cb078aebffd727755775481047b976)
+
+- Jump links on the Items page
+
+	- Error: The trading type headings(“Sell”/”Buy”/”Giveaway”) went behind the header when clicking the trading type menu button.
+    ![Items Menu Error GIF](https://media.giphy.com/media/YZG33qybs7Sy30PurT/giphy.gif)
+	- Reason: I did not consider the height of the header and the menu for the Items page.
+	- Fix: I added the `scroll-margin-top` property to the trading type container.
+  - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
+
+### Known Bugs
+No known bugs remaining.
+
+[Back To **Table of Contents**](#table-of-contents)
 <br>
 
 # Deployment
@@ -272,6 +325,7 @@ The site was deployed to GitHub Pages using the following steps:
 
 The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 
+[Back To **Table of Contents**](#table-of-contents)
 <br>
 
 # Credits
@@ -279,19 +333,35 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 ## Code
 
 - Responsive hamburger menu navigation bar
-  - Resource: [Kevin Powell's 'Create a responsive navigation nav with no JS!'](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
+  - Resource: Kevin Powell's [Create a responsive navigation nav with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
   - I have learned these techniques from the above tutorial: 
 
-    - Using the input checkbox and the label element for the responsive navigation bar 
-    - Using the transform property instead of the display property to apply the transition in CSS
+    - Using the `input checkbox` and the `label` element for the responsive navigation bar 
+    - Using the `transform` property instead of the `display` property to apply the transition in CSS
 
 - Full brower width bars
   - Resource: [CSS-TRICKS](https://css-tricks.com/full-browser-width-bars/)
   - I have learned this technique from the above tutorial:
 
-    - Using before and after pseudo properties for making background colour wider than maximum width of the element
+    - Using `before` and `after` pseudo properties for making background colour wider than maximum width of the element
   
   - I have used this technique to make the header, trade guide and contact form's background colour wider than 1400px/87.5rem, which I have set as the maximum width of the site.
+
+- Sticky footer
+	- Resource:  Kevin Powell's [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
+	- I have learned this technique from the above tutorial:
+		- Using a `flex` property(to the parent element) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
+
+- Fixed header and jump links
+	- Resource: [CSS-Tricks](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
+    - I have learned this technique from the above tutorial:
+      - Using a `scroll-margin-top` property to the linked element makes the whole linked content visible.
+  - I have used this technique for the menu buttons on the Items page.
+
+- 404 page
+  - Resource: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
+    - Using a filename `404.html` makes an error page display when the user tries to access nonexistent pages on my site.
+
 
 ## Content
 
@@ -347,3 +417,5 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 - Accessibility
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
   - I found a lot of useful information on [A11Y Project](https://www.a11yproject.com/) and especially [this checklist](https://www.a11yproject.com/checklist/) was helpful to see what I need to implement to enhance accessibility of my website.
+
+[Back To **Table of Contents**](#table-of-contents)
