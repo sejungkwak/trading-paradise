@@ -112,7 +112,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 - Imagery
 
   - Using ACNH imagery is important to make users comfortable by being similar to ACNH, whereas having unrelated imagery would be confusing.
-  - Game Characters are used on the Home, About, Success and Error page.
+  - Game Characters are used on the Home, About, Success and 404 page.
   - Item images are used on the Items page to help users recognise items easily even if they don't know the exact name.
   - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
 
@@ -135,19 +135,19 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [View About Page Wireframe](documentation/wireframes/mobile/about.png) / [View About Page Mockup](documentation/mockups/mobile/about.png)
   - [View Items Page Wireframe](documentation/wireframes/mobile/items.png) / [View Items Page Mockup](documentation/mockups/mobile/items.png)
   - [View Contact Page Wireframe](documentation/wireframes/mobile/contact.png) / [View Contact Page Mockup](documentation/mockups/mobile/contact.png)
-  - [View Success/Error Page Wireframe](documentation/wireframes/mobile/success+error.png) / [View Success Page Mockup](documentation/mockups/mobile/success.png) / [View Error Page Mockup](documentation/mockups/mobile/error.png)
+  - [View Success/404 Page Wireframe](documentation/wireframes/mobile/success+error.png) / [View Success Page Mockup](documentation/mockups/mobile/success.png) / [View 404 Page Mockup](documentation/mockups/mobile/error.png)
 - Tablet
   - [View Home Page Wireframe](documentation/wireframes/tablet/home.png) / [View Home Page Mockup](documentation/mockups/tablet/home.png)
   - [View About Page Wireframe](documentation/wireframes/tablet/about.png) / [View About Page Mockup](documentation/mockups/tablet/about.png)
   - [View Items Page Wireframe](documentation/wireframes/tablet/items.png) / [View Items Page Mockup](documentation/mockups/tablet/items.png)
   - [View Contact Page Wireframe](documentation/wireframes/tablet/contact.png) / [View Contact Page Mockup](documentation/mockups/tablet/contact.png)
-  - [View Success/Error Page Wireframe](documentation/wireframes/tablet/success+error.png) / [View Success Page Mockup](documentation/mockups/tablet/success.png) / [View Error Page Mockup](documentation/mockups/tablet/error.png)
+  - [View Success/404 Page Wireframe](documentation/wireframes/tablet/success+error.png) / [View Success Page Mockup](documentation/mockups/tablet/success.png) / [View 404 Page Mockup](documentation/mockups/tablet/error.png)
 - Desktop
   - [View Home Page Wireframe](documentation/wireframes/desktop/home.png) / [View Home Page Mockup](documentation/mockups/desktop/home.png)
   - [View About Page Wireframe](documentation/wireframes/desktop/about.png) / [View About Page Mockup](documentation/mockups/desktop/about.png)
   - [View Items Page Wireframe](documentation/wireframes/desktop/items.png) / [View Items Page Mockup](documentation/mockups/desktop/items.png)
   - [View Contact Page Wireframe](documentation/wireframes/desktop/contact.png) / [View Contact Page Mockup](documentation/mockups/desktop/contact.png)
-  - [View Success/Error Page Wireframe](documentation/wireframes/desktop/success+error.png) / [View Success Page Mockup](documentation/mockups/desktop/success.png) / [View Error Page Mockup](documentation/mockups/desktop/error.png)
+  - [View Success/404 Page Wireframe](documentation/wireframes/desktop/success+error.png) / [View Success Page Mockup](documentation/mockups/desktop/success.png) / [View 404 Page Mockup](documentation/mockups/desktop/error.png)
 
 
 [Back To **Table of Contents**](#table-of-contents)
@@ -200,11 +200,11 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   - Upon clicking the button 'Send Message', the user is redirected to the Success page.
 
 - Success page
-  - The success page was created to give feedback to the user when they have successfully submitted their information via the contact form.
+  - The success page gives feedback to the user when they have successfully submitted their information via the contact form.
   - The page includes a button that links to the Home page.
 
-- Error page
-  - The Error page was created to give feedback to the user when there is an error.
+- 404 page
+  - The 404 page gives feedback to the user when they try to access nonexistent pages on my site.
   - The page includes a button that links to the Home page.
 
 ## Features Left to Implement
@@ -361,7 +361,7 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 
 - 404 page
   - Resource: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
-    - Using a filename `404.html` makes an error page display when the user tries to access nonexistent pages on my site.
+    - Using a filename `404.html` makes a 404 error page display when the user tries to access nonexistent pages on my site.
 
 
 ## Content
@@ -379,7 +379,7 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
     - [Daisy Mae](https://animalcrossing.fandom.com/wiki/Daisy_Mae?file=Daisy_Mae_NH.png): The boar on the Home page
     - [Tortimer](https://animalcrossing.fandom.com/wiki/Tortimer?file=Tortimer_NLa.png): The tortoise on the Home page
     - [Pascal](https://animalcrossing.fandom.com/wiki/Pascal?file=Pascal-NH.png): The otter on the Success page
-    - [Redd](https://animalcrossing.fandom.com/wiki/Animal_Crossing:_City_Folk/Gallery?file=Redd.png): The fox on the Error page
+    - [Redd](https://animalcrossing.fandom.com/wiki/Animal_Crossing:_City_Folk/Gallery?file=Redd.png): The fox on the 404 page
 
 - All the item images on the Items page were sourced from [this spreadsheet](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1397507627) which is hosted on [Norviah's repository: acnh-images](https://github.com/Norviah/acnh-images).
 
