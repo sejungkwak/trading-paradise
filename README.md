@@ -1,7 +1,8 @@
 # Trading Paradise Website
 
-_Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact _Trading Paradise_ for trading in-game items.
+_Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact _Trading Paradise_ for trading in-game items. It is designed to be responsive and accessible on a range of devices.
 
+![Responsive Design](documentation/responsive.png)
 
 [View the live project here](https://sejungkwak.github.io/trading-paradise/)
 
@@ -150,7 +151,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 
 [Back To **Table of Contents**](#table-of-contents)
-<br>
+<br><br>
 
 # Features
 
@@ -225,7 +226,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
     Users are invited to the Discord channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
 
 [Back To **Table of Contents**](#table-of-contents)
-<br>
+<br><br>
 
 # Technologies Used
 
@@ -236,7 +237,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 ## Programs
 
-- [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the image showing a responsive design.
+- [Am I Responsive](http://ami.responsivedesign.is/) was used to create the image showing a responsive design.
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
 - [Canva](https://www.canva.com/en_gb/) was used to create the logo.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to view the site's styling during development and to check runtime performance.
@@ -259,7 +260,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check the contrast ratio between the background colour and the font colour.
 
 [Back To **Table of Contents**](#table-of-contents)
-<br>
+<br><br>
 
 # Testing
 
@@ -296,7 +297,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 No known bugs remaining.
 
 [Back To **Table of Contents**](#table-of-contents)
-<br>
+<br><br>
 
 # Deployment
 
@@ -326,7 +327,7 @@ The site was deployed to GitHub Pages using the following steps:
 The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 
 [Back To **Table of Contents**](#table-of-contents)
-<br>
+<br><br>
 
 # Credits
 
