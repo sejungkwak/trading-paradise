@@ -34,13 +34,13 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Sticky footer: I have learned the method of using flex(to the main) and justify-self property(to the footer) from Kevin powell's YouTube video(https://www.youtube.com/watch?v=yc2olxLgKLk) and Gábor Móczik's comment. */
-
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
+/* Source: Kevin Powell's "Easy sticky footer"(https://www.youtube.com/watch?v=yc2olxLgKLk) and Gábor Móczik's comment */
 
 footer {
   justify-self: flex-end;
@@ -104,7 +104,7 @@ path {
   transition: transform .5s ease-in-out;
 }
 
-/* Buttons - used on the Home, About, Contact and Feedback pages */
+/* Button - for the Home, About, Contact, Success and 404 page */
 
 .btn {
   background-color: var(--header-bg-color);
@@ -132,7 +132,7 @@ path {
   transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
-/* Full brower width bars: I have learned the method of using before and after pseudo properties for making background colour wider than maximum width of the elements from CSS-TRICKS(https://css-tricks.com/full-browser-width-bars/). */
+/* Source: Chris Coyier's "Full Browser Width Bars"(https://css-tricks.com/full-browser-width-bars/) */
 
 .header::after,
 .header::before,
@@ -194,8 +194,6 @@ path {
   margin: .5em 0 .5em 1em;
 }
 
-/* Responsive navigation bar: I have learned the method of using checkbox, and using transform for transition from Kevin powell's YouTube video(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s). */
-
 .nav {
   position: relative;
   width: 100%;
@@ -236,6 +234,8 @@ path {
   transform: scale(1, 0);
   transition: transform .5s ease-in-out;
 }
+
+/* Source: Kevin Powell's "Create a responsive navigation nav with no JS!"(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) */
 
 .nav-toggle-input:checked~.nav-toggle-label>.nav-toggle-icon {
   transform: scale(1, 0);
@@ -344,7 +344,7 @@ path {
   width: 100%;
 }
 
-/* NPC and speech bubble - used on the Home and Feedback pages */
+/* NPC and speech bubble - for the Home, Success and 404 page */
 
 .npc-container {
   height: 20rem;
@@ -529,10 +529,12 @@ path {
 
 /*--------------- Item list(sell, buy, trade) section ---------------*/
 
+/* Source: Chris Coyier's "Fixed Headers and Jump Links? The Solution is scroll-margin-top"(https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/) */
+
 .trade-type-container {
+  scroll-margin-top: 7em;
   background-color: var(--trade-bg-color);
   padding: 1.1em;
-  scroll-margin-top: 7em;
   width: 100%;
 }
 
@@ -845,12 +847,12 @@ textarea:focus {
     grid-row: span 2;
   }
 
-  #sell .item:last-child {
+  .sell .item:last-child {
     grid-row: 3 / span 2;
     grid-column: 3;
   }
 
-  #giveaway .item:nth-child(2) {
+  .giveaway .item:nth-child(2) {
     grid-row: span 2;
   }
 
@@ -944,28 +946,28 @@ textarea:focus {
     grid-column: span 2;
   }
 
-  #sell .item:nth-last-child(-n+2) {
+  .sell .item:nth-last-child(-n+2) {
     grid-row: 2 / span 2;
   }
 
-  #sell .item:nth-last-child(2) {
+  .sell .item:nth-last-child(2) {
     grid-column: 4;
   }
 
-  #sell .item:last-child {
+  .sell .item:last-child {
     grid-column: 5;
   }
 
-  #buy .item:nth-child(2) {
+  .buy .item:nth-child(2) {
     grid-row: span 2;
   }
 
-  #buy .item:last-child {
+  .buy .item:last-child {
     grid-column: 4 / span 2;
     grid-row: 2 / span 2;
   }
 
-  #giveaway .item {
+  .giveaway .item {
     grid-row: span 2;
   }
 
