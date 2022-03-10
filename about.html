@@ -27,7 +27,7 @@
     <!-- Collapsible navigation bar -->
     <nav class="nav" aria-label="Website menu">
       <!-- Source: Kevin Powell's "Create a responsive navigation nav with no JS!"(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) -->
-      <input class="nav-toggle-input" type="checkbox" role="button" aria-pressed="true" id="nav-toggle">
+      <input class="nav-toggle-input" id="nav-toggle" type="checkbox" role="button" aria-pressed="true">
       <label class="nav-toggle-label" for="nav-toggle">
         <!-- Open icon (three bars) -->
         <svg class="nav-toggle-icon open" aria-labelledby="open" xmlns="http://www.w3.org/2000/svg"
@@ -46,10 +46,10 @@
       </label>
       <!-- Navigation menu -->
       <ul class="nav-menu">
-        <li><a href="index.html" aria-label="Go to the Home page" class="menu-item">home</a></li>
-        <li><a href="about.html" aria-label="Go to the About page" class="menu-item active">about</a></li>
-        <li><a href="items.html" aria-label="Go to the Items page" class="menu-item">items</a></li>
-        <li><a href="contact.html" aria-label="Go to the Contact page" class="menu-item">contact</a></li>
+        <li><a class="menu-item" href="index.html" aria-label="Go to the Home page">home</a></li>
+        <li><a class="menu-item active" href="about.html" aria-label="Go to the About page">about</a></li>
+        <li><a class="menu-item" href="items.html" aria-label="Go to the Items page">items</a></li>
+        <li><a class="menu-item" href="contact.html" aria-label="Go to the Contact page">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -59,8 +59,8 @@
       <!-- Who we are -->
       <article class="story-container">
         <figure class="story-img-container">
-          <img class="story-img" alt="A human villager is greeting in front of the 2022 Celebratory Arch"
-            src="assets/images/greetings.jpg">
+          <img class="story-img" src="assets/images/greetings.jpg"
+            alt="A human villager is greeting in front of the 2022 Celebratory Arch">
           <figcaption>Greetings from Paradise</figcaption>
         </figure>
         <div class="story-text">
@@ -73,7 +73,8 @@
       <!-- How we started -->
       <article class="story-container">
         <figure class="story-img-container">
-          <img class="story-img" src="assets/images/trade-site.jpg" alt="Trading site on Paradise">
+          <img class="story-img" src="assets/images/trade-site.jpg"
+            alt="Paradise island has a spacious trading place with 54 slots">
           <figcaption>Trading site on Paradise</figcaption>
         </figure>
         <div class="story-text">
@@ -83,8 +84,8 @@
           <p>We opened our own marketplace in 2022 named after our northern hemisphere located island Paradise.</p>
         </div>
         <!-- Button to the Items page -->
-        <a href="items.html" role="button" aria-label="View items, Click the button to go to the Items page"
-          class="btn">View Items</a>
+        <a class="btn" href="items.html" role="button"
+          aria-label="View items, Click the button to go to the Items page">View Items</a>
       </article>
       <!-- What else we do -->
       <article class="story-container">
@@ -100,8 +101,8 @@
             about upcoming events, leave us your email address!</p>
         </div>
         <!-- Button to the Contact page -->
-        <a href="contact.html" role="button" aria-label="Contact us, Click the button to go to the Contact page"
-          class="btn">Contact us</a>
+        <a class="btn" href="contact.html" role="button"
+          aria-label="Contact us, Click the button to go to the Contact page">Contact us</a>
       </article>
     </section>
   </main>

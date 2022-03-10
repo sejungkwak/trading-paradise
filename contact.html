@@ -27,7 +27,7 @@
     <!-- collapsible navigation bar -->
     <nav class="nav" aria-label="Website menu">
       <!-- Source: Kevin Powell's "Create a responsive navigation nav with no JS!"(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) -->
-      <input class="nav-toggle-input" type="checkbox" role="button" aria-pressed="true" id="nav-toggle">
+      <input class="nav-toggle-input" id="nav-toggle" type="checkbox" role="button" aria-pressed="true">
       <label class="nav-toggle-label" for="nav-toggle">
         <!-- open icon (three bars) -->
         <svg class="nav-toggle-icon open" aria-labelledby="open" xmlns="http://www.w3.org/2000/svg"
@@ -46,10 +46,10 @@
       </label>
       <!-- navigation menu -->
       <ul class="nav-menu">
-        <li><a href="index.html" aria-label="Go to the Home page" class="menu-item">home</a></li>
-        <li><a href="about.html" aria-label="Go to the About page" class="menu-item">about</a></li>
-        <li><a href="items.html" aria-label="Go to the Items page" class="menu-item">items</a></li>
-        <li><a href="contact.html" aria-label="Go to the Contact page" class="menu-item active">contact</a></li>
+        <li><a class="menu-item" href="index.html" aria-label="Go to the Home page">home</a></li>
+        <li><a class="menu-item" href="about.html" aria-label="Go to the About page">about</a></li>
+        <li><a class="menu-item" href="items.html" aria-label="Go to the Items page">items</a></li>
+        <li><a class="menu-item active" href="contact.html" aria-label="Go to the Contact page">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -65,27 +65,27 @@
         <p class="contact-text">We will reply within 24 hours!</p>
       </div>
     </div>
-    <!-- 
+    <!--
       This is a dummy form.
-      To give the user feedback, Success page is linked to the action attribute and "GET" value is added to the method attribute.
+      To give the user feedback, "success.html" is assigned to the action attribute and "GET" is assigned to the method attribute.
     -->
     <form class="contact-form" action="success.html" method="GET">
       <label for="name">Your Name</label>
-      <input type="text" name="name" id="name">
+      <input id="name" type="text" name="name">
       <label for="email">Email Address</label>
-      <input type="email" name="email" id="email">
+      <input id="email" type="email" name="email">
       <!-- Player's name can be up to 10 characters. -->
       <label for="villager-name">Your Villager's Name</label>
-      <input type="text" name="villager-name" id="villager-name" maxlength="10">
+      <input id="villager-name" type="text" name="villager-name" maxlength="10">
       <!-- Island name can be up to 10 characters. -->
       <label for="island-name">Island Name</label>
-      <input type="text" name="island-name" id="island-name" maxlength="10">
+      <input id="island-name" type="text" name="island-name" maxlength="10">
       <!-- Friend code format is: SW-0000-0000-0000 -->
       <label for="friend-code">Friend Code</label>
-      <input type="tel" name="friend-code" id="friend-code" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+      <input id="friend-code" type="tel" name="friend-code" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
         placeholder="e.g. 0000-0000-0000">
       <label for="msg"><strong>Your Message <em>(required)</em></strong></label>
-      <textarea name="msg" id="msg" rows="5" required></textarea>
+      <textarea id="msg" name="msg" rows="5" required></textarea>
       <label><input type="checkbox" name="privacy-policy" required> <strong>I agree to
           the Privacy Policy <em>(required)</em></strong></label>
       <article class="privacy">
@@ -161,7 +161,7 @@
           records.</p>
       </article>
       <label><input type="checkbox" name="notifications"> I would like to receive updates via Email</label>
-      <button type="submit" class="btn">Send message</button>
+      <button class="btn" type="submit">Send message</button>
     </form>
   </main>
   <footer class="footer">

@@ -27,7 +27,7 @@
     <!-- Collapsible navigation bar -->
     <nav class="nav" aria-label="Website menu">
       <!-- Source: Kevin Powell's "Create a responsive navigation nav with no JS!"(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) -->
-      <input class="nav-toggle-input" type="checkbox" role="button" aria-pressed="true" id="nav-toggle">
+      <input class="nav-toggle-input" id="nav-toggle" type="checkbox" role="button" aria-pressed="true">
       <label class="nav-toggle-label" for="nav-toggle">
         <!-- Open icon (three bars) -->
         <svg class="nav-toggle-icon open" aria-labelledby="open" xmlns="http://www.w3.org/2000/svg"
@@ -46,10 +46,10 @@
       </label>
       <!-- Navigation menu -->
       <ul class="nav-menu">
-        <li><a href="index.html" aria-label="Go to the Home page" class="menu-item">home</a></li>
-        <li><a href="about.html" aria-label="Go to the About page" class="menu-item">about</a></li>
-        <li><a href="items.html" aria-label="Go to the Items page" class="menu-item">items</a></li>
-        <li><a href="contact.html" aria-label="Go to the Contact page" class="menu-item">contact</a></li>
+        <li><a class="menu-item" href="index.html" aria-label="Go to the Home page">home</a></li>
+        <li><a class="menu-item" href="about.html" aria-label="Go to the About page">about</a></li>
+        <li><a class="menu-item" href="items.html" aria-label="Go to the Items page">items</a></li>
+        <li><a class="menu-item" href="contact.html" aria-label="Go to the Contact page">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <!-- Button to the Home page -->
-    <a href="index.html" role="button" class="btn">Go to the home page</a>
+    <a class="btn" href="index.html" role="button">Go to the home page</a>
   </main>
   <footer class="footer">
     <!-- Social media links -->
