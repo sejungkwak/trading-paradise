@@ -694,6 +694,7 @@ path {
   display: flex;
   flex-direction: column;
   padding: 1.1em;
+  position: relative;
   margin-top: 1em;
 }
 
