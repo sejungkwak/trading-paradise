@@ -140,6 +140,8 @@ path {
 .header::after,
 .trading-guide::before,
 .trading-guide::after,
+.trade-type-container::before,
+.trade-type-container::after,
 .contact-form::before,
 .contact-form::after {
   content: "";
@@ -153,6 +155,7 @@ path {
 
 .header::after,
 .trading-guide::after,
+.trade-type-container::after,
 .contact-form::after {
   left: 100%;
 }
@@ -160,6 +163,11 @@ path {
 .header::before,
 .header::after {
   background-color: var(--header-bg-color);
+}
+
+.trade-type-container::before,
+.trade-type-container::after {
+  background-color: var(--trade-bg-color);
 }
 
 /*=============== Home Page ===============*/
@@ -512,6 +520,7 @@ path {
 /* Source: Chris Coyier's "Fixed Headers and Jump Links? The Solution is scroll-margin-top"(https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/) */
 
 .trade-type-container {
+  position: relative;
   scroll-margin-top: 7em;
   width: 100%;
   padding: 1.1em;
