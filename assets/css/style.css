@@ -14,42 +14,44 @@
 /*--------------- Basic styling ---------------*/
 
 * {
-  box-sizing: border-box;
-  color: var(--text-color);
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
+  color: var(--text-color);
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
+}
+
+body,
+main,
+header,
+footer {
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  background: url("../images/leaf-pattern-mobile.png") top center / cover;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Libre Franklin', sans-serif;
   height: 100vh;
-  overflow-x: hidden;
+  background: url("../images/leaf-pattern-mobile.png") top center / cover;
+  font-family: 'Libre Franklin', sans-serif;
   scroll-behavior: smooth;
 }
 
 main {
   flex: 1;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Source: Kevin Powell's "Easy sticky footer"(https://www.youtube.com/watch?v=yc2olxLgKLk) and Gábor Móczik's comment */
 
 footer {
   justify-self: flex-end;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: var(--header-bg-color);
   width: 100%;
   padding: 1.2em 0;
+  background-color: var(--header-bg-color);
 }
 
 h1,
@@ -64,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -107,46 +109,46 @@ path {
 /* Button - for the Home, About, Contact, Success and 404 page */
 
 .btn {
-  background-color: var(--header-bg-color);
+  margin: 1em auto 0;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
   border: none;
   border-radius: 20px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
-  color: inherit;
-  cursor: pointer;
-  font-family: 'Zilla Slab', serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1.7px;
-  margin: 1em auto 0;
-  padding: 1em 1.8em;
-  text-transform: uppercase;
-  transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
-  white-space: normal;
   width: fit-content;
+  padding: 1em 1.8em;
+  background-color: var(--header-bg-color);
+  color: inherit;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  white-space: normal;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .btn:hover {
+  transform: scale(1.1);
   background-color: var(--text-color);
   color: var(--main-bg-color);
-  transform: scale(1.1);
   transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
+/* Making background colour wider than max-width */
 /* Source: Chris Coyier's "Full Browser Width Bars"(https://css-tricks.com/full-browser-width-bars/) */
 
-.header::after,
 .header::before,
-.trading-guide::after,
+.header::after,
 .trading-guide::before,
-.contact-form::after,
-.contact-form::before {
+.trading-guide::after,
+.contact-form::before,
+.contact-form::after {
   content: "";
-  background-color: var(--header-bg-color);
   position: absolute;
+  top: 0;
   right: 100%;
+  width: 999rem;
   height: 100%;
-  Top: 0;
-  width: 9999rem;
+  background-color: var(--main-bg-color);
 }
 
 .header::after,
@@ -155,11 +157,9 @@ path {
   left: 100%;
 }
 
-.trading-guide::after,
-.trading-guide::before,
-.contact-form::after,
-.contact-form::before {
-  background-color: var(--main-bg-color);
+.header::before,
+.header::after {
+  background-color: var(--header-bg-color);
 }
 
 /*=============== Home Page ===============*/
@@ -167,15 +167,13 @@ path {
 /*--------------- Header ---------------*/
 
 .header {
-  background-color: var(--header-bg-color);
-  display: flex;
-  flex-direction: column;
   position: sticky;
-  margin: auto;
-  max-width: 87.5rem;
-  width: 100%;
-  top: 0;
   z-index: 100;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 87.5rem;
+  background-color: var(--header-bg-color);
 }
 
 .header a {
@@ -190,8 +188,8 @@ path {
 }
 
 .logo {
-  width: 7em;
   margin: .5em 0 .5em 1em;
+  width: 7em;
 }
 
 .nav {
@@ -217,12 +215,12 @@ path {
 }
 
 .nav-toggle-icon {
-  cursor: pointer;
   position: absolute;
-  height: 2em;
-  width: 2em;
-  right: .3em;
   bottom: 100%;
+  right: .3em;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
 }
 
 .nav-toggle-icon.open {
@@ -250,17 +248,17 @@ path {
 /*--------------- Navigation menu (hidden by default on mobile) ---------------*/
 
 .nav-menu {
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: scale(1, 0);
+  transform-origin: top;
+  width: 100%;
   background-color: var(--header-bg-color);
   font-size: 1.2rem;
   font-weight: 700;
-  left: 0;
   text-transform: uppercase;
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
   transition: transform .5s ease-in-out;
 }
 
@@ -271,8 +269,8 @@ path {
 
 .menu-item:hover,
 .menu-item.active {
-  background-color: var(--main-bg-color);
   border-radius: 35%;
+  background-color: var(--main-bg-color);
 }
 
 .menu-item.active {
@@ -288,52 +286,47 @@ path {
 /*--------------- Hero section ---------------*/
 
 .hero-section {
-  background: url("../images/hero-image-mobile.webp") center bottom/cover no-repeat;
-  padding: 2em;
-  height: 40em;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 40em;
+  padding: 2em;
+  background: url("../images/hero-image-mobile.webp") center bottom/cover no-repeat;
   text-align: center;
 }
 
 .hero-title,
 .hero-description {
+  width: 90%;
   background-color: var(--trade-bg-color);
 }
 
 .hero-title {
-  font-weight: 700;
-  padding: .5em .4em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  overflow: hidden;
-  width: 90%;
+  padding: .5em .4em;
 }
 
 .hero-description {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  padding: 0 .5em .5em;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  overflow: hidden;
-  width: 90%;
+  padding: 0 .5em .5em;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
 /*--------------- Reasons section ---------------*/
 
 .reasons-trading-section {
-  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--main-bg-color);
 }
 
 .reasons-title {
-  font-weight: 700;
   margin: 1.5em auto;
 }
 
@@ -347,55 +340,50 @@ path {
 /* NPC and speech bubble - for the Home, Success and 404 page */
 
 .npc-container {
-  height: 20rem;
-  max-width: 21.875rem;
-  width: 100%;
-  padding: 1.1em;
   position: relative;
+  width: 100%;
+  max-width: 21.875rem;
+  height: 20rem;
+  padding: 1.1em;
 }
 
 .npc-container>* {
   position: absolute;
 }
 
-/* Positioning 1st + 3rd NPC's images on the right side */
-
-.npc-container:nth-child(2n+1)>.npc-img {
-  right: 1.1rem;
-}
-
 .npc-img {
   height: 80%;
 }
 
-/* Positioning 2nd NPC's speech bubble on the right side */
+/* Positioning 1st + 3rd NPC's images and 2nd NPC's speech bubble on the right side */
 
+.npc-container:nth-child(2n+1)>.npc-img,
 .npc-container:nth-child(2)>.speech-bubble {
   right: 1.1rem;
 }
 
 .speech-bubble {
-  background-color: var(--main-bg-color);
-  border: 2px solid var(--header-bg-color);
-  border-radius: 50px;
   bottom: 2rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  border: 2px solid var(--header-bg-color);
+  border-radius: 50px;
   padding: 1em 3em;
+  background-color: var(--main-bg-color);
 }
 
 .npc-name {
   position: absolute;
   bottom: 80%;
   left: 10%;
-  background-color: var(--header-bg-color);
   border-radius: 50px;
-  font-weight: 700;
   padding: .5em;
+  background-color: var(--header-bg-color);
+  font-weight: 700;
 }
 
 .npc-speech {
-  font-weight: 500;
   line-height: 1.5;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -415,24 +403,23 @@ path {
 /*=============== About page ===============*/
 
 .about-title {
-  font-weight: 700;
   padding: 1em 0;
   text-align: center;
 }
 
 .story-container {
-  background-color: var(--main-bg-color);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: 1em 1.1em 2em;
+  border-radius: 10px;
   padding: 2em 1.1em;
+  background-color: var(--main-bg-color);
 }
 
 .story-img-container {
+  margin: auto;
   max-width: 20rem;
   text-align: center;
-  margin: auto;
 }
 
 .story-img {
@@ -440,22 +427,18 @@ path {
 }
 
 .story-text {
-  line-height: 2;
   width: 100%;
-  padding: 0 1.1em 1.1em;
-}
-
-.story-text h2 {
-  font-size: 1.5rem;
+  padding: 1.1em 0;
+  line-height: 2;
 }
 
 /*=============== Items page ===============*/
 
 .trade-header {
-  max-width: 87.5rem;
-  width: 90%;
-  margin: auto;
   position: relative;
+  margin: auto;
+  width: 90%;
+  max-width: 87.5rem;
 }
 
 .trade-title {
@@ -463,12 +446,12 @@ path {
 }
 
 .trade-menu {
+  position: fixed;
+  z-index: 2;
   display: flex;
   justify-content: center;
-  position: fixed;
-  max-width: 87.5rem;
   width: 90%;
-  z-index: 2;
+  max-width: 87.5rem;
 }
 
 .trade-menu li {
@@ -480,22 +463,22 @@ path {
 }
 
 .trade-menu a {
-  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   border: 2px solid var(--text-color);
   border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
   padding: .5em 1em;
-  margin: 0;
+  background-color: var(--main-bg-color);
+  font-size: 1rem;
   transition: border .5s ease-in-out, box-shadow .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .trade-menu a:hover {
-  border: 2px solid var(--accent-color);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
   transform-origin: top;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+  border: 2px solid var(--accent-color);
   transition: border .5s ease-in-out, box-shadow .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
@@ -506,14 +489,10 @@ path {
 /*--------------- Trading guide ---------------*/
 
 .trading-guide {
-  background-color: var(--main-bg-color);
-  padding: 1.1em;
   position: relative;
   width: 100%;
-}
-
-.trading-guide h2 {
-  font-size: 1.2rem;
+  padding: 1.1em;
+  background-color: var(--main-bg-color);
 }
 
 .trading-guide>ol {
@@ -523,8 +502,9 @@ path {
 
 .date {
   position: absolute;
-  right: 1.1rem;
+  z-index: 9;
   top: 100%;
+  right: 1.1rem;
 }
 
 /*--------------- Item list(sell, buy, trade) section ---------------*/
@@ -533,13 +513,9 @@ path {
 
 .trade-type-container {
   scroll-margin-top: 7em;
-  background-color: var(--trade-bg-color);
-  padding: 1.1em;
   width: 100%;
-}
-
-.trade-type {
-  font-size: 1.5rem;
+  padding: 1.1em;
+  background-color: var(--trade-bg-color);
 }
 
 /* Individual item */
@@ -553,21 +529,21 @@ path {
 }
 
 .item {
-  background-color: var(--main-bg-color);
-  border-radius: 10px;
-  padding: .5em;
-  text-align: center;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: .5em;
+  background-color: var(--main-bg-color);
+  text-align: center;
   transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .item:hover {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transform: translateY(-1rem);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
 }
 
@@ -577,15 +553,14 @@ path {
 }
 
 .item-name {
-  font-size: .9rem;
-  font-weight: 400;
   margin: 0 auto .2em;
+  font-size: .9rem;
 }
 
 .price {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -597,21 +572,21 @@ path {
 /* Popup message */
 
 .popup {
+  z-index: 10;
   position: absolute;
-  bottom: 10%;
   right: 5%;
-  background-color: var(--header-bg-color);
+  bottom: 10%;
   border-radius: 10px;
-  font-weight: 500;
-  line-height: 1.5;
   padding: 1em;
+  background-color: var(--header-bg-color);
+  line-height: 1.5;
+  font-weight: 500;
   text-align: center;
-  z-index: 3;
 }
 
 .social-icon.small {
-  height: 1rem;
   vertical-align: text-top;
+  height: 1rem;
 }
 
 /*=============== Contact page ===============*/
@@ -624,22 +599,22 @@ path {
 /* Source: Ziratsu's CSS Carousel(https://codepen.io/Ziratsu/pen/ZEKWaRv) */
 
 .frame {
-  background-color: var(--main-bg-color);
-  border-radius: 10px;
-  height: 8em;
-  margin: 0 auto 2em;
   overflow: hidden;
+  margin: 0 auto 2em;
+  border-radius: 10px;
   width: 90%;
   max-width: 87.5rem;
+  height: 8em;
+  background-color: var(--main-bg-color);
 }
 
 .carousel {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  height: 500%;
+  align-items: center;
   width: 100%;
+  height: 500%;
   animation: carousel 20s infinite linear;
 }
 
@@ -681,21 +656,21 @@ path {
 }
 
 .contact-text {
+  width: 100%;
+  max-width: 87.5rem;
+  padding: 0 1em;
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
-  max-width: 87.5rem;
-  padding: 0 1em;
-  width: 100%;
 }
 
 .contact-form {
-  background-color: var(--main-bg-color);
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 1.1em;
-  position: relative;
   margin-top: 1em;
+  padding: 1.1em;
+  background-color: var(--main-bg-color);
 }
 
 .contact-form label {
@@ -703,24 +678,24 @@ path {
 }
 
 input {
-  background-color: inherit;
   border: none;
   border-bottom: 1px solid var(--text-color);
   padding: .5em;
+  background-color: inherit;
 }
 
 textarea {
-  background-color: inherit;
   border: 1px solid var(--accent-color);
   border-radius: 3px;
   padding: .5em;
+  background-color: inherit;
 }
 
 input:focus,
 textarea:focus {
-  outline: none;
-  border-bottom: 3px solid var(--accent-color);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
+  border-bottom: 3px solid var(--accent-color);
+  outline: none;
 }
 
 .privacy-link {
@@ -728,17 +703,17 @@ textarea:focus {
 }
 
 .privacy {
-  height: 7rem;
+  overflow-y: scroll;
   border: 1px solid var(--text-color);
   border-radius: 3px;
+  height: 7rem;
   padding: .5em;
-  overflow-y: scroll;
 }
 
 .privacy h2 {
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 1.1rem;
   margin-bottom: .5em;
+  font-size: 1.1rem;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .privacy strong {
@@ -751,15 +726,15 @@ textarea:focus {
 }
 
 .privacy ul {
-  list-style-type: disc;
   padding-left: 1em;
+  list-style-type: disc;
 }
 
 /*=============== Feedback(success, 404) page ===============*/
 
 .feedback-main {
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 /****************************************************************
@@ -775,10 +750,6 @@ textarea:focus {
   }
 
   h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
     font-size: 2.5rem;
   }
 
@@ -789,14 +760,14 @@ textarea:focus {
   }
 
   .logo {
-    width: 9em;
     margin: .5em 1em;
+    width: 9em;
   }
 
   .nav {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     margin-right: 1em;
   }
 
@@ -808,12 +779,12 @@ textarea:focus {
   }
 
   .nav-menu {
+    position: unset;
     display: flex;
     flex-direction: row;
-    font-size: 1.2rem;
-    position: unset;
     transform: unset;
     width: unset;
+    font-size: 1.2rem;
   }
 
   .nav-menu>li {
@@ -833,10 +804,15 @@ textarea:focus {
 
   .hero-title {
     margin-top: 1.35em;
+    font-size: 3rem;
   }
 
   .hero-description {
     padding: 0 4.8em .5em;
+  }
+
+  .reasons-title {
+    font-size: 2rem;
   }
 
   /*--------------- About Page ---------------*/
@@ -846,8 +822,8 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     justify-content: center;
-    max-width: 87.5rem;
     margin: auto;
+    max-width: 87.5rem;
   }
 
   .about-title,
@@ -858,6 +834,7 @@ textarea:focus {
 
   .story-text {
     flex: 1;
+    padding: 1.1em;
   }
 
   .story-container:nth-child(2) .story-text {
@@ -885,10 +862,6 @@ textarea:focus {
 
   .trade-title {
     margin-top: 1em;
-  }
-
-  .trading-guide h2 {
-    font-size: 1.5rem;
   }
 
   .trade-type-container {
@@ -984,8 +957,8 @@ textarea:focus {
   /*--------------- About Page ---------------*/
 
   .story-container:nth-child(2) {
-    max-width: 70%;
     margin: auto;
+    max-width: 70%;
   }
 
   .story-text p {
@@ -996,8 +969,8 @@ textarea:focus {
 
   .trading-guide,
   .trade-type-container {
-    max-width: 87.5rem;
     margin: auto;
+    max-width: 87.5rem;
   }
 
   .item-list {
@@ -1029,8 +1002,8 @@ textarea:focus {
   }
 
   .buy .item:last-child {
-    grid-column: 4 / span 2;
     grid-row: 2 / span 2;
+    grid-column: 4 / span 2;
   }
 
   .giveaway .item {
@@ -1044,13 +1017,12 @@ textarea:focus {
   }
 
   .contact-form {
-    max-width: 87.5rem;
-    margin: 1em auto 0;
-    position: relative;
     display: grid;
-    gap: .6rem 2rem;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(10, 2rem);
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem 2rem;
+    margin: 1em auto 0;
+    max-width: 87.5rem;
   }
 
   .contact-form * {
