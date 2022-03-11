@@ -680,6 +680,7 @@ path {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: auto;
   padding: 2em 1.1em;
   background-color: var(--main-bg-color);
 }
