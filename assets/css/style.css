@@ -57,11 +57,11 @@ footer {
 h1,
 h2 {
   font-family: 'Zilla Slab', serif;
-  font-size: 2rem;
   letter-spacing: 2px;
 }
 
 h1 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -76,7 +76,8 @@ ul {
 a {
   cursor: pointer;
   text-decoration: none;
-  transition: color .5s ease-in-out, transform .5s ease-in-out;
+  transition: .5s ease-in-out;
+  transition-property: transform, color;
 }
 
 a:focus-visible,
@@ -88,7 +89,6 @@ a:focus-visible,
 
 a:hover {
   transform: scale(1.1);
-  transition: color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 svg {
@@ -103,7 +103,6 @@ path {
 *:hover>path {
   transform: scale(1.2);
   transform-origin: center;
-  transition: transform .5s ease-in-out;
 }
 
 /* Button - for the Home, About, Contact, Success and 404 page */
@@ -123,17 +122,17 @@ path {
   text-transform: uppercase;
   letter-spacing: 1.7px;
   white-space: normal;
-  transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
+  transition: .5s ease-in-out;
+  transition-property: transform, background-color, color;
 }
 
 .btn:hover {
   transform: scale(1.1);
   background-color: var(--text-color);
   color: var(--main-bg-color);
-  transition: background-color .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
-/* Making background colour wider than max-width */
+/* Making the background colour wider than max-width */
 /* Source: Chris Coyier's "Full Browser Width Bars"(https://css-tricks.com/full-browser-width-bars/) */
 
 .header::before,
@@ -184,18 +183,19 @@ path {
   background-color: var(--header-bg-color);
 }
 
-.header a {
+.logo-link,
+.menu-link {
   align-self: flex-start;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header>a:focus {
+.logo-link:focus {
   outline-offset: -0.5em;
 }
 
-.logo {
+.logo-img {
   margin: .5em 0 .5em 1em;
   width: 7em;
 }
@@ -241,6 +241,7 @@ path {
   transition: transform .5s ease-in-out;
 }
 
+/* When the checkbox is clicked, the icon toggles */
 /* Source: Kevin Powell's "Create a responsive navigation nav with no JS!"(https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) */
 
 .nav-toggle-input:checked~.nav-toggle-label>.nav-toggle-icon {
@@ -270,21 +271,25 @@ path {
   transition: transform .5s ease-in-out;
 }
 
-.menu-item {
+.menu-link {
   margin-bottom: 1.5em;
   padding: .6em 1em;
+  transition: .5s ease-in-out;
+  transition-property: transform, border-radius, background-color, color;
 }
 
-.menu-item:hover,
-.menu-item.active {
+.menu-link:hover,
+.menu-link.active {
   border-radius: 35%;
   background-color: var(--main-bg-color);
 }
 
-.menu-item.active {
+.menu-link.active {
   text-decoration: underline var(--text-color) solid 2px;
   text-underline-offset: 5px;
 }
+
+/* When the checkbox is clicked(checked), the navigation menu opens */
 
 .nav-toggle-input:checked~.nav-menu {
   transform: scale(1, 1);
@@ -311,34 +316,32 @@ path {
 }
 
 .hero-title {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px 20px 0 0;
   padding: .5em .4em;
 }
 
 .hero-description {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-radius: 0 0 20px 20px;
   padding: 0 .5em .5em;
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 500;
 }
 
-/*--------------- Reasons section ---------------*/
+/*--------------- Feature section ---------------*/
 
-.reasons-trading-section {
+.feature-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--main-bg-color);
 }
 
-.reasons-title {
-  margin: 1.5em auto;
+.feature-title {
+  margin: 1.5em 0;
 }
 
-.reasons-container {
+.feature-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,12 +364,6 @@ path {
 
 .npc-img {
   height: 80%;
-}
-
-/* Positioning 1st + 3rd NPC's images and 2nd NPC's speech bubble on the right side */
-
-.npc-container:nth-child(2n+1)>.npc-img,
-.npc-container:nth-child(2)>.speech-bubble {
   right: 1.1rem;
 }
 
@@ -395,6 +392,16 @@ path {
   text-align: center;
 }
 
+/* 2nd NPC: reverse the horizontal position of the image and speech bubble */
+
+.daisy-img {
+  left: 1.1rem;
+}
+
+.daisy-speech {
+  right: 1.1rem;
+}
+
 /*--------------- Footer ---------------*/
 
 .social-media {
@@ -415,7 +422,7 @@ path {
   text-align: center;
 }
 
-.story-container {
+.about-article-container {
   display: flex;
   flex-direction: column;
   margin: 1em 1.1em 2em;
@@ -424,17 +431,17 @@ path {
   background-color: var(--main-bg-color);
 }
 
-.story-img-container {
+.about-img-container {
   margin: auto;
   max-width: 20rem;
   text-align: center;
 }
 
-.story-img {
+.about-img {
   width: 100%;
 }
 
-.story-text {
+.about-article {
   width: 100%;
   padding: 1.1em 0;
   line-height: 2;
@@ -458,36 +465,32 @@ path {
   z-index: 2;
   display: flex;
   justify-content: center;
+  gap: .2em;
   width: 90%;
   max-width: 87.5rem;
 }
 
-.trade-menu li {
+.trade-menu-item {
   width: fit-content;
 }
 
-.trade-menu li:nth-child(2) {
-  margin: 0 .2em;
-}
-
-.trade-menu a {
+.trade-menu-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
   border: 2px solid var(--text-color);
   border-radius: 20px;
   padding: .5em 1em;
   background-color: var(--main-bg-color);
   font-size: 1rem;
-  transition: border .5s ease-in-out, box-shadow .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
+  transition: .5s ease-in-out;
+  transition-property: transform, box-shadow, border;
 }
 
-.trade-menu a:hover {
+.trade-menu-link:hover {
   transform-origin: top;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
   border: 2px solid var(--accent-color);
-  transition: border .5s ease-in-out, box-shadow .5s ease-in-out, color .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .trade-menu img {
@@ -503,7 +506,7 @@ path {
   background-color: var(--main-bg-color);
 }
 
-.trading-guide>ol {
+.trading-guide-list {
   padding: 0 1.1em 1.1em;
   line-height: 1.5;
 }
@@ -527,8 +530,6 @@ path {
   background-color: var(--trade-bg-color);
 }
 
-/* Individual item */
-
 .item-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(120px, 1fr));
@@ -536,6 +537,8 @@ path {
   margin-top: 1.5em;
   width: 100%;
 }
+
+/* Individual item container */
 
 .item {
   display: flex;
@@ -546,14 +549,13 @@ path {
   width: 100%;
   padding: .5em;
   background-color: var(--main-bg-color);
-  text-align: center;
-  transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
+  transition: .5s ease-in-out;
+  transition-property: transform, box-shadow;
 }
 
 .item:hover {
   transform: translateY(-1rem);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-  transition: box-shadow .5s ease-in-out, transform .5s ease-in-out;
 }
 
 .item-img {
@@ -602,14 +604,13 @@ path {
 
 .contact-title {
   padding: 1em 0;
-  text-align: center;
 }
 
 /* Source: Ziratsu's CSS Carousel(https://codepen.io/Ziratsu/pen/ZEKWaRv) */
 
 .frame {
   overflow: hidden;
-  margin: 0 auto 2em;
+  margin: 0 auto 3em;
   border-radius: 10px;
   width: 90%;
   max-width: 87.5rem;
@@ -626,6 +627,8 @@ path {
   height: 500%;
   animation: carousel 20s infinite linear;
 }
+
+/* vertical slideshow */
 
 @keyframes carousel {
 
@@ -677,31 +680,30 @@ path {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
-  padding: 1.1em;
+  padding: 2em 1.1em;
   background-color: var(--main-bg-color);
 }
 
-.contact-form label {
-  margin: 1em 0 .3em;
+.contact-label {
+  margin-top: 1em;
 }
 
-input {
+.contact-input {
   border: none;
   border-bottom: 1px solid var(--text-color);
   padding: .5em;
   background-color: inherit;
 }
 
-textarea {
+.textarea {
   border: 1px solid var(--accent-color);
   border-radius: 3px;
   padding: .5em;
   background-color: inherit;
 }
 
-input:focus,
-textarea:focus {
+.contact-input:focus,
+.textarea:focus {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
   border-bottom: 3px solid var(--accent-color);
   outline: none;
@@ -711,7 +713,7 @@ textarea:focus {
   text-decoration: underline;
 }
 
-.privacy {
+.privacy-policy {
   overflow-y: scroll;
   border: 1px solid var(--text-color);
   border-radius: 3px;
@@ -719,22 +721,22 @@ textarea:focus {
   padding: .5em;
 }
 
-.privacy h2 {
+.privacy-title {
   margin-bottom: .5em;
   font-size: 1.1rem;
   font-family: 'Libre Franklin', sans-serif;
 }
 
-.privacy strong {
+.privacy-subtitle {
   display: block;
   margin-top: .5em;
 }
 
-.privacy h2~* {
+.privacy-title~* {
   font-size: .9rem;
 }
 
-.privacy ul {
+.privacy-policy ul {
   padding-left: 1em;
   list-style-type: disc;
 }
@@ -768,7 +770,7 @@ textarea:focus {
     flex-direction: row;
   }
 
-  .logo {
+  .logo-img {
     margin: .5em 1em;
     width: 9em;
   }
@@ -780,7 +782,7 @@ textarea:focus {
     margin-right: 1em;
   }
 
-  /* Hide checkbox and collapsible navigation open/close icons */
+  /* Hide checkbox and toggle icons */
 
   .nav-toggle-input,
   .nav-toggle-label {
@@ -796,11 +798,11 @@ textarea:focus {
     font-size: 1.2rem;
   }
 
-  .nav-menu>li {
+  .menu-item {
     margin-left: 1em;
   }
 
-  .menu-item {
+  .menu-link {
     margin-bottom: unset;
   }
 
@@ -820,13 +822,13 @@ textarea:focus {
     padding: 0 4.8em .5em;
   }
 
-  .reasons-title {
+  .feature-title {
     font-size: 2rem;
   }
 
   /*--------------- About Page ---------------*/
 
-  .stories-container {
+  .about-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -836,41 +838,36 @@ textarea:focus {
   }
 
   .about-title,
-  .story-container:nth-child(2) {
+  .about-article-container.who {
     grid-column: span 2;
     flex-direction: row;
   }
 
-  .story-text {
+  .about-article {
     flex: 1;
     padding: 1.1em;
   }
 
-  .story-container:nth-child(2) .story-text {
+  .about-article.who {
     margin-left: 2em;
   }
 
-  .story-container:nth-child(2) .story-text h2 {
-    margin-top: 0;
-  }
-
-  .story-text h2 {
+  .about-article-title {
     margin-top: 1em;
   }
 
-  .story-text p {
+  .about-article-title.who {
+    margin-top: 0;
+  }
+
+  .about-text {
     font-size: 1.1rem;
   }
 
   /*--------------- Items page ---------------*/
 
-  .trade-header,
-  .trade-menu {
-    width: 45rem;
-  }
-
   .trade-title {
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
 
   .trade-type-container {
@@ -929,7 +926,7 @@ textarea:focus {
     background: url("../images/hero-image.webp") center bottom/cover no-repeat;
   }
 
-  .reasons-container {
+  .feature-container {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 3em;
@@ -940,19 +937,22 @@ textarea:focus {
     height: 25rem;
   }
 
-  .npc-container:nth-child(2n+1)>.npc-img,
   .npc-img {
     right: 0;
   }
 
-  .npc-container:nth-child(2)>.speech-bubble {
-    right: unset;
+  .daisy-img {
+    left: 55%;
   }
 
   .speech-bubble {
     bottom: 0;
     left: 0;
     padding: 1.5em 3em;
+  }
+
+  .daisy-speech {
+    right: unset;
   }
 
   .npc-name {
@@ -965,12 +965,12 @@ textarea:focus {
 
   /*--------------- About Page ---------------*/
 
-  .story-container:nth-child(2) {
+  .about-article-container.who {
     margin: auto;
     max-width: 70%;
   }
 
-  .story-text p {
+  .about-text {
     letter-spacing: .8px;
   }
 
@@ -994,7 +994,8 @@ textarea:focus {
     grid-column: span 2;
   }
 
-  .sell .item:nth-last-child(-n+2) {
+  .sell .item:nth-last-child(-n+2),
+  .buy .item:last-child {
     grid-row: 2 / span 2;
   }
 
@@ -1006,31 +1007,22 @@ textarea:focus {
     grid-column: 5;
   }
 
-  .buy .item:nth-child(2) {
-    grid-row: span 2;
-  }
-
-  .buy .item:last-child {
-    grid-row: 2 / span 2;
-    grid-column: 4 / span 2;
-  }
-
+  .buy .item:nth-child(2),
   .giveaway .item {
     grid-row: span 2;
   }
 
-  /*--------------- Contact Page ---------------*/
-
-  .contact-text {
-    font-weight: 500;
+  .buy .item:last-child {
+    grid-column: 4 / span 2;
   }
+
+  /*--------------- Contact Page ---------------*/
 
   .contact-form {
     display: grid;
     grid-template-rows: repeat(10, 2rem);
     grid-template-columns: 1fr 1fr;
     gap: .6rem 2rem;
-    margin: 1em auto 0;
     max-width: 87.5rem;
   }
 
@@ -1038,29 +1030,29 @@ textarea:focus {
     grid-column: 1;
   }
 
-  .contact-form label:nth-last-child(-n+6),
-  .contact-form textarea,
-  .contact-form article {
+  .contact-label:nth-last-child(-n+6),
+  .textarea,
+  .privacy-policy {
     grid-column: 2;
   }
 
-  .contact-form label[for="msg"] {
+  .contact-label.msg {
     grid-row: 1;
   }
 
-  .contact-form textarea {
+  .textarea {
     grid-row: 2 / span 4;
   }
 
-  .contact-form label:nth-last-child(4) {
+  .contact-label.privacy {
     grid-row: 6;
   }
 
-  .contact-form article {
+  .privacy-policy {
     grid-row: 7 / span 4;
   }
 
-  .contact-form label:nth-last-child(2) {
+  .contact-label.notification {
     grid-row: 10;
   }
 
