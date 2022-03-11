@@ -20,8 +20,8 @@
 <body>
   <header class="header">
     <!-- logo -->
-    <a href="index.html" aria-label="Go to the Home page">
-      <img class="logo" src="assets/images/logo-trading-paradise.png"
+    <a class="logo-link" href="index.html" aria-label="Go to the Home page">
+      <img class="logo-img" src="assets/images/logo-trading-paradise.png"
         alt="Trading Paradise Logo, consisting of the words 'Trading Paradise' inside a Nintendo Switch console">
     </a>
     <!-- collapsible navigation bar -->
@@ -36,7 +36,7 @@
           <path
             d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
         </svg>
-        <!-- close icon (xmark) -->
+        <!-- close icon (x mark) -->
         <svg class="nav-toggle-icon close" aria-labelledby="close" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512">
           <title id="close">Close the navigation menu</title>
@@ -46,10 +46,11 @@
       </label>
       <!-- navigation menu -->
       <ul class="nav-menu">
-        <li><a class="menu-item" href="index.html" aria-label="Go to the Home page">home</a></li>
-        <li><a class="menu-item" href="about.html" aria-label="Go to the About page">about</a></li>
-        <li><a class="menu-item" href="items.html" aria-label="Go to the Items page">items</a></li>
-        <li><a class="menu-item active" href="contact.html" aria-label="Go to the Contact page">contact</a></li>
+        <li class="menu-item"><a class="menu-link" href="index.html" aria-label="Go to the Home page">home</a></li>
+        <li class="menu-item"><a class="menu-link" href="about.html" aria-label="Go to the About page">about</a></li>
+        <li class="menu-item"><a class="menu-link" href="items.html" aria-label="Go to the Items page">items</a></li>
+        <li class="menu-item"><a class="menu-link active" href="contact.html"
+            aria-label="Go to the Contact page">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -70,26 +71,28 @@
       To give the user feedback, "success.html" is assigned to the action attribute and "GET" is assigned to the method attribute.
     -->
     <form class="contact-form" action="success.html" method="GET">
-      <label for="name">Your Name</label>
-      <input id="name" type="text" name="name">
-      <label for="email">Email Address</label>
-      <input id="email" type="email" name="email">
+      <label class="contact-label" for="name">Your Name</label>
+      <input class="contact-input" id="name" type="text" name="name">
+      <label class="contact-label" for="email">Email Address</label>
+      <input class="contact-input" id="email" type="email" name="email">
       <!-- Player's name can be up to 10 characters. -->
-      <label for="villager-name">Your Villager's Name</label>
-      <input id="villager-name" type="text" name="villager-name" maxlength="10">
+      <label class="contact-label" for="villager-name">Your Villager's Name</label>
+      <input class="contact-input" id="villager-name" type="text" name="villager-name" maxlength="10">
       <!-- Island name can be up to 10 characters. -->
-      <label for="island-name">Island Name</label>
-      <input id="island-name" type="text" name="island-name" maxlength="10">
+      <label class="contact-label" for="island-name">Island Name</label>
+      <input class="contact-input" id="island-name" type="text" name="island-name" maxlength="10">
       <!-- Friend code format is: SW-0000-0000-0000 -->
-      <label for="friend-code">Friend Code</label>
-      <input id="friend-code" type="tel" name="friend-code" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+      <label class="contact-label" for="friend-code">Friend Code</label>
+      <input class="contact-input" id="friend-code" type="tel" name="friend-code" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
         placeholder="e.g. 0000-0000-0000">
-      <label for="msg"><strong>Your Message <em>(required)</em></strong></label>
-      <textarea id="msg" name="msg" rows="5" required></textarea>
-      <label><input type="checkbox" name="privacy-policy" required> <strong>I agree to
+      <label class="contact-label msg" for="msg"><strong>Your Message <em>(required)</em></strong></label>
+      <textarea class="textarea" id="msg" name="msg" rows="5" required></textarea>
+      <label class="contact-label privacy" for="privacy"><input class="contact-input" id="privacy" type="checkbox"
+          name="privacy-policy" required>
+        <strong>I agree to
           the Privacy Policy <em>(required)</em></strong></label>
-      <article class="privacy">
-        <h2>Privacy Policy</h2>
+      <article class="privacy-policy">
+        <h2 class="privacy-title">Privacy Policy</h2>
         <p>At Trading Paradise, one of our main priorities is the privacy of our visitors. This Privacy Policy
           document
           contains types of information that is collected and recorded by Trading Paradise and how we use it.</p>
@@ -101,15 +104,15 @@
           to any information collected offline or via channels other than this website. Our Privacy Policy was created
           with the help of the <a href="https://www.privacypolicygenerator.info" target="_blank" rel="noopener">Free
             Privacy Policy Generator</a>.</p>
-        <strong>Consent</strong>
+        <strong class="privacy-subtitle">Consent</strong>
         <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-        <strong>Information we collect</strong>
+        <strong class="privacy-subtitle">Information we collect</strong>
         <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it,
           will
           be made clear to you at the point we ask you to provide your personal information.</p>
         <p>If you contact us directly, we may receive additional information about you such as your name, email
           address, the contents of the message, and any other information you may choose to provide.</p>
-        <strong>How we use your information</strong>
+        <strong class="privacy-subtitle">How we use your information</strong>
         <p>We use the information we collect in various ways, including to:</p>
         <ul>
           <li>Provide, operate, and maintain our website</li>
@@ -122,7 +125,7 @@
           <li>Send you emails</li>
           <li>Find and prevent fraud</li>
         </ul>
-        <strong>CCPA Privacy Rights (Do Not Sell My Personal Information)</strong>
+        <strong class="privacy-subtitle">CCPA Privacy Rights (Do Not Sell My Personal Information)</strong>
         <p>Under the CCPA, among other rights, California consumers have the right to:</p>
         <p>Request that a business that collects a consumer's personal data disclose the categories and specific
           pieces
@@ -131,7 +134,7 @@
         <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
         <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these
           rights, please contact us.</p>
-        <strong>GDPR Data Protection Rights</strong>
+        <strong class="privacy-subtitle">GDPR Data Protection Rights</strong>
         <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is
           entitled
           to the following:</p>
@@ -150,7 +153,7 @@
           collected to another organisation, or directly to you, under certain conditions.</p>
         <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these
           rights, please contact us.</p>
-        <strong>Children's Information</strong>
+        <strong class="privacy-subtitle">Children's Information</strong>
         <p>Another part of our priority is adding protection for children while using the internet. We encourage
           parents
           and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
@@ -160,7 +163,10 @@
           you to contact us immediately and we will do our best efforts to promptly remove such information from our
           records.</p>
       </article>
-      <label><input type="checkbox" name="notifications"> I would like to receive updates via Email</label>
+      <label class="contact-label notification" for="notification"><input class="contact-input" id="notification"
+          type="checkbox" name="notifications"> I
+        would like to receive updates via
+        Email</label>
       <button class="btn" type="submit">Send message</button>
     </form>
   </main>

@@ -20,8 +20,8 @@
 <body>
   <header class="header">
     <!-- Logo -->
-    <a href="index.html" aria-label="Go to the Home page">
-      <img class="logo" src="assets/images/logo-trading-paradise.png"
+    <a class="logo-link" href="index.html" aria-label="Go to the Home page">
+      <img class="logo-img" src="assets/images/logo-trading-paradise.png"
         alt="Trading Paradise Logo, consisting of the words 'Trading Paradise' inside a Nintendo Switch console">
     </a>
     <!-- Collapsible navigation bar -->
@@ -36,7 +36,7 @@
           <path
             d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
         </svg>
-        <!-- Close icon (xmark) -->
+        <!-- Close icon (x mark) -->
         <svg class="nav-toggle-icon close" aria-labelledby="close" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512">
           <title id="close">Close the navigation menu</title>
@@ -46,59 +46,66 @@
       </label>
       <!-- Navigation menu -->
       <ul class="nav-menu">
-        <li><a class="menu-item" href="index.html" aria-label="Go to the Home page">home</a></li>
-        <li><a class="menu-item active" href="about.html" aria-label="Go to the About page">about</a></li>
-        <li><a class="menu-item" href="items.html" aria-label="Go to the Items page">items</a></li>
-        <li><a class="menu-item" href="contact.html" aria-label="Go to the Contact page">contact</a></li>
+        <li class="menu-item"><a class="menu-link" href="index.html" aria-label="Go to the Home page">home</a></li>
+        <li class="menu-item"><a class="menu-link active" href="about.html" aria-label="Go to the About page">about</a>
+        </li>
+        <li class="menu-item"><a class="menu-link" href="items.html" aria-label="Go to the Items page">items</a></li>
+        <li class="menu-item"><a class="menu-link" href="contact.html" aria-label="Go to the Contact page">contact</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="stories-container">
+    <section class="about-container">
       <h1 class="about-title">Paradise Stories</h1>
       <!-- Who we are -->
-      <article class="story-container">
-        <figure class="story-img-container">
-          <img class="story-img" src="assets/images/greetings.jpg"
+      <article class="about-article-container who">
+        <figure class="about-img-container">
+          <img class="about-img" src="assets/images/greetings.jpg"
             alt="A human villager is greeting in front of the 2022 Celebratory Arch">
           <figcaption>Greetings from Paradise</figcaption>
         </figure>
-        <div class="story-text">
-          <h2>Who we are</h2>
-          <p>Trading Paradise is an ACNH-fan-made marketplace for in-game items.</p>
-          <p>We are selling a variety of items to make your island more beautiful and would like to buy some artworks to
+        <div class="about-article who">
+          <h2 class="about-article-title who">Who we are</h2>
+          <p class="about-text">Trading Paradise is an ACNH-fan-made marketplace for in-game items.</p>
+          <p class="about-text">We are selling a variety of items to make your island more beautiful and would like to
+            buy some artworks to
             donate to the museum.</p>
         </div>
       </article>
       <!-- How we started -->
-      <article class="story-container">
-        <figure class="story-img-container">
-          <img class="story-img" src="assets/images/trade-site.jpg"
+      <article class="about-article-container">
+        <figure class="about-img-container">
+          <img class="about-img" src="assets/images/trade-site.jpg"
             alt="Paradise island has a spacious trading place with 54 slots">
           <figcaption>Trading site on Paradise</figcaption>
         </figure>
-        <div class="story-text">
-          <h2>How we started</h2>
-          <p>We first bought a couple of items from a Korean Nintendo community in 2021 and found meeting other
+        <div class="about-article">
+          <h2 class="about-article-title">How we started</h2>
+          <p class="about-text">We first bought a couple of items from a Korean Nintendo community in 2021 and found
+            meeting other
             players is one of the most fun parts of ACNH.</p>
-          <p>We opened our own marketplace in 2022 named after our northern hemisphere located island Paradise.</p>
+          <p class="about-text">We opened our own marketplace in 2022 named after our northern hemisphere located island
+            Paradise.</p>
         </div>
         <!-- Button to the Items page -->
         <a class="btn" href="items.html" role="button"
           aria-label="View items, Click the button to go to the Items page">View Items</a>
       </article>
       <!-- What else we do -->
-      <article class="story-container">
-        <figure class="story-img-container">
-          <img class="story-img" src="assets/images/event.jpg"
+      <article class="about-article-container">
+        <figure class="about-img-container">
+          <img class="about-img" src="assets/images/event.jpg"
             alt="A human villager is sitting on a bench with a bunch of nook miles tickets in front">
           <figcaption>After solving a maze on a maze island</figcaption>
         </figure>
-        <div class="story-text">
-          <h2>What else we do</h2>
-          <p>We also hold events like Island Maze, Treasure Hunt, and Hide and Seek. If you would like to receive
+        <div class="about-article">
+          <h2 class="about-article-title">What else we do</h2>
+          <p class="about-text">We also hold events like island maze, treasure hunt, and hide and seek.</p>
+          <p class="about-text">If you would
+            like to receive
             notifications
-            about upcoming events, leave us your email address!</p>
+            about item updates and upcoming events, leave us your email address!</p>
         </div>
         <!-- Button to the Contact page -->
         <a class="btn" href="contact.html" role="button"
