@@ -4,7 +4,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 
 ![Responsive Design](documentation/responsive.png)
 
-[View the live project here](https://sejungkwak.github.io/trading-paradise/)
+### View the live project [here](https://sejungkwak.github.io/trading-paradise/)
 
 <br>
 
@@ -26,11 +26,16 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 
 [Testing](#testing)
 
+- [W3C Validation](#w3c-validation)
+- [Functionality Testing](#functionality-testing)
+- [Performance Testing](#performance-testing)
 - [Bugs](#bugs)
 
 [Deployment](#deployment)
 
 - [Github Pages](#github-pages)
+- [Making a Local Clone](#making-a-local-clone)
+- [Forking this Repository](#forking-this-repository)
 
 [Credits](#credits)
 
@@ -51,15 +56,11 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
   - I want to be able to navigate pages easily, so that I don't have to waste my time.
   - I want to check their social media, so that I can determine whether they are trustworthy.
     
-    <br>
-
 - As a Returning Visitor,
 
   - I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
   - I want to know easily if items that I want to buy are available, so that I don't have to browse the whole page.
   - I want to be able to contact them, so that I can ask questions before trading.
-
-    <br>
 
 - As a Frequent User,
 
@@ -67,7 +68,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
   - I want to get notified when there are updates on available items, so that I can get them before someone else.
   - I want to be able to add items to my wish list, so that I can find them faster at a later date.
 
-  <br>
+<br>
 
 ## Design
 
@@ -80,14 +81,14 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     - Text colour: #5e5450(Umber)
     - Accent colour: #fea600(Chrome Yellow)
 
-    <br>
+<br>
 
   - Each hex colour code was found the following steps:
 
     1.  Take a screenshot on the game screen.
     2.  Go to [HTML Color Codes](https://html-color-codes.info/colors-from-image/)
     3.  Place the mouse cursor where desired colours are.
-    <br>
+<br>
 
     ![speech bubble](documentation/speech-bubble.png)
 
@@ -98,7 +99,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     
     ![Contrast Checker](documentation/contrast-checker.png)
 
-    <br>
+<br>
 
 - Typography
 
@@ -107,7 +108,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     - Paragraph: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) is used in body text with Sans Serif as the fall back. It is often perceived as more friendly and warmer than other sans serif types.
   - Fonts on the ACNH official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and Chrome developer tool.
 
-    <br>
+<br>
 
 - Imagery
 
@@ -116,7 +117,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - Item images are used on the Items page to help users recognise items easily even if they don't know the exact name.
   - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
 
-    <br>
+<br>
 
 - Logo
 
@@ -125,30 +126,31 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [Canva](https://www.canva.com/) was used to design the logo.
   <br>
 
-  ![Logo](documentation/logo.png)  
-    
+    ![Logo](documentation/logo.png)
+
+<br>
+
+- Favicon
+
+  - The Favicon has the Nintendo Switch console joy cons image.
+  - [Canva](https://www.canva.com/), [Removebg](https://www.remove.bg/) and [favicon.io](https://favicon.io/) were used to create the favicon.
+
+    ![Favicon](assets/images/favicon/favicon-32x32.png)
+
   <br>
 
 ## Wireframes / Mockups
 - Mobile
-  - [View Home Page Wireframe](documentation/wireframes/mobile/home.png) / [View Home Page Mockup](documentation/mockups/mobile/home.png)
-  - [View About Page Wireframe](documentation/wireframes/mobile/about.png) / [View About Page Mockup](documentation/mockups/mobile/about.png)
-  - [View Items Page Wireframe](documentation/wireframes/mobile/items.png) / [View Items Page Mockup](documentation/mockups/mobile/items.png)
-  - [View Contact Page Wireframe](documentation/wireframes/mobile/contact.png) / [View Contact Page Mockup](documentation/mockups/mobile/contact.png)
-  - [View Success/404 Page Wireframe](documentation/wireframes/mobile/success+error.png) / [View Success Page Mockup](documentation/mockups/mobile/success.png) / [View 404 Page Mockup](documentation/mockups/mobile/error.png)
+  - [View Wireframes](DESIGN.md/#mobile-wireframes)
+  - [View Mockups](DESIGN.md/#mobile-mockups)
+  
 - Tablet
-  - [View Home Page Wireframe](documentation/wireframes/tablet/home.png) / [View Home Page Mockup](documentation/mockups/tablet/home.png)
-  - [View About Page Wireframe](documentation/wireframes/tablet/about.png) / [View About Page Mockup](documentation/mockups/tablet/about.png)
-  - [View Items Page Wireframe](documentation/wireframes/tablet/items.png) / [View Items Page Mockup](documentation/mockups/tablet/items.png)
-  - [View Contact Page Wireframe](documentation/wireframes/tablet/contact.png) / [View Contact Page Mockup](documentation/mockups/tablet/contact.png)
-  - [View Success/404 Page Wireframe](documentation/wireframes/tablet/success+error.png) / [View Success Page Mockup](documentation/mockups/tablet/success.png) / [View 404 Page Mockup](documentation/mockups/tablet/error.png)
+  - [View Wireframes](DESIGN.md/#tablet-wireframes)
+  - [View Mockups](DESIGN.md/#tablet-mockups)
+  
 - Desktop
-  - [View Home Page Wireframe](documentation/wireframes/desktop/home.png) / [View Home Page Mockup](documentation/mockups/desktop/home.png)
-  - [View About Page Wireframe](documentation/wireframes/desktop/about.png) / [View About Page Mockup](documentation/mockups/desktop/about.png)
-  - [View Items Page Wireframe](documentation/wireframes/desktop/items.png) / [View Items Page Mockup](documentation/mockups/desktop/items.png)
-  - [View Contact Page Wireframe](documentation/wireframes/desktop/contact.png) / [View Contact Page Mockup](documentation/mockups/desktop/contact.png)
-  - [View Success/404 Page Wireframe](documentation/wireframes/desktop/success+error.png) / [View Success Page Mockup](documentation/mockups/desktop/success.png) / [View 404 Page Mockup](documentation/mockups/desktop/error.png)
-
+  - [View Wireframes](DESIGN.md/#desktop-wireframes)
+  - [View Mockups](DESIGN.md/#desktop-mockups)
 
 [Back To **Table of Contents**](#table-of-contents)
 <br><br>
@@ -239,8 +241,9 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - [Am I Responsive](http://ami.responsivedesign.is/) was used to create the image showing a responsive design.
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
-- [Canva](https://www.canva.com/en_gb/) was used to create the logo.
+- [Canva](https://www.canva.com/en_gb/) was used to create the logo and favicon.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to view the site's styling during development and to check runtime performance.
+- [favicon.io](https://favicon.io/) was used to create the favicon.
 - [Figma](https://www.figma.com/) was used to create the mockups.
 - [Font Awesome](https://fontawesome.com/) was used for the responsive hamburger menu icons as well as social media icons in the footer.
 - [GIPHY](https://giphy.com/) was used to convert video files to gifs for the README.
@@ -253,7 +256,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [Removebg](https://www.remove.bg/) was used to remove the background of the ACNH characters image for the hero image on the Home page.
 - [TinyPNG](https://tinypng.com/) was used to compress the leaf pattern background images.
 - [Upscalepics](https://upscalepics.com/) was used to enhance the quality of the ACNH characters image for the hero image on the Home page.
-- [Visual Studio Code](https://code.visualstudio.com/) was used to edit my code.
+- [Visual Studio Code](https://code.visualstudio.com/) was used to edit my code and create svg paths from svg image files.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS validity.
 - [W3C Markup Validation Service](https://validator.w3.org/) was used to check the HTML markup validity.
 - [WAVE](https://wave.webaim.org/) was used to evaluate the accessibility.
@@ -263,6 +266,63 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 <br><br>
 
 # Testing
+
+## W3C Validation
+
+- HTML Validation
+
+  - No errors or warnings were found when passing through the [W3C Markup Validator](https://validator.w3.org/).
+  - [View details](VALIDATION.md)
+
+<br>
+
+- CSS Validation
+  - No errors or warnings were found when passing through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+  - [View details](VALIDATION.md)
+
+
+<br>
+
+## Functionality Testing
+
+<br>
+
+## Performance Testing
+
+- [Lighthouse in Chrome DevTools](https://developers.google.com/web/tools/lighthouse)
+
+  - I have measured the performance, accessibility, best practices, SEO using Lighthouse in incognito mode.
+
+  - Mobile
+
+    | Page\Category | Performance | Accessibility | Best practices | SEO |
+    | :-------------: | :---------: | :-----------: | :------------: | :-: |
+    |      Home       |     94      |      100      |      100       | 100 |
+    |      About      |     99      |      100      |      100       | 100 |
+    |      Items      |     99      |      100      |       92       | 100 |
+    |     Contact     |     99      |      100      |      100       | 100 |
+    |     Success     |     99      |      100      |       92       | 100 |
+    |       404       |     99      |      100      |      100       | 100 |
+
+
+    - [View details](PERFORMANCE.md)
+
+  <br>
+
+  - Desktop
+
+    | Page\Category | Performance | Accessibility | Best practices | SEO |
+    | :-------------: | :---------: | :-----------: | :------------: | :-: |
+    |      Home       |     100     |      100      |      100       | 100 |
+    |      About      |     100     |      100      |      100       | 100 |
+    |      Items      |     100     |      100      |      100       | 100 |
+    |     Contact     |     100     |      100      |      100       | 100 |
+    |     Success     |     100     |      100      |      100       | 100 |
+    |       404       |     100     |      100      |      100       | 100 |
+
+    - [View details](PERFORMANCE.md)
+
+<br>
 
 ## Bugs
 
@@ -274,7 +334,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   
     ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
   - Reason: The `header` element has two child elements: `a`(the logo) and `nav`(the navigation menu). A flex layout is used for the `header` and the `column` value is set to the `flex-direction`. The `a` element was taking up the whole header bar except the toggle button space. 
-  - Fix: I Added an `align-self: flex-start` declaration to the `a` element.
+  - Fix: I Added an `align-self: flex-start;` declaration to the `a` element.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/70640afad5c6fb76f477b9d511fcd0cde9eb9106)
 
 - Colour Contrast on the Header
@@ -292,7 +352,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 	- Error: The trading type headings(“Sell”/”Buy”/”Giveaway”) went behind the header when clicking the trading type menu button.
 
-    ![Items Menu Error GIF](https://media.giphy.com/media/YZG33qybs7Sy30PurT/giphy.gif)
+      ![Items Menu Error GIF](https://media.giphy.com/media/YZG33qybs7Sy30PurT/giphy.gif)
 	- Reason: I did not consider the height of the header and the menu for the Items page.
 	- Fix: I added the `scroll-margin-top` property to the trading type container.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
@@ -310,13 +370,13 @@ No known bugs remaining.
 The site was deployed to GitHub Pages using the following steps:
 
   1. Navigate to [my GitHub Repository](https://github.com/sejungkwak/trading-paradise).
-  2. Locate the "Settings" button on the menu.
-  3. Select "Pages" from the left side vertical menu.
-  4. Under "Source", click the dropdown called "None" and select "main".
+  2. Click the __Settings__ button on the menu.
+  3. Select __Pages__ from the left side vertical menu.
+  4. Under __Source__, click the dropdown called __None__ and select __main__.
 
   ![Deployment Step 1 to 4](documentation/deployment/deployment-step1-4.png)
 
-  5. Click the "Save" button.
+  5. Click the __Save__ button.
 
   ![Deployment Step 5](documentation/deployment/deployment-step5.png)
 
@@ -330,6 +390,46 @@ The site was deployed to GitHub Pages using the following steps:
 
 The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 
+## Making a Local Clone
+These steps demonstrate how I cloned my repository to create a local copy on my computer to run the code locally.
+
+  1. Navigate to [my GitHub Repository](https://github.com/sejungkwak/trading-paradise).
+  2. Click the __Code__ button above the list of files.
+
+  ![Clone Step 1 to 2](documentation/clone/clone-step1-2.png)
+
+  3. Select __HTTPS__ under __Clone__. I have chosen this option as it is simpler than SSH.
+  4. Click the copy icon on the right side of the URL.
+
+  ![Clone Step 3 to 4](documentation/clone/clone-step3-4.png)
+
+  5. Open the Terminal.
+  6. Change the current working directory to the location where I want the cloned directory.
+  7. Type `git clone ` and then paste the URL I copied in step 4.
+  
+  ```
+  $ git clone https://github.com/sejungkwak/trading-paradise.git
+  ```
+
+  ![Clone Step 6 to 7](documentation/clone/clone-step6-7.png)
+
+  8. Press enter. Messages are displayed in the Terminal to indicate the local clone has been successfully created.
+
+  ![Clone Step 8](documentation/clone/clone-step8.png)
+
+## Forking this Repository
+These steps demonstrate how to make a copy of this repository on your GitHub account to make changes without affecting this repository or to deploy the site yourself.
+
+  1. Log in to your GitHub account.
+  2. Navigate to [this Trading Paradise repository](https://github.com/sejungkwak/trading-paradise).
+  3. Click the __fork__ button* on the top right side of the repository.
+    *The button in the image is disabled since the repository belongs to me. It should be active if you logged on your account.
+
+  ![Fork step 2 to 3](documentation/fork.png)
+
+  3. You should now have a copy of the original repository in your GitHub account.
+  4. You can make a local clone from the copied repository on your computer using the steps demonstrated in [Making a Local Clone](#making-a-local-clone) and/or deploy to GitHub Pages using the steps demonstrated in [GitHub Pages](#github-pages).
+
 [Back To **Table of Contents**](#table-of-contents)
 <br><br>
 
@@ -338,33 +438,36 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 ## Code
 
 - Responsive hamburger menu navigation bar
-  - Resource: Kevin Powell's [Create a responsive navigation nav with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
-  - I have learned these techniques from the above tutorial: 
-
+  - Source: Kevin Powell's YouTube video [Create a responsive navigation nav with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
     - Using the `input checkbox` and the `label` element for the responsive navigation bar 
     - Using the `transform` property instead of the `display` property to apply the transition in CSS
+  - I have used this technique to make hamburger menu navigation bar on small devices less than 768px/48rem width.
+
+<br>
 
 - Full brower width bars
-  - Resource: [CSS-TRICKS](https://css-tricks.com/full-browser-width-bars/)
-  - I have learned this technique from the above tutorial:
-
-    - Using `before` and `after` pseudo properties for making background colour wider than maximum width of the element
-  
+  - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
+    - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element  
   - I have used this technique to make the header, trade guide and contact form's background colour wider than 1400px/87.5rem, which I have set as the maximum width of the site.
 
+<br>
+
 - Sticky footer
-	- Resource:  Kevin Powell's [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
-	- I have learned this technique from the above tutorial:
-		- Using a `flex` property(to the parent element) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
+	- Source:  Kevin Powell's YouTube video [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
+		- Using a `flex` property(to the main) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
+  - I have used this technique to make a sticky footer across the site.
+
+<br>
 
 - Fixed header and jump links
-	- Resource: [CSS-Tricks](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
-    - I have learned this technique from the above tutorial:
+	- Source: Chris Coyier's CSS-TRICKS article [Fixed Headers and Jump Links? The Solution is scroll-margin-top](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
       - Using a `scroll-margin-top` property to the linked element makes the whole linked content visible.
   - I have used this technique for the menu buttons on the Items page.
 
+<br>
+
 - 404 page
-  - Resource: GitHub Docs(https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
+  - Source: [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
     - Using a filename `404.html` makes a 404 error page display when the user tries to access nonexistent pages on my site.
 
 
@@ -372,6 +475,7 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 
 - I have found information about Libre Franklin font on [Hackernoon](https://hackernoon.com/tips-about-using-libre-franklin-a-versatile-font-for-friendly-brands-mo2t34hn). This information was used in the README.
 - I have found information about the island name length limitation of ACNH on [Animal Crossing World](https://animalcrossingworld.com/2020/03/10-character-island-names-confirmed-in-animal-crossing-new-horizons-opening-day-tutorial-details/). This information was used in the Contact page to create the island name validation.
+- I have used a privacy policy generated by [Privacy Policy Generator](https://www.privacypolicygenerator.info/).
 
 ## Images
 
@@ -415,10 +519,13 @@ The live link can be found here - https://sejungkwak.github.io/trading-paradise/
 
 - Images that were not mentioned above were created by me.
 
+<br>
+
 ## Inspiration
 
 - Item layout
   - Each item is in a separate item container. Each container has an item image, name and price with the bell and nook mile ticket image. This layout is from a well-known ACNH trading website [Nookazon](https://nookazon.com/).
+
 - Accessibility
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
   - I found a lot of useful information on [A11Y Project](https://www.a11yproject.com/) and especially [this checklist](https://www.a11yproject.com/checklist/) was helpful to see what I need to implement to enhance accessibility of my website.
