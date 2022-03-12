@@ -357,8 +357,27 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 	- Fix: I added the `scroll-margin-top` property to the trading type container.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
 
+- Horizontal overflow
+  
+  - Error: A horizontal overflow error on the Contact page was identified when adjusting the size of the screen.
+
+    ![Horizontal overflow](documentation/overflow.png)
+
+  - Reason: I used `before` and  `after` pseudo elements to make the background colour wider than the element’s maximum width and assigned `absolute` to its position. However, I did not add a `relative` value to its parent element.
+  - Fix: I assigned a `position: relative;` declaration to the `contact-form` selector.
+  - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/523107e17d593d210ae1d9f92b515e5430ed3525)
+
+<br>
+
 ### Known Bugs
-No known bugs remaining.
+
+- Federated Learning of Cohorts (FLoC)
+    - There is an error message: `Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.` in the console in Chrome, Opera and Edge browser. This appears because _GitHub Pages_ has disabled Federated Learning of Cohorts(FLoC) which is an API for gathering users’ data.
+
+      ![FLoc](documentation/floc.png)
+
+    - I have found more information about FLoC in the following documents: [GitHub Pages: Permissions-Policy: interest-cohort=() Header added to all pages sites](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/) on [GitHub Changelog](https://github.blog/changelog/), [Federated Learning of Cohorts (FLoC)](https://docs.gitlab.com/ee/user/admin_area/settings/floc.html) on [GitLab Docs](https://docs.gitlab.com/) and WICG’s [FLoC repository](https://github.com/WICG/floc).
+    - According to _GitHub Pages_, FLoC has been disabled to avoid users being tracked and categorised. As the Chrome DevTools Lighthouse does not report any negative performance issues, I have decided not to pursue any further.
 
 [Back To **Table of Contents**](#table-of-contents)
 <br><br>
@@ -367,7 +386,7 @@ No known bugs remaining.
 
 ## GitHub Pages
 
-The site was deployed to GitHub Pages using the following steps:
+The site was deployed to _GitHub Pages_ using the following steps:
 
   1. Navigate to [my GitHub Repository](https://github.com/sejungkwak/trading-paradise).
   2. Click the __Settings__ button on the menu.
@@ -389,6 +408,8 @@ The site was deployed to GitHub Pages using the following steps:
   ![Deployment Step 7](documentation/deployment/deployment-step7.png)
 
 The live link can be found here - https://sejungkwak.github.io/trading-paradise/
+
+<br>
 
 ## Making a Local Clone
 These steps demonstrate how I cloned my repository to create a local copy on my computer to run the code locally.
@@ -417,6 +438,8 @@ These steps demonstrate how I cloned my repository to create a local copy on my 
 
   ![Clone Step 8](documentation/clone/clone-step8.png)
 
+<br>
+
 ## Forking this Repository
 These steps demonstrate how to make a copy of this repository on your GitHub account to make changes without affecting this repository or to deploy the site yourself.
 
@@ -428,7 +451,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   ![Fork step 2 to 3](documentation/fork.png)
 
   3. You should now have a copy of the original repository in your GitHub account.
-  4. You can make a local clone from the copied repository on your computer using the steps demonstrated in [Making a Local Clone](#making-a-local-clone) and/or deploy to GitHub Pages using the steps demonstrated in [GitHub Pages](#github-pages).
+  4. You can make a local clone from the copied repository on your computer using the steps demonstrated in [Making a Local Clone](#making-a-local-clone) and/or deploy to _GitHub Pages_ using the steps demonstrated in [GitHub Pages](#github-pages).
 
 [Back To **Table of Contents**](#table-of-contents)
 <br><br>
