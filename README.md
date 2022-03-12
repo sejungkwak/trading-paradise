@@ -76,30 +76,26 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Colour Scheme
   - Colours are adopted from speech bubbles in the game.
-  ![Colour Scheme](documentation/colour-scheme.png)
+
+    ![Colour Scheme](documentation/colour-scheme.png)
+  
     - Background colours: #fffae4(Cornsilk), #feed9f(Green Yellow Crayola)
     - Text colour: #5e5450(Umber)
     - Accent colour: #fea600(Chrome Yellow)
-
-<br>
 
   - Each hex colour code was found the following steps:
 
     1.  Take a screenshot on the game screen.
     2.  Go to [HTML Color Codes](https://html-color-codes.info/colors-from-image/)
     3.  Place the mouse cursor where desired colours are.
-<br>
 
     ![speech bubble](documentation/speech-bubble.png)
 
     4.  Get hex codes.
     5.  Go to [WebAIM](https://webaim.org/resources/contrastchecker/).
     6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
-    <br>
     
     ![Contrast Checker](documentation/contrast-checker.png)
-
-<br>
 
 - Typography
 
@@ -108,8 +104,6 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     - Paragraph: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) is used in body text with Sans Serif as the fall back. It is often perceived as more friendly and warmer than other sans serif types.
   - Fonts on the ACNH official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and Chrome developer tool.
 
-<br>
-
 - Imagery
 
   - Using ACNH imagery is important to make users comfortable by being similar to ACNH, whereas having unrelated imagery would be confusing.
@@ -117,27 +111,20 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - Item images are used on the Items page to help users recognise items easily even if they don't know the exact name.
   - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
 
-<br>
-
 - Logo
 
   - The logo has the website name _Trading Paradise_ inside the Nintendo Switch console image.
   - The user will recognise the console in the logo by its shape and colour.
-  - [Canva](https://www.canva.com/) was used to design the logo.
-  <br>
 
     ![Logo](documentation/logo.png)
 
-<br>
-
 - Favicon
 
-  - The Favicon has the Nintendo Switch console joy cons image.
-  - [Canva](https://www.canva.com/), [Removebg](https://www.remove.bg/) and [favicon.io](https://favicon.io/) were used to create the favicon.
+  - The favicon has the Nintendo Switch joy-cons image in the same colour as the logo.
 
     ![Favicon](assets/images/favicon/favicon-32x32.png)
 
-  <br>
+<br>
 
 ## Wireframes / Mockups
 - Mobile
@@ -153,7 +140,8 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - [View Mockups](DESIGN.md/#desktop-mockups)
 
 [Back To **Table of Contents**](#table-of-contents)
-<br><br>
+
+<br>
 
 # Features
 
@@ -209,26 +197,29 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   - The 404 page gives feedback to the user when they try to access nonexistent pages on my site.
   - The page includes a button that links to the Home page.
 
+<br>
+
 ## Features Left to Implement
 
 This project is written in HTML5 and CSS3, so it does not have all the features that I would like to include.
 
-  - The form on the Contact page
+- The form on the Contact page
   
-    The form does not send the user data anywhere since I assigned `success.html` to the `action` attribute. The form is a placeholder until the back-end is implemented.
+  The form does not send the user data anywhere since I assigned `success.html` to the `action` attribute. The form is a placeholder until the back-end is implemented.
 
-  - Adding items into a user's wish list
+- Adding items into a user's wish list
 
-    Users can not store their data at this stage. This feature is unavailable until the back-end is implemented.
+  Users can not store their data at this stage. This feature is unavailable until the back-end is implemented.
 
-    > As a Frequent User, I want to be able to add items to my wish list, so that I can find them faster at a later date.
+  > As a Frequent User, I want to be able to add items to my wish list, so that I can find them faster at a later date.
 
-  - Internal chat system
+- Internal chat system
   
-    Users are invited to the Discord channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
+  Users are invited to the Discord channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
 
 [Back To **Table of Contents**](#table-of-contents)
-<br><br>
+
+<br>
 
 # Technologies Used
 
@@ -236,6 +227,8 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to present and structure content.
 - [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style content.
+
+<br>
 
 ## Programs
 
@@ -263,23 +256,20 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) was used to check the contrast ratio between the background colour and the font colour.
 
 [Back To **Table of Contents**](#table-of-contents)
-<br><br>
+
+<br>
 
 # Testing
 
 ## W3C Validation
 
 - HTML Validation
-
   - No errors or warnings were found when passing through the [W3C Markup Validator](https://validator.w3.org/).
   - [View details](VALIDATION.md)
-
-<br>
 
 - CSS Validation
   - No errors or warnings were found when passing through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
   - [View details](VALIDATION.md)
-
 
 <br>
 
@@ -290,9 +280,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 ## Performance Testing
 
 - [Lighthouse in Chrome DevTools](https://developers.google.com/web/tools/lighthouse)
-
   - I have measured the performance, accessibility, best practices, SEO using Lighthouse in incognito mode.
-
   - Mobile
 
     | Page\Category | Performance | Accessibility | Best practices | SEO |
@@ -329,7 +317,6 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 ### Fixed Bugs
 
 - The Header on small devices less than 768px/48rem width
-
   - Error: I was redirected to the Home page when clicking in the middle of the header bar.
   
     ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
@@ -338,7 +325,6 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/70640afad5c6fb76f477b9d511fcd0cde9eb9106)
 
 - Colour Contrast on the Header
-	
   - Error: [WAVE](https://wave.webaim.org/) detected a colour contrast error on the header between the background colour and the accent colour that indicated the current page.
 
     ![Colour Contrast error](documentation/contrast-error.png)
@@ -349,7 +335,6 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/5e268d1149cb078aebffd727755775481047b976)
 
 - Jump links on the Items page
-
 	- Error: The trading type headings(“Sell”/”Buy”/”Giveaway”) went behind the header when clicking the trading type menu button.
 
       ![Items Menu Error GIF](https://media.giphy.com/media/YZG33qybs7Sy30PurT/giphy.gif)
@@ -358,7 +343,6 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
 
 - Horizontal overflow
-  
   - Error: A horizontal overflow error on the Contact page was identified when adjusting the size of the screen.
 
     ![Horizontal overflow](documentation/overflow.png)
@@ -372,15 +356,16 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 ### Known Bugs
 
 - Federated Learning of Cohorts (FLoC)
-    - There is an error message: `Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.` in the console in Chrome, Opera and Edge browser. This appears because _GitHub Pages_ has disabled Federated Learning of Cohorts(FLoC) which is an API for gathering users’ data.
+  - There is an error message: `Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.` in the console in Chrome, Opera and Edge. This appears because _GitHub Pages_ has disabled Federated Learning of Cohorts(FLoC) which is an API for gathering users’ data.
 
-      ![FLoc](documentation/floc.png)
+    ![FLoc](documentation/floc.png)
 
-    - I have found more information about FLoC in the following documents: [GitHub Pages: Permissions-Policy: interest-cohort=() Header added to all pages sites](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/) on [GitHub Changelog](https://github.blog/changelog/), [Federated Learning of Cohorts (FLoC)](https://docs.gitlab.com/ee/user/admin_area/settings/floc.html) on [GitLab Docs](https://docs.gitlab.com/) and WICG’s [FLoC repository](https://github.com/WICG/floc).
-    - According to _GitHub Pages_, FLoC has been disabled to avoid users being tracked and categorised. As the Chrome DevTools Lighthouse does not report any negative performance issues, I have decided not to pursue any further.
+  - I have found more information about FLoC in the following documents: WICG’s [FLoC repository](https://github.com/WICG/floc), [Federated Learning of Cohorts (FLoC)](https://docs.gitlab.com/ee/user/admin_area/settings/floc.html) on [GitLab Docs](https://docs.gitlab.com/) and [GitHub Pages: Permissions-Policy: interest-cohort=() Header added to all pages sites](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/) on [GitHub Changelog](https://github.blog/changelog/).
+  - According to _GitHub Pages_, FLoC has been disabled to avoid users being tracked and categorised. As the Chrome DevTools Lighthouse does not report any negative performance issues, I have decided not to pursue any further.
 
 [Back To **Table of Contents**](#table-of-contents)
-<br><br>
+
+<br>
 
 # Deployment
 
@@ -446,7 +431,8 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   1. Log in to your GitHub account.
   2. Navigate to [this Trading Paradise repository](https://github.com/sejungkwak/trading-paradise).
   3. Click the __fork__ button* on the top right side of the repository.
-    *The button in the image is disabled since the repository belongs to me. It should be active if you logged on your account.
+
+  *The button in the image is disabled since the repository belongs to me. It should be active if you logged on your account.
 
   ![Fork step 2 to 3](documentation/fork.png)
 
@@ -454,7 +440,8 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   4. You can make a local clone from the copied repository on your computer using the steps demonstrated in [Making a Local Clone](#making-a-local-clone) and/or deploy to _GitHub Pages_ using the steps demonstrated in [GitHub Pages](#github-pages).
 
 [Back To **Table of Contents**](#table-of-contents)
-<br><br>
+
+<br>
 
 # Credits
 
@@ -465,30 +452,18 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
     - Using the `input checkbox` and the `label` element for the responsive navigation bar 
     - Using the `transform` property instead of the `display` property to apply the transition in CSS
   - I have used this technique to make hamburger menu navigation bar on small devices less than 768px/48rem width.
-
-<br>
-
 - Full brower width bars
   - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
     - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element  
   - I have used this technique to make the header, trade guide and contact form's background colour wider than 1400px/87.5rem, which I have set as the maximum width of the site.
-
-<br>
-
 - Sticky footer
 	- Source:  Kevin Powell's YouTube video [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
 		- Using a `flex` property(to the main) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
   - I have used this technique to make a sticky footer across the site.
-
-<br>
-
 - Fixed header and jump links
 	- Source: Chris Coyier's CSS-TRICKS article [Fixed Headers and Jump Links? The Solution is scroll-margin-top](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
       - Using a `scroll-margin-top` property to the linked element makes the whole linked content visible.
   - I have used this technique for the menu buttons on the Items page.
-
-<br>
-
 - 404 page
   - Source: [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
     - Using a filename `404.html` makes a 404 error page display when the user tries to access nonexistent pages on my site.
@@ -552,5 +527,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - Accessibility
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
   - I found a lot of useful information on [A11Y Project](https://www.a11yproject.com/) and especially [this checklist](https://www.a11yproject.com/checklist/) was helpful to see what I need to implement to enhance accessibility of my website.
+    - I wanted to add a tooltip to each item on the Items page to show the contact information when clicking on each item container. I found a technique using `tabindex` on [Stackoverflow](https://stackoverflow.com/questions/39741709/css-focus-not-working).  
+    However, after reading [this post on A11Y Project](https://www.a11yproject.com/posts/how-to-use-the-tabindex-attribute/) and [MDN document](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets), I have learned usage of `tabindex` should be limited to occasions such as managing focus within an interactive widget or a scrollbar of an overflow container.
 
 [Back To **Table of Contents**](#table-of-contents)
