@@ -1,14 +1,16 @@
 # Table of Content
 
 - Mobile
-- [Wireframes](#mobile-wireframes)
-- [Mockups](#mobile-mockups)
+    - [Wireframes](#mobile-wireframes)
+    - [Mockups](#mobile-mockups)
 - Tablet
-- [Wireframes](#tablet-wireframes)
-- [Mockups](#tablet-mockups)
+    - [Wireframes](#tablet-wireframes)
+    - [Mockups](#tablet-mockups)
 - Desktop
-- [Wireframes](#desktop-wireframes)
-- [Mockups](#desktop-mockups)
+    - [Wireframes](#desktop-wireframes)
+    - [Mockups](#desktop-mockups)
+
+<br>
 
 ### Mobile Wireframes
 
