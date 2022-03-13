@@ -26,6 +26,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 
 [Testing](#testing)
 
+- [Testing User Stories](#testing-user-stories-from-user-experience-ux-section)
 - [W3C Validation](#w3c-validation)
 - [Functionality Testing](#functionality-testing)
 - [Performance Testing](#performance-testing)
@@ -92,7 +93,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
     ![speech bubble](documentation/speech-bubble.png)
 
     4.  Get hex codes.
-    5.  Go to [WebAIM](https://webaim.org/resources/contrastchecker/).
+    5.  Go to [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
     6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
     
     ![Contrast Checker](documentation/contrast-checker.png)
@@ -319,6 +320,46 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 # Testing
 
+## Testing User Stories from User Experience (UX) Section
+
+- As a First Time Visitor,
+
+  > I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
+  
+  : Upon entering the site, users are automatically greeted with an image that is from _ACNH_, and a text overlay that says “Welcome to Trading Paradise - Animal Crossing: New Horizons Marketplace”.
+  > I want to be able to navigate pages easily, so that I don't have to waste my time.
+  
+  : At the top of each page there is a clean navigation bar and each link name describes what page the user will end up at clearly.
+  > I want to check their social media, so that I can determine whether they are trustworthy.
+  
+  : At the bottom of each page there is a footer with relevant social media site links such as _Discord_, _Facebook_, _Instagram_, _Twitter_.
+
+- As a Returning Visitor,
+
+  > I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
+  
+  : The site features a fully responsive design. On small devices less than 768px width, the navigation menu collapses and content stacks vertically to optimise the layout.
+  > I want to know easily if items that I want to buy are available, so that I don't have to browse the whole page.
+  
+  : On the Items page, there are three menu buttons: __Sell__, __Buy__, __Giveaway__. The user is directed to one of the item lists by clicking the associated button without having to scroll down.
+  > I want to be able to contact them, so that I can ask questions before trading.
+  
+  : On the Contact page, the user can freely write their message as there is no letter  length limitation in the text area.
+
+- As a Frequent User,
+
+  > I want to be friends with them, so that I can participate in more events and shooting star wishes.
+  
+  : User can submit their Friend code via the contact form.
+  > I want to get notified when there are updates on available items, so that I can get them before someone else.
+  
+  : In the contact form, there is an updates notification checkbox (“I would like to receive updates via Email”) for the user to tick.
+  > I want to be able to add items to my wish list, so that I can find them faster at a later date.
+  
+  : This feature has not been implemented as this project is written in HTML5 and CSS3. It will be available when the back-end is implemented.
+
+<br>
+
 ## W3C Validation
 
 - HTML Validation
@@ -418,7 +459,10 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
     ![FLoc](documentation/floc.png)
 
-  - I have found more information about FLoC in the following documents: WICG’s [FLoC repository](https://github.com/WICG/floc), [Federated Learning of Cohorts (FLoC)](https://docs.gitlab.com/ee/user/admin_area/settings/floc.html) on [GitLab Docs](https://docs.gitlab.com/) and [GitHub Pages: Permissions-Policy: interest-cohort=() Header added to all pages sites](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/) on [GitHub Changelog](https://github.blog/changelog/).
+  - I have found more information about FLoC in the following documents: 
+    - WICG’s [FLoC repository](https://github.com/WICG/floc)
+    - [Federated Learning of Cohorts (FLoC)](https://docs.gitlab.com/ee/user/admin_area/settings/floc.html) on [GitLab Docs](https://docs.gitlab.com/)
+    - [GitHub Pages: Permissions-Policy: interest-cohort=() Header added to all pages sites](https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/) on [GitHub Changelog](https://github.blog/changelog/)
   - According to _GitHub Pages_, FLoC has been disabled to avoid users being tracked and categorised. As the Chrome DevTools Lighthouse does not report any negative performance issues, I have decided not to pursue any further.
 
 [Back To **Table of Contents**](#table-of-contents)
@@ -513,7 +557,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - Full brower width bars
   - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
     - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element  
-  - I have used this technique to make the header, trade guide, item list and contact form's background colour wider than 1400px/87.5rem, which I have set as the maximum width of the site.
+  - I have used this technique to make the header, trade guide, item list and contact form's background colour wider than 1400px, which I have set as the maximum width of the site.
 - Sticky footer
 	- Source:  Kevin Powell's YouTube video [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
 		- Using a `flex` property(to the main) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
@@ -540,10 +584,11 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 
 ## Content
 
+- I have used the README structure from Code Institute Solutions’ templates: [SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME) and [readme-template](https://github.com/Code-Institute-Solutions/readme-template).
 - I have found information about the island name length limitation of ACNH on [Animal Crossing World](https://animalcrossingworld.com/2020/03/10-character-island-names-confirmed-in-animal-crossing-new-horizons-opening-day-tutorial-details/). This information was used in the Contact page to create the island name validation.
 - I have used a privacy policy generated by [Privacy Policy Generator](https://www.privacypolicygenerator.info/).
 - I have found information about Libre Franklin font on [Hackernoon](https://hackernoon.com/tips-about-using-libre-franklin-a-versatile-font-for-friendly-brands-mo2t34hn). This information was used in the README.
-- I have found the information about cloning and forking a repository from these documents: [Fork a repo
+- I have found information about cloning and forking a repository from these documents: [Fork a repo
 ](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on [GitHub Docs](https://docs.github.com/en) and [Deployment](https://github.com/Code-Institute-Solutions/SampleREADME#deployment) section of Code Institute’s [sample README](https://github.com/Code-Institute-Solutions/SampleREADME). This information were used in the README.
 
 ## Images
@@ -599,6 +644,6 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
   - I found a lot of useful information on [A11Y Project](https://www.a11yproject.com/) and especially [this checklist](https://www.a11yproject.com/checklist/) was helpful to see what I need to implement to enhance accessibility of my website.
     - I wanted to add a tooltip to each item on the Items page to show the contact information when clicking on each item container. I found a technique using `tabindex` on [Stackoverflow](https://stackoverflow.com/questions/39741709/css-focus-not-working).  
-    However, after reading [this post on A11Y Project](https://www.a11yproject.com/posts/how-to-use-the-tabindex-attribute/) and [MDN document](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets), I have learned usage of `tabindex` should be limited to occasions such as managing focus within an interactive widget or a scrollbar of an overflow container.
+    However, after reading [this post](https://www.a11yproject.com/posts/how-to-use-the-tabindex-attribute/) on A11Y Project and [MDN document](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets), I have learned usage of `tabindex` should be limited to occasions such as managing focus within an interactive widget or a scrollbar of an overflow container.
 
 [Back To **Table of Contents**](#table-of-contents)
