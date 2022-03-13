@@ -120,7 +120,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 - Favicon
 
-  - The favicon has the Nintendo Switch joy-cons image in the same colour as the logo.
+  - The favicon has the Nintendo Switch joy-cons in the same shape and colour as the logo.
 
     ![Favicon](assets/images/favicon/favicon-32x32.png)
 
@@ -148,54 +148,112 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 ## Implemented Features
 
 The site features a fully responsive design and contains 4 main pages(Home, About, Items, Contact) and 2 supporting pages(Success, 404). The header and footer are identical across the site.
-  > As a Returning Visitor, I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
 
 - Header
-  - The logo is linked to the Home page and the menu is linked to the Home, About, Items and Contact pages. The user can navigate easily from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-  - The header stays at the top of the screen even when the user is scrolling down the page.
-    > As a First Time Visitor, I want to be able to navigate pages easily, so that I don't have to waste my time.
-  - The navigation menu collapses on small devices less than 768px/48rem width.
+
+  ![Header](documentation/features/header.png)
+
+  - The header is fixed to the top of the screen even when the user is scrolling down the page to allow easier navigation.
+  - The logo is linked to the Home page and each menu item is linked to each page on the site to allow easier navigation.
+  - A menu item is highlighted as the user browses the site to verify where they are currently.
+  - The navigation menu collapses on small devices less than 768px width to optimise the menu for smaller screen sizes.
+
+    ![Header on Mobile](documentation/features/header-mobile.png)
 
 - Footer
-  - The footer includes links to the relevant social media sites such as Discord, Facebook, Instagram, Twitter.
-  - The links open in a new tab to allow easy navigation.
-    > As a First Time Visitor, I want to check their social media, so that I can determine whether they are trustworthy.
+
+  ![Footer](documentation/features/footer.png)
+
+  - The footer includes links to the relevant social media sites such as _Discord_, _Facebook_, _Instagram_, _Twitter_ to allow the user to check the _Trading Paradise_'s reputation.
+  - The links open in a new tab to allow the user to return to _Trading Paradise_ more easily.
 
 - Home page
-  - The Home page includes the header, hero section, feature section and footer.
-  - The hero section contains a screenshot of ACNH characters' greetings with text overlay to allow the user to understand the purpose of the site at a glance.
-    > As a First Time Visitor, I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
-  - The feature section includes three key marketing points of _Trading Paradise_.
+  - This page contains the hero and feature section.
+  - Hero section
+
+      ![Hero section](documentation/features/home-hero.png)
+
+    - This section contains a screenshot of ACNH characters' greetings with a text overlay to allow the user to understand the purpose of the site at a glance.
+    - This section provides a button to the Items page for quick access.
+  - Feature section
+  
+      ![Feature section](documentation/features/home-feature.png)
+
+    - This section includes brief information about _Trading Paradise_ to assure the user _Trading Paradise_ is an experienced and reliable trader.
+    - Smaller screen sizes(less than 768px) show each NPC(animal) image in a single column to optimise the layout.
 
 - About page
-  - The About page provides information about _Trading Paradise_: Who we are, How we started, and What else we do.
-  - Two buttons are positioned in optimal locations to catch the user's attention as the content flows. A button that links to the Items page appears after the 'How we started' section and another button that links to the Contact page appears after the 'What else we do' section.
+
+  ![About main](documentation/features/about-main.png)
+
+  - This page provides information about _Trading Paradise_: Who we are, How we started, and What else we do.
+  - Two buttons are positioned in optimal locations to catch the user's attention as the content flows.
+  - Smaller screen sizes(less than 768px) show each section in a single column to optimise the layout.
 
 - Items page
-  - The Items page includes 3 options for the user to choose: Buy, Sell, Giveaway. The user is directed to one of these sections by clicking the menu at the top without having to scroll down.
-    > As a Returning Visitor, I want to know easily if items that I want to buy are available, so that I don't have to browse the whole page.
-  - The menu links(Buy, Sell, Giveaway) for the page stay at the top to allow easier navigation.
-  - The page includes each items’ image, name and price.
+  - This page contains menu buttons, trading guide, contact box and item list which are organised by trading types: Buy, Sell, Giveaway.
+
+  - Menu buttons
+
+    ![Items menu](documentation/features/items-menu.png)
+
+    - The menu buttons stay at the top of the main content and right below the header to allow easier navigation.
+    - The user is directed to one of the lists by clicking the associated button without having to scroll down.
+
+  - Trading guide
+
+      ![Trading guide](documentation/features/items-guide.png)
+  
+    - This provides the user clear instructions on how to trade items with _Trading Paradise_.
+
+  - Item list
+
+    ![Item list](documentation/features/items-items.png)
+
+    - This includes each items’ image, name and price which the user would be highly interested in.
+    - Smaller screen sizes(less than 768px) show item containers in two columns and medium screen sizes(between 768px and 1024px) show in three columns to optimise the layout.
+
+  - Contact box
+
+    ![Contact box](documentation/features/items-box.png)
+
+    - The box is fixed to the bottom right side of the screen for quick access.
+    - It encourages the user to contact _Trading Paradise_ when they have found items they would like to trade.
+    - The _Discord_ icon is linked to the _Discord_ channel and opens in a new tab to allow the user to return to _Trading Paradise_ more easily.
 
 - Contact page
-  - The Contact page allows the user to submit their name, email address, in-game information and message.
-    > As a Returning Visitor, I want to be able to contact them, so that I can ask questions before trading.
-  - The user can view the privacy policy in a small window inside the form.
-  - The message field and the checkbox for privacy policy are required and show feedback if empty or unchecked.
-  - The fields for the name, email address, in-game information (the user's character name, island name and friend code) are not required and show feedback if empty or invalid.
-    > As a Frequent User, I want to be friends with them, so that I can participate in more events and shooting star wishes.
-    <br>
+  - This page contains a call-to-action carousel and contact form.
 
-    > As a Frequent User, I want to get notified when there are updates on available items, so that I can get them before someone else.
-  - Upon clicking the button 'Send Message', the user is redirected to the Success page.
+  - Call-to-action carousel
+
+    ![Contact text](documentation/features/contact-carousel.png)
+
+    - This section features a carousel(slideshow) which catches the user’s attention where it might be overlooked with a simple static text.
+    - This encourages the user to contact _Trading Paradise_.
+
+  - The Contact form
+  
+    ![Contact form](documentation/features/contact-form.png)
+  
+    - This form allows the user to submit their name, email address, in-game information and message.
+    - The privacy policy is provided to assure the user that protecting their privacy is a high priority for _Trading Paradise_.
+    - The message field and the checkbox for the privacy policy are required and show feedback if empty or unchecked.
+    - The fields for the name, email address, in-game information (the user's character name, island name and friend code) are not required and show feedback if invalid.
+    - Upon clicking the __Send Message__ button, the user is redirected to the Success page.
 
 - Success page
-  - The success page gives feedback to the user when they have successfully submitted their information via the contact form.
-  - The page includes a button that links to the Home page.
+
+  ![Success page](documentation/features/success-main.png)
+
+  - This page gives feedback to the user when they have successfully submitted their information via the contact form.
+  - It includes a button to the Home page for quick access.
 
 - 404 page
-  - The 404 page gives feedback to the user when they try to access nonexistent pages on my site.
-  - The page includes a button that links to the Home page.
+
+  ![404 page](documentation/features/404-main.png)
+
+  - This page gives feedback to the user when they try to access nonexistent pages on my site.
+  - It includes a button to the Home page for quick access.
 
 <br>
 
@@ -316,7 +374,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 ### Fixed Bugs
 
-- The Header on small devices less than 768px/48rem width
+- The Header on small devices less than 768px width
   - Error: I was redirected to the Home page when clicking in the middle of the header bar.
   
     ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
@@ -451,7 +509,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   - Source: Kevin Powell's YouTube video [Create a responsive navigation nav with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
     - Using the `input checkbox` and the `label` element for the responsive navigation bar 
     - Using the `transform` property instead of the `display` property to apply the transition in CSS
-  - I have used this technique to make hamburger menu navigation bar on small devices less than 768px/48rem width.
+  - I have used this technique to make hamburger menu navigation bar on small devices less than 768px width.
 - Full brower width bars
   - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
     - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element  
