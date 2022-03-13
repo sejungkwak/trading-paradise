@@ -108,7 +108,7 @@ path {
 /* Button - for the Home, About, Contact, Success and 404 page */
 
 .btn {
-  margin: 1em auto 0;
+  margin: 1em auto;
   box-shadow: 0 3px 3px rgba(0, 0, 0, .5);
   border: none;
   border-radius: 20px;
@@ -130,43 +130,6 @@ path {
   transform: scale(1.1);
   background-color: var(--text-color);
   color: var(--main-bg-color);
-}
-
-/* Making the background colour wider than max-width */
-/* Source: Chris Coyier's "Full Browser Width Bars"(https://css-tricks.com/full-browser-width-bars/) */
-
-.header::before,
-.header::after,
-.trading-guide::before,
-.trading-guide::after,
-.trade-type-container::before,
-.trade-type-container::after,
-.contact-form::before,
-.contact-form::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 100%;
-  width: 999rem;
-  height: 100%;
-  background-color: var(--main-bg-color);
-}
-
-.header::after,
-.trading-guide::after,
-.trade-type-container::after,
-.contact-form::after {
-  left: 100%;
-}
-
-.header::before,
-.header::after {
-  background-color: var(--header-bg-color);
-}
-
-.trade-type-container::before,
-.trade-type-container::after {
-  background-color: var(--trade-bg-color);
 }
 
 /*=============== Home Page ===============*/
@@ -689,18 +652,22 @@ path {
   margin-top: 1em;
 }
 
+.contact-input,
+.textarea {
+  padding: .5em;
+  background-color: inherit;
+  font-size: 1.1rem;
+  font-family: inherit;
+}
+
 .contact-input {
   border: none;
   border-bottom: 1px solid var(--text-color);
-  padding: .5em;
-  background-color: inherit;
 }
 
 .textarea {
   border: 1px solid var(--accent-color);
   border-radius: 3px;
-  padding: .5em;
-  background-color: inherit;
 }
 
 .contact-input:focus,
@@ -920,6 +887,43 @@ path {
 /*=============== Large screen size devices from 64rem/1024px width  ===============*/
 
 @media screen and (min-width: 64rem) {
+
+  /* Making the background colour wider than max-width */
+  /* Source: Chris Coyier's "Full Browser Width Bars"(https://css-tricks.com/full-browser-width-bars/) */
+
+  .header::before,
+  .header::after,
+  .trading-guide::before,
+  .trading-guide::after,
+  .trade-type-container::before,
+  .trade-type-container::after,
+  .contact-form::before,
+  .contact-form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 999rem;
+    height: 100%;
+    background-color: var(--main-bg-color);
+  }
+
+  .header::after,
+  .trading-guide::after,
+  .trade-type-container::after,
+  .contact-form::after {
+    left: 100%;
+  }
+
+  .header::before,
+  .header::after {
+    background-color: var(--header-bg-color);
+  }
+
+  .trade-type-container::before,
+  .trade-type-container::after {
+    background-color: var(--trade-bg-color);
+  }
 
   /*--------------- Home page ---------------*/
 
