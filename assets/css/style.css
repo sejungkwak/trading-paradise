@@ -721,6 +721,21 @@ path {
 ************************* Media queries *************************
 *****************************************************************/
 
+/* Fix for the displaced header in Chrome Android/iOS while using the portrait mode */
+
+@media (orientation: portrait) {
+  main {
+    margin-top: 4.5rem;
+  }
+
+  .header {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4.5rem;
+  }
+}
+
 /*=============== Medium screen size devices from 48rem/768px width  ===============*/
 
 @media screen and (min-width: 48rem) {
@@ -883,6 +898,18 @@ path {
     font-size: 1.5rem;
   }
 
+}
+
+/* Fix for the displaced header in Chrome Android/iOS while using the portrait mode */
+
+@media screen and (min-width: 48rem) and (orientation: portrait) {
+  main {
+    margin-top: 5.5rem;
+  }
+
+  .header {
+    height: 5.5rem;
+  }
 }
 
 /*=============== Large screen size devices from 64rem/1024px width  ===============*/
