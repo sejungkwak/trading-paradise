@@ -295,7 +295,8 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [Balsamiq](https://balsamiq.com/) was used to create the wireframes.
 - [Canva](https://www.canva.com/en_gb/) was used to create the logo and favicon.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) was used to view the site's styling during development and to check runtime performance.
-- [favicon.io](https://favicon.io/) was used to create the favicon.
+- [Ezgif](https://ezgif.com/) was used to convert webp format images to png for the Items page.
+- [Favicon.io](https://favicon.io/) was used to create the favicon.
 - [Figma](https://www.figma.com/) was used to create the mockups.
 - [Font Awesome](https://fontawesome.com/) was used for the responsive hamburger menu icons as well as social media icons in the footer.
 - [GIPHY](https://giphy.com/) was used to convert video files to gifs for the README.
@@ -420,7 +421,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   
     ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
   - Reason: The `header` element has two child elements: `a`(the logo) and `nav`(the navigation menu). A flex layout is used for the `header` and the `column` value is set to the `flex-direction`. The `a` element was taking up the whole header bar except the toggle button space. 
-  - Fix: I Added an `align-self: flex-start;` declaration to the `a` element.
+  - Fix: I added an `align-self: flex-start;` declaration to the `a` element.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/70640afad5c6fb76f477b9d511fcd0cde9eb9106)
 
 - Colour Contrast on the Header
@@ -434,12 +435,20 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/5e268d1149cb078aebffd727755775481047b976)
 
 - Jump links on the Items page
-	- Error: The trading type headings(“Sell”/”Buy”/”Giveaway”) went behind the header when clicking the trading type menu button.
+	- Error: The trading type headings( __Sell__ / __Buy__ / __Giveaway__ ) went behind the header when clicking the trading type menu button.
 
       ![Items Menu Error GIF](https://media.giphy.com/media/YZG33qybs7Sy30PurT/giphy.gif)
 	- Reason: I did not consider the height of the header and the menu for the Items page.
 	- Fix: I added the `scroll-margin-top` property to the trading type container.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
+
+- Giveaway jump link on the Items page
+  - Error: When touching the __Giveaway__ menu button, the header was pushed off the screen in Chrome Android and displaced in Chrome iOS while using the portrait mode. This behaviour did not exist in Chrome Windows/mocOS.
+
+    ![Sticky header displacement](documentation/sticky-header-bug.jpg)
+  - Reason: `position: sticky` caused the issue when there is not enough content to scroll down.
+  - Fix: I added a media query for portrait mode and changed the header position to fixed.
+  - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/29b7956582391259da2b2026982a47d696f0231d)
 
 - Horizontal overflow
   - Error: A horizontal overflow error on the Contact page was identified when adjusting the size of the screen.
