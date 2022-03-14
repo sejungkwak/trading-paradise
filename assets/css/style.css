@@ -235,7 +235,7 @@ path {
 }
 
 .menu-link {
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
   padding: .6em 1em;
   transition: .5s ease-in-out;
   transition-property: transform, border-radius, background-color, color;
