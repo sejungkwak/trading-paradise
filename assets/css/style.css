@@ -248,7 +248,8 @@ path {
 }
 
 .menu-link.active {
-  text-decoration: underline var(--text-color) solid 2px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
   text-underline-offset: 5px;
 }
 
