@@ -81,9 +81,9 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
     ![Colour Scheme](documentation/colour-scheme.png)
   
-    - Background colours: #fffae4(Cornsilk), #feed9f(Green Yellow Crayola)
-    - Text colour: #5e5450(Umber)
-    - Accent colour: #fea600(Chrome Yellow)
+    - Background colours: #FFFAE4(Cornsilk), #FEED9F(Green Yellow Crayola)
+    - Text colour: #5E5450(Umber)
+    - Accent colour: #fEA600(Chrome Yellow)
 
   - Each hex colour code was found the following steps:
 
@@ -104,7 +104,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - Fonts are adopted from the [ACNH official website](https://www.animal-crossing.com/new-horizons/) instead of in-game fonts due to licence fee.
     - Headings: [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab) is used with Serif as the fallback font. It is characterised by bold appearance and smooth curves, so it looks more contemporary and joyful than other serif types.
     - Paragraph: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) is used in body text with Sans Serif as the fall back. It is often perceived as more friendly and warmer than other sans serif types.
-  - Fonts on the ACNH official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and Chrome developer tool.
+  - Fonts on the ACNH official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
 - Imagery
 
@@ -130,16 +130,16 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
 ## Wireframes / Mockups
 - Mobile
-  - [View Wireframes](DESIGN.md/#mobile-wireframes)
-  - [View Mockups](DESIGN.md/#mobile-mockups)
+  - [View Wireframes](DESIGN.md#mobile-wireframes)
+  - [View Mockups](DESIGN.md#mobile-mockups)
   
 - Tablet
-  - [View Wireframes](DESIGN.md/#tablet-wireframes)
-  - [View Mockups](DESIGN.md/#tablet-mockups)
+  - [View Wireframes](DESIGN.md#tablet-wireframes)
+  - [View Mockups](DESIGN.md#tablet-mockups)
   
 - Desktop
-  - [View Wireframes](DESIGN.md/#desktop-wireframes)
-  - [View Mockups](DESIGN.md/#desktop-mockups)
+  - [View Wireframes](DESIGN.md#desktop-wireframes)
+  - [View Mockups](DESIGN.md#desktop-mockups)
 
 [Back To **Table of Contents**](#table-of-contents)
 
@@ -271,8 +271,6 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
   Users can not store their data at this stage. This feature is unavailable until the back-end is implemented.
 
-  > As a Frequent User, I want to be able to add items to my wish list, so that I can find them faster at a later date.
-
 - Internal chat system
   
   Users are invited to the Discord channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
@@ -352,7 +350,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
   - [x] I want to be friends with them, so that I can participate in more events and shooting star wishes.
   
-    : User can submit their Friend code via the contact form.
+    : The user can submit their Friend code via the contact form.
   - [x] I want to get notified when there are updates on available items, so that I can get them before someone else.
   
     : In the contact form, there is an updates notification checkbox (“I would like to receive updates via Email”) for the user to tick.
@@ -366,11 +364,11 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - HTML Validation
   - No errors or warnings were found when passing through the [W3C Markup Validator](https://validator.w3.org/).
-  - [View details](VALIDATION.md)
+  - [View details](VALIDATION.md#html-validation)
 
 - CSS Validation
   - No errors or warnings were found when passing through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
-  - [View details](VALIDATION.md)
+  - [View details](VALIDATION.md#css-validation)
 
 <br>
 
@@ -384,7 +382,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 ## Performance Testing
 
-- I have measured the performance, accessibility, best practices, SEO using [Lighthouse in Chrome DevTools](https://developers.google.com/web/tools/lighthouse) in incognito mode.
+- I have measured the performance, accessibility, best practices, SEO using [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools in incognito mode.
   - Mobile
 
     | Page\Category | Performance | Accessibility | Best practices | SEO |
@@ -447,7 +445,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
 
 - Header / Giveaway button on the Items page
-  - Error: In portrait mode pressing the __Giveaway__ menu button, the header was displaced off the screen in Chrome Android and displaced ~8% in Chrome iOS. This behaviour did not exist in Chrome Windows/macOS.
+  - Error: In portrait mode pressing the __Giveaway__ menu button, the header was displaced off the screen in Chrome Android and displaced ~8% in Chrome iOS. This behaviour did not exist in Chrome Windows/macOS nor in other browsers.
 
     ![Sticky header displacement](documentation/sticky-header-bug.jpg)
   - Reason: `position: sticky` caused the issue when there is not enough content to scroll down.
@@ -455,7 +453,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/29b7956582391259da2b2026982a47d696f0231d)
 
 - Horizontal overflow
-  - Error: A horizontal overflow error on the Contact page was identified when adjusting the size of the screen.
+  - Error: A horizontal overflow error on the Contact page was identified when adjusting the screen size in Chrome DevTools.
 
     ![Horizontal overflow](documentation/overflow.png)
 
@@ -566,8 +564,8 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   - Source: Kevin Powell's YouTube video [Create a responsive navigation nav with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
     - Using the `input checkbox` and the `label` element for the responsive navigation bar 
     - Using the `transform` property instead of the `display` property to apply the transition in CSS
-  - I have used this technique to make hamburger menu navigation bar on small devices less than 768px width.
-- Full brower width bars
+  - I have used this technique to make the hamburger menu navigation bar on small devices less than 768px width.
+- Full browser width bars
   - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
     - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element  
   - I have used this technique to make the header, trade guide, item list and contact form's background colour wider than 1400px, which I have set as the maximum width of the site.
@@ -602,7 +600,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - I have used a privacy policy generated by [Privacy Policy Generator](https://www.privacypolicygenerator.info/).
 - I have found information about Libre Franklin font on [Hackernoon](https://hackernoon.com/tips-about-using-libre-franklin-a-versatile-font-for-friendly-brands-mo2t34hn). This information was used in the README.
 - I have found information about cloning and forking a repository from these documents: [Fork a repo
-](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on [GitHub Docs](https://docs.github.com/en) and [Deployment](https://github.com/Code-Institute-Solutions/SampleREADME#deployment) section of Code Institute’s [sample README](https://github.com/Code-Institute-Solutions/SampleREADME). This information were used in the README.
+](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on [GitHub Docs](https://docs.github.com/en) and [Deployment](https://github.com/Code-Institute-Solutions/SampleREADME#deployment) section of Code Institute’s [sample README](https://github.com/Code-Institute-Solutions/SampleREADME). This information was used in the README.
 
 ## Images
 
@@ -619,9 +617,11 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - All the item images on the Items page were sourced from [this spreadsheet](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1397507627) which is hosted on [Norviah's repository: acnh-images](https://github.com/Norviah/acnh-images).
 
   - in order of appearance on the website
+    - [Nook Inc. rug](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1194392315): Row 106 / Column B in the file.
+    - [Nook miles ticket](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 145 / Column B in the file.
+    - [Present (gold)](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 213 /  / Column B in the file.
     - [Adventure dress](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=714704098): Row 5 / Column B in the file.
     - [Bell bag](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 13 / Column B in the file.
-    - [Nook miles ticket](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 145 / Column B in the file.
     - [Astronaut suit](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 66 / Column B in the file.
     - [Bonsai shelf](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 218 / Column B in the file.
     - [Campsite sign](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 302 / Column B in the file.
@@ -651,7 +651,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 ## Inspiration
 
 - Item layout
-  - Each item is in a separate item container. Each container has an item image, name and price with the bell and nook mile ticket image. This layout is from a well-known ACNH trading website [Nookazon](https://nookazon.com/).
+  - Each item is in a separate item container. Each container has an item image, name and price with the bell and nook miles ticket image. This layout is from a well-known ACNH trading website [Nookazon](https://nookazon.com/).
 
 - Accessibility
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
