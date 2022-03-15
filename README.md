@@ -44,6 +44,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 - [Content](#content)
 - [Images](#images)
 - [Inspiration](#inspiration)
+- [Acknowledgements](#acknowledgements)
 
 <br>
 
@@ -325,39 +326,39 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - As a First Time Visitor,
 
-  > I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
+  - [x] I want to know what this site is about immediately, so that I can quickly decide whether I want to explore it more.
   
-  : Upon entering the site, users are automatically greeted with an image that is from _ACNH_, and a text overlay that says “Welcome to Trading Paradise - Animal Crossing: New Horizons Marketplace”.
-  > I want to be able to navigate pages easily, so that I don't have to waste my time.
+    : Upon entering the site, users are automatically greeted with an image that is from _ACNH_, and a text overlay that says “Welcome to Trading Paradise - Animal Crossing: New Horizons Marketplace”.
+  - [x] I want to be able to navigate pages easily, so that I don't have to waste my time.
   
-  : At the top of each page there is a clean navigation bar and each link name describes what page the user will end up at clearly.
-  > I want to check their social media, so that I can determine whether they are trustworthy.
+    : At the top of each page there is a clean navigation bar and each link name describes what page the user will end up at clearly.
+  - [x] I want to check their social media, so that I can determine whether they are trustworthy.
   
-  : At the bottom of each page there is a footer with relevant social media site links such as _Discord_, _Facebook_, _Instagram_, _Twitter_.
+    : At the bottom of each page there is a footer with relevant social media site links such as _Discord_, _Facebook_, _Instagram_, _Twitter_.
 
 - As a Returning Visitor,
 
-  > I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
+  - [x] I want to see the site on my phone nicely, so that I can visit it on my way home on the bus.
   
-  : The site features a fully responsive design. On small devices less than 768px width, the navigation menu collapses and content stacks vertically to optimise the layout.
-  > I want to know easily if items that I want to buy are available, so that I don't have to browse the whole page.
+    : The site features a fully responsive design. On small devices less than 768px width, the navigation menu collapses and content stacks vertically to optimise the layout.
+  - [x] I want to know easily if items that I want to buy are available, so that I don't have to browse the whole page.
   
-  : On the Items page, there are three menu buttons: __Sell__, __Buy__, __Giveaway__. The user is directed to one of the item lists by clicking the associated button without having to scroll down.
-  > I want to be able to contact them, so that I can ask questions before trading.
+    : On the Items page, there are three menu buttons: __Sell__, __Buy__, __Giveaway__. The user is directed to one of the item lists by clicking the associated button without having to scroll down.
+  - [x] I want to be able to contact them, so that I can ask questions before trading.
   
-  : On the Contact page, the user can freely write their message as there is no letter  length limitation in the text area.
+    : On the Contact page, the user can freely write their message as there is no letter  length limitation in the text area.
 
 - As a Frequent User,
 
-  > I want to be friends with them, so that I can participate in more events and shooting star wishes.
+  - [x] I want to be friends with them, so that I can participate in more events and shooting star wishes.
   
-  : User can submit their Friend code via the contact form.
-  > I want to get notified when there are updates on available items, so that I can get them before someone else.
+    : User can submit their Friend code via the contact form.
+  - [x] I want to get notified when there are updates on available items, so that I can get them before someone else.
   
-  : In the contact form, there is an updates notification checkbox (“I would like to receive updates via Email”) for the user to tick.
-  > I want to be able to add items to my wish list, so that I can find them faster at a later date.
+    : In the contact form, there is an updates notification checkbox (“I would like to receive updates via Email”) for the user to tick.
+  - [ ] I want to be able to add items to my wish list, so that I can find them faster at a later date.
   
-  : This feature has not been implemented as this project is written in HTML5 and CSS3. It will be available when the back-end is implemented.
+    : This feature has not been implemented as this project is written in HTML5 and CSS3. It will be available when the back-end is implemented.
 
 <br>
 
@@ -375,12 +376,15 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 ## Functionality Testing
 
+- I have tested the functionality of the site manually on Mobile(Safari version 15.3 on iOS 15.4, Chrome version 98.0 on Android 9), Tablet(Chrome version 78.0 on Android 8.1.0) and Desktop(Safari version 15.2 on macOS Monterey version 12.1, Chrome version 98.0 Windows 10).
+- During the tests, I found a bug where the header was displaced when pressing the __Giveaway__ menu button on the Items page. I fixed the issue and documented it in the [fixed bugs section](#fixed-bugs) - __Header / Giveaway button on the Items page__.
+- All the tests passed: [View details](FUNCTIONALITY.md)
+
 <br>
 
 ## Performance Testing
 
-- [Lighthouse in Chrome DevTools](https://developers.google.com/web/tools/lighthouse)
-  - I have measured the performance, accessibility, best practices, SEO using Lighthouse in incognito mode.
+- I have measured the performance, accessibility, best practices, SEO using [Lighthouse in Chrome DevTools](https://developers.google.com/web/tools/lighthouse) in incognito mode.
   - Mobile
 
     | Page\Category | Performance | Accessibility | Best practices | SEO |
@@ -442,8 +446,8 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 	- Fix: I added the `scroll-margin-top` property to the trading type container.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
 
-- Giveaway jump link on the Items page
-  - Error: When touching the __Giveaway__ menu button, the header was pushed off the screen in Chrome Android and displaced in Chrome iOS while using the portrait mode. This behaviour did not exist in Chrome Windows/mocOS.
+- Header / Giveaway button on the Items page
+  - Error: In portrait mode pressing the __Giveaway__ menu button, the header was displaced off the screen in Chrome Android and displaced ~8% in Chrome iOS. This behaviour did not exist in Chrome Windows/macOS.
 
     ![Sticky header displacement](documentation/sticky-header-bug.jpg)
   - Reason: `position: sticky` caused the issue when there is not enough content to scroll down.
@@ -654,5 +658,15 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   - I found a lot of useful information on [A11Y Project](https://www.a11yproject.com/) and especially [this checklist](https://www.a11yproject.com/checklist/) was helpful to see what I need to implement to enhance accessibility of my website.
     - I wanted to add a tooltip to each item on the Items page to show the contact information when clicking on each item container. I found a technique using `tabindex` on [Stackoverflow](https://stackoverflow.com/questions/39741709/css-focus-not-working).  
     However, after reading [this post](https://www.a11yproject.com/posts/how-to-use-the-tabindex-attribute/) on A11Y Project and [MDN document](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets), I have learned usage of `tabindex` should be limited to occasions such as managing focus within an interactive widget or a scrollbar of an overflow container.
+
+<br>
+
+## Acknowledgements
+
+- My mentor Narender Singh for the guidance and advice on the process.
+- My fiancé Ciarán Maher for giving me ideas, feedback and proofreading.
+- My friends Hwayoung Kim, Junga Choi, Sena Park and Haeyoung Lee for giving me feedback.
+
+<br>
 
 [Back To **Table of Contents**](#table-of-contents)
