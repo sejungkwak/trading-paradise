@@ -1,3 +1,23 @@
+# Table of Contents
+
+[Mobile](#mobile)
+  - [Home page](#home-page)
+  - [About page](#about-page)
+  - [Items page](#items-page)
+  - [Contact page](#contact-page)
+  - [Success page](#success-page)
+  - [404 page](#404-page)
+
+[Desktop](#desktop)
+  - [Home page](#home-page-1)
+  - [About page](#about-page-1)
+  - [Items page](#items-page-1)
+  - [Contact page](#contact-page-1)
+  - [Success page](#success-page-1)
+  - [404 page](#404-page-1)
+
+<br>
+
 # Mobile
 
 ## Home page
@@ -12,6 +32,8 @@
 ![Success page](documentation/performance-testing/mobile/success.png)
 ## 404 page
 ![404 page](documentation/performance-testing/mobile/404.png)
+
+[Back To **Table of Contents**](#table-of-contents)
 
 <br>
 
@@ -29,3 +51,5 @@
 ![Success page](documentation/performance-testing/desktop/success.png)
 ## 404 page
 ![404 page](documentation/performance-testing/desktop/404.png)
+
+[Back To **Table of Contents**](#table-of-contents)
