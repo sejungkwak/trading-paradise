@@ -721,6 +721,23 @@ path {
 ************************* Media queries *************************
 *****************************************************************/
 
+/* remove hover effect on touchscreen devices */
+
+@media (hover: none) {
+
+  a:hover,
+  .btn:hover,
+  .item:hover,
+  *:hover>path {
+    transform: unset;
+  }
+
+  .btn:hover {
+    background-color: unset;
+    color: unset;
+  }
+}
+
 /* Fix for the displaced header in Chrome Android/iOS while using the portrait mode */
 
 @media (orientation: portrait) {
