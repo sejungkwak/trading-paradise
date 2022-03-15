@@ -1,6 +1,6 @@
 # HTML Validation
 
-## Home pag
+## Home page
 ![Home page](documentation/w3c-testing-markup/home.png)
 ## About page
 ![About page](documentation/w3c-testing-markup/about.png)
