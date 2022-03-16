@@ -13,7 +13,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 [User Experience (UX)](#user-experience-ux)
   - [User Stories](#user-stories)
   - [Design](#design)
-  - [Wireframes / Mockups](#wireframes--mockups)
+  - [Wireframes / Mockups](DESIGN.md)
 
 [Features](#features)
   - [Implemented Features](#implemented-features)
@@ -95,7 +95,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 
     4.  Get hex codes.
     5.  Go to [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
-    6.  Check the contrast between background and text and adjust the lightness of the text colour for the accessibility purpose.
+    6.  Check the contrast between the background and text colour and adjust the lightness of the text colour for the accessibility purpose.
     
     ![Contrast Checker](documentation/contrast-checker.png)
 
@@ -129,17 +129,8 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
 <br>
 
 ## Wireframes / Mockups
-- Mobile
-  - [View Wireframes](DESIGN.md#mobile-wireframes)
-  - [View Mockups](DESIGN.md#mobile-mockups)
-  
-- Tablet
-  - [View Wireframes](DESIGN.md#tablet-wireframes)
-  - [View Mockups](DESIGN.md#tablet-mockups)
-  
-- Desktop
-  - [View Wireframes](DESIGN.md#desktop-wireframes)
-  - [View Mockups](DESIGN.md#desktop-mockups)
+- I created wireframes and mockups for different device types such as mobile, tablet and desktop.
+- [View Wireframes and Mockups](DESIGN.md)
 
 [Back To **Table of Contents**](#table-of-contents)
 
@@ -182,7 +173,7 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
       ![Feature section](documentation/features/home-feature.png)
 
     - This section includes brief information about _Trading Paradise_ to assure the user _Trading Paradise_ is an experienced and reliable trader.
-    - Smaller screen sizes(less than 768px) show each NPC(animal) image in a single column to optimise the layout.
+    - Less than 768px width devices show each [Non-Player Character(NPC)](https://en.wikipedia.org/wiki/Non-player_character) image in a single column to optimise the layout.
 
 - About page
 
@@ -190,10 +181,10 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
 
   - This page provides information about _Trading Paradise_: Who we are, How we started, and What else we do.
   - Two buttons are positioned in optimal locations to catch the user's attention as the content flows.
-  - Smaller screen sizes(less than 768px) show each section in a single column to optimise the layout.
+  - Less than 768px width devices show each section in a single column to optimise the layout.
 
 - Items page
-  - This page contains menu buttons, trading guide, contact box and item list which are organised by trading types: Buy, Sell, Giveaway.
+  - This page contains menu buttons, trading guide, contact box and item lists which are organised by trading types: Buy, Sell, Giveaway.
 
   - Menu buttons
 
@@ -208,12 +199,12 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   
     - This provides the user clear instructions on how to trade items with _Trading Paradise_.
 
-  - Item list
+  - Item lists
 
-    ![Item list](documentation/features/items-items.png)
+    ![Item lists](documentation/features/items-items.png)
 
     - This includes each items’ image, name and price which the user would be highly interested in.
-    - Smaller screen sizes(less than 768px) show item containers in two columns and medium screen sizes(between 768px and 1024px) show in three columns to optimise the layout.
+    - Less than 768px width devices show item containers in two columns and between 768px and 1024px width devices show in three columns to optimise the layout.
 
   - Contact box
 
@@ -364,11 +355,11 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - HTML Validation
   - No errors or warnings were found when passing through the [W3C Markup Validator](https://validator.w3.org/).
-  - [View details](VALIDATION.md#html-validation)
 
 - CSS Validation
   - No errors or warnings were found when passing through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
-  - [View details](VALIDATION.md#css-validation)
+
+- [View screenshots](VALIDATION.md)
 
 <br>
 
@@ -394,11 +385,6 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
     |     Success     |     99      |      100      |       92       | 100 |
     |       404       |     99      |      100      |      100       | 100 |
 
-
-    - [View details](PERFORMANCE.md)
-
-  <br>
-
   - Desktop
 
     | Page\Category | Performance | Accessibility | Best practices | SEO |
@@ -410,7 +396,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
     |     Success     |     100     |      100      |      100       | 100 |
     |       404       |     100     |      100      |      100       | 100 |
 
-    - [View details](PERFORMANCE.md)
+- [View screenshots](PERFORMANCE.md)
 
 <br>
 
@@ -445,7 +431,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/4d12f06f0b121dfd135523546d8d11e287024601)
 
 - Header / Giveaway button on the Items page
-  - Error: In portrait mode pressing the __Giveaway__ menu button, the header was displaced off the screen in Chrome Android and displaced ~8% in Chrome iOS. This behaviour did not exist in Chrome Windows/macOS nor in other browsers.
+  - Error: In portrait mode, pressing the __Giveaway__ menu button, the header was displaced off the screen in Chrome Android and displaced ~8% in Chrome iOS. This behaviour did not exist in Chrome Windows/macOS nor in other browsers.
 
     ![Sticky header displacement](documentation/sticky-header-bug.jpg)
   - Reason: `position: sticky` caused the issue when there is not enough content to scroll down.
@@ -457,7 +443,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
     ![Horizontal overflow](documentation/overflow.png)
 
-  - Reason: I used `before` and  `after` pseudo elements to make the background colour wider than the element’s maximum width and assigned `absolute` to its position. However, I did not add a `relative` value to its parent element.
+  - Reason: I used `before` and `after` pseudo elements to make the background colour wider than the element’s maximum width and assigned `absolute` to its position. However, I did not add a `relative` value to its parent element.
   - Fix: I assigned a `position: relative;` declaration to the `contact-form` selector.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/523107e17d593d210ae1d9f92b515e5430ed3525)
 
@@ -562,15 +548,15 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 
 - Responsive hamburger menu navigation bar
   - Source: Kevin Powell's YouTube video [Create a responsive navigation nav with no JS!](https://www.youtube.com/watch?v=8QKOaTYvYUA&t=1402s) and [his code on Codepen](https://codepen.io/kevinpowell/pen/jxppmr)
-    - Using the `input checkbox` and the `label` element for the responsive navigation bar 
-    - Using the `transform` property instead of the `display` property to apply the transition in CSS
+    - Using the `input checkbox` and the `label` element for the responsive navigation bar.
+    - Using the `transform` property instead of the `display` property to apply the transition in CSS.
   - I have used this technique to make the hamburger menu navigation bar on small devices less than 768px width.
 - Full browser width bars
   - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
-    - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element  
-  - I have used this technique to make the header, trade guide, item list and contact form's background colour wider than 1400px, which I have set as the maximum width of the site.
+    - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element.
+  - I have used this technique to make the header, trade guide, item lists and contact form's background colour wider than 1400px, which I have set as the maximum width of the site.
 - Sticky footer
-	- Source:  Kevin Powell's YouTube video [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
+	- Source: Kevin Powell's YouTube video [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
 		- Using a `flex` property(to the main) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
   - I have used this technique to make a sticky footer across the site.
 - Fixed header and jump links
@@ -578,7 +564,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
       - Using a `scroll-margin-top` property to the linked element makes the whole linked content visible.
   - I have used this technique for the menu buttons on the Items page.
 - Vertical carousel
-	- Resource:  Ziratsu's CSS Carousel(https://codepen.io/Ziratsu/pen/ZEKWaRv)
+	- Resource: Ziratsu's CSS Carousel(https://codepen.io/Ziratsu/pen/ZEKWaRv)
       - Using an animation that scrolls through a number of words in a carousel format.
 	- I have used this technique to create a slideshow on the Contact page.
 - Refactoring
@@ -592,6 +578,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   - Source: [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
     - Using a filename `404.html` makes a 404 error page display when the user tries to access nonexistent pages on my site.
 
+<br>
 
 ## Content
 
@@ -602,10 +589,12 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - I have found information about cloning and forking a repository from these documents: [Fork a repo
 ](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on [GitHub Docs](https://docs.github.com/en) and [Deployment](https://github.com/Code-Institute-Solutions/SampleREADME#deployment) section of Code Institute’s [sample README](https://github.com/Code-Institute-Solutions/SampleREADME). This information was used in the README.
 
+<br>
+
 ## Images
 
 - The leaf background image was sourced from [Devinatart](https://www.deviantart.com/jotaauvei/art/Nook-Inc-Wallpaper-Collection-827180686).
-- Animal character images were sourced from [Fandom](https://www.fandom.com/).
+- NPC images were sourced from [Fandom](https://www.fandom.com/).
 
   - in order of appearance on the website
     - [Tom Nook](https://animalcrossing.fandom.com/wiki/Tom_Nook?file=NH-character-Tom_Nook.png): The raccoon on the Home page
@@ -619,7 +608,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
   - in order of appearance on the website
     - [Nook Inc. rug](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1194392315): Row 106 / Column B in the file.
     - [Nook miles ticket](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 145 / Column B in the file.
-    - [Present (gold)](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 213 /  / Column B in the file.
+    - [Present (gold)](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 213 / Column B in the file.
     - [Adventure dress](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=714704098): Row 5 / Column B in the file.
     - [Bell bag](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 13 / Column B in the file.
     - [Astronaut suit](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 66 / Column B in the file.
@@ -656,7 +645,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - Accessibility
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
   - I found a lot of useful information on [A11Y Project](https://www.a11yproject.com/) and especially [this checklist](https://www.a11yproject.com/checklist/) was helpful to see what I need to implement to enhance accessibility of my website.
-    - I wanted to add a tooltip to each item on the Items page to show the contact information when clicking on each item container. I found a technique using `tabindex` on [Stackoverflow](https://stackoverflow.com/questions/39741709/css-focus-not-working).  
+    - I wanted to add a tooltip to each item on the Items page to show the contact information when clicking on each item container. I found a technique using `tabindex` on [Stackoverflow](https://stackoverflow.com/questions/39741709/css-focus-not-working).
     However, after reading [this post](https://www.a11yproject.com/posts/how-to-use-the-tabindex-attribute/) on A11Y Project and [MDN document](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Keyboard-navigable_JavaScript_widgets), I have learned usage of `tabindex` should be limited to occasions such as managing focus within an interactive widget or a scrollbar of an overflow container.
 
 <br>
