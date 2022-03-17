@@ -13,7 +13,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 [User Experience (UX)](#user-experience-ux)
   - [User Stories](#user-stories)
   - [Design](#design)
-  - [Wireframes / Mockups](DESIGN.md)
+  - [Wireframes / Mockups](documentation/DESIGN.md)
 
 [Features](#features)
   - [Implemented Features](#implemented-features)
@@ -130,7 +130,7 @@ The site is designed to look familiar to _ACNH_. Users can be more comfortable w
 
 ## Wireframes / Mockups
 - I created wireframes and mockups for different device types such as mobile, tablet and desktop.
-- [View Wireframes and Mockups](DESIGN.md)
+- [View Wireframes and Mockups](documentation/DESIGN.md)
 
 [Back To **Table of Contents**](#table-of-contents)
 
@@ -359,7 +359,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - CSS Validation
   - No errors or warnings were found when passing through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 
-- [View screenshots](VALIDATION.md)
+- [View screenshots](documentation/VALIDATION.md)
 
 <br>
 
@@ -367,7 +367,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - I have tested the functionality of the site manually on Mobile(Safari version 15.3 on iOS 15.4, Chrome version 98.0 on Android 9), Tablet(Chrome version 78.0 on Android 8.1.0) and Desktop(Safari version 15.2 on macOS Monterey version 12.1, Chrome version 98.0 Windows 10).
 - During the tests, I found a bug where the header was displaced when pressing the __Giveaway__ menu button on the Items page. I fixed the issue and documented it in the [fixed bugs section](#fixed-bugs) - __Header / Giveaway button on the Items page__.
-- All the tests passed: [View details](FUNCTIONALITY.md)
+- All the tests passed: [View details](documentation/FUNCTIONALITY.md)
 
 <br>
 
@@ -396,7 +396,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
     |     Success     |     100     |      100      |      100       | 100 |
     |       404       |     100     |      100      |      100       | 100 |
 
-- [View screenshots](PERFORMANCE.md)
+- [View screenshots](documentation/PERFORMANCE.md)
 
 <br>
 
