@@ -58,7 +58,7 @@
 
     ![Success Page Mockup](documentation/mockups/mobile/success.png)
 
-- 404 page page
+- 404 page
 
     ![404 Page Mockup](documentation/mockups/mobile/error.png)
 
@@ -110,7 +110,7 @@
 
     ![Success Page Mockup](documentation/mockups/tablet/success.png)
 
-- 404 page page
+- 404 page
 
     ![404 Page Mockup](documentation/mockups/tablet/error.png)
 
@@ -162,7 +162,7 @@
 
     ![Success Page Mockup](documentation/mockups/desktop/success.png)
 
-- 404 page page
+- 404 page
 
     ![404 Page Mockup](documentation/mockups/desktop/error.png)
 
