@@ -93,9 +93,9 @@ Click the __SEND MESSAGE__ button with/without inputting anything in the require
   |  All   | with a message and the checkbox unchecked | Show an error message  | Show an error message below/beside the checkbox input\*\* |    Pass     |
   |  All   | with a message and the checkbox checked       | Go to the Success page | Go to the Success page                                    |    Pass     |
 
-\*Error messages on Safari iOS and macOS: "Fill out this field" / on Chrome: "Please fill in this field."
+\*Error messages are in Safari: "Fill out this field" / Chrome: "Please fill in this field."
 
-\*\*Error messages on Safari iOS: "Select this tick..." / Safari macOS: "Select this tickbox" / Chrome Android: "Please tick this box if you want to proceed." / Chrome Windows: “Please check this box if you want to proceed."
+\*\*Error messages are in Safari iOS: "Select this tick..." / Safari macOS: "Select this tickbox" / Chrome Android: "Please tick this box if you want to proceed." / Chrome Windows: “Please check this box if you want to proceed."
 
 [Back To **Table of Contents**](#table-of-contents)
 
