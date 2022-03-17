@@ -16,23 +16,23 @@
 
 - Home page
 
-    ![Home Page Wireframe](documentation/wireframes/mobile/home.png)
+    ![Home Page Wireframe](wireframes/mobile/home.png)
 
 - About page
 
-    ![About Page Wireframe](documentation/wireframes/mobile/about.png)
+    ![About Page Wireframe](wireframes/mobile/about.png)
 
 - Items page
 
-    ![Items Page Wireframe](documentation/wireframes/mobile/items.png)
+    ![Items Page Wireframe](wireframes/mobile/items.png)
 
 - Contact page
 
-    ![Contact Page Wireframe](documentation/wireframes/mobile/contact.png)
+    ![Contact Page Wireframe](wireframes/mobile/contact.png)
 
 - Success/404 page
 
-    ![Success/404 Page Wireframe](documentation/wireframes/mobile/success+error.png)
+    ![Success/404 Page Wireframe](wireframes/mobile/success+error.png)
 
 [Back to Top](#table-of-content)
 
@@ -40,27 +40,27 @@
 
 - Home page
 
-    ![Home Page Mockup](documentation/mockups/mobile/home.png)
+    ![Home Page Mockup](mockups/mobile/home.png)
 
 - About page
 
-    ![About Page Mockup](documentation/mockups/mobile/about.png)
+    ![About Page Mockup](mockups/mobile/about.png)
 
 - Items page
 
-    ![Items Page Mockup](documentation/mockups/mobile/items.png)
+    ![Items Page Mockup](mockups/mobile/items.png)
 
 - Contact page
 
-    ![Contact Page Mockup](documentation/mockups/mobile/contact.png)
+    ![Contact Page Mockup](mockups/mobile/contact.png)
 
 - Success page
 
-    ![Success Page Mockup](documentation/mockups/mobile/success.png)
+    ![Success Page Mockup](mockups/mobile/success.png)
 
 - 404 page
 
-    ![404 Page Mockup](documentation/mockups/mobile/error.png)
+    ![404 Page Mockup](mockups/mobile/error.png)
 
 [Back to Top](#table-of-content)
 
@@ -68,23 +68,23 @@
 
 - Home page
 
-    ![Home Page Wireframe](documentation/wireframes/tablet/home.png)
+    ![Home Page Wireframe](wireframes/tablet/home.png)
 
 - About page
 
-    ![About Page Wireframe](documentation/wireframes/tablet/about.png)
+    ![About Page Wireframe](wireframes/tablet/about.png)
 
 - Items page
 
-    ![Items Page Wireframe](documentation/wireframes/tablet/items.png)
+    ![Items Page Wireframe](wireframes/tablet/items.png)
 
 - Contact page
 
-    ![Contact Page Wireframe](documentation/wireframes/tablet/contact.png)
+    ![Contact Page Wireframe](wireframes/tablet/contact.png)
 
 - Success/404 page
 
-    ![Success/404 Page Wireframe](documentation/wireframes/tablet/success+error.png)
+    ![Success/404 Page Wireframe](wireframes/tablet/success+error.png)
 
 [Back to Top](#table-of-content)
 
@@ -92,27 +92,27 @@
 
 - Home page
 
-    ![Home Page Mockup](documentation/mockups/tablet/home.png)
+    ![Home Page Mockup](mockups/tablet/home.png)
 
 - About page
 
-    ![About Page Mockup](documentation/mockups/tablet/about.png)
+    ![About Page Mockup](mockups/tablet/about.png)
 
 - Items page
 
-    ![Items Page Mockup](documentation/mockups/tablet/items.png)
+    ![Items Page Mockup](mockups/tablet/items.png)
 
 - Contact page
 
-    ![Contact Page Mockup](documentation/mockups/tablet/contact.png)
+    ![Contact Page Mockup](mockups/tablet/contact.png)
 
 - Success page
 
-    ![Success Page Mockup](documentation/mockups/tablet/success.png)
+    ![Success Page Mockup](mockups/tablet/success.png)
 
 - 404 page
 
-    ![404 Page Mockup](documentation/mockups/tablet/error.png)
+    ![404 Page Mockup](mockups/tablet/error.png)
 
 [Back to Top](#table-of-content)
 
@@ -120,23 +120,23 @@
 
 - Home page
 
-    ![Home Page Wireframe](documentation/wireframes/desktop/home.png)
+    ![Home Page Wireframe](wireframes/desktop/home.png)
 
 - About page
 
-    ![About Page Wireframe](documentation/wireframes/desktop/about.png)
+    ![About Page Wireframe](wireframes/desktop/about.png)
 
 - Items page
 
-    ![Items Page Wireframe](documentation/wireframes/desktop/items.png)
+    ![Items Page Wireframe](wireframes/desktop/items.png)
 
 - Contact page
 
-    ![Contact Page Wireframe](documentation/wireframes/desktop/contact.png)
+    ![Contact Page Wireframe](wireframes/desktop/contact.png)
 
 - Success/404 page
 
-    ![Success/404 Page Wireframe](documentation/wireframes/desktop/success+error.png)
+    ![Success/404 Page Wireframe](wireframes/desktop/success+error.png)
 
 [Back to Top](#table-of-content)
 
@@ -144,26 +144,26 @@
 
 - Home page
 
-    ![Home Page Mockup](documentation/mockups/desktop/home.png)
+    ![Home Page Mockup](mockups/desktop/home.png)
 
 - About page
 
-    ![About Page Mockup](documentation/mockups/desktop/about.png)
+    ![About Page Mockup](mockups/desktop/about.png)
 
 - Items page
 
-    ![Items Page Mockup](documentation/mockups/desktop/items.png)
+    ![Items Page Mockup](mockups/desktop/items.png)
 
 - Contact page
 
-    ![Contact Page Mockup](documentation/mockups/desktop/contact.png)
+    ![Contact Page Mockup](mockups/desktop/contact.png)
 
 - Success page
 
-    ![Success Page Mockup](documentation/mockups/desktop/success.png)
+    ![Success Page Mockup](mockups/desktop/success.png)
 
 - 404 page
 
-    ![404 Page Mockup](documentation/mockups/desktop/error.png)
+    ![404 Page Mockup](mockups/desktop/error.png)
 
 [Back to Top](#table-of-content)
