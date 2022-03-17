@@ -1,6 +1,6 @@
 # Table of Contents
 
-[Mobile](#mobile)
+- Mobile
   - [Home page](#home-page)
   - [About page](#about-page)
   - [Items page](#items-page)
@@ -8,7 +8,7 @@
   - [Success page](#success-page)
   - [404 page](#404-page)
 
-[Desktop](#desktop)
+- Desktop
   - [Home page](#home-page-1)
   - [About page](#about-page-1)
   - [Items page](#items-page-1)
@@ -21,17 +21,17 @@
 # Mobile
 
 ## Home page
-![Home page](documentation/performance-testing/mobile/home.png)
+![Home page](performance-testing/mobile/home.png)
 ## About page
-![About page](documentation/performance-testing/mobile/about.png)
+![About page](performance-testing/mobile/about.png)
 ## Items page
-![Items page](documentation/performance-testing/mobile/items.png)
+![Items page](performance-testing/mobile/items.png)
 ## Contact page
-![Contact page](documentation/performance-testing/mobile/contact.png)
+![Contact page](performance-testing/mobile/contact.png)
 ## Success page
-![Success page](documentation/performance-testing/mobile/success.png)
+![Success page](performance-testing/mobile/success.png)
 ## 404 page
-![404 page](documentation/performance-testing/mobile/404.png)
+![404 page](performance-testing/mobile/404.png)
 
 [Back To **Table of Contents**](#table-of-contents)
 
@@ -40,16 +40,16 @@
 # Desktop
 
 ## Home page
-![Home page](documentation/performance-testing/desktop/home.png)
+![Home page](performance-testing/desktop/home.png)
 ## About page
-![About page](documentation/performance-testing/desktop/about.png)
+![About page](performance-testing/desktop/about.png)
 ## Items page
-![Items page](documentation/performance-testing/desktop/items.png)
+![Items page](performance-testing/desktop/items.png)
 ## Contact page
-![Contact page](documentation/performance-testing/desktop/contact.png)
+![Contact page](performance-testing/desktop/contact.png)
 ## Success page
-![Success page](documentation/performance-testing/desktop/success.png)
+![Success page](performance-testing/desktop/success.png)
 ## 404 page
-![404 page](documentation/performance-testing/desktop/404.png)
+![404 page](performance-testing/desktop/404.png)
 
 [Back To **Table of Contents**](#table-of-contents)
