@@ -1,6 +1,6 @@
 # Trading Paradise Website
 
-_Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other ACNH players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact _Trading Paradise_ for trading in-game items. It is designed to be responsive and accessible on a range of devices.
+_Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH)](https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons) player. The site will be targeted towards other _ACNH_ players who are interested in trading in-game items and have [Nintendo Switch online membership](https://www.nintendo.com/switch/online-service/). The main goal of this website is for users to contact _Trading Paradise_ for trading in-game items. It is designed to be responsive and accessible on a range of devices.
 
 ![Responsive Design](documentation/responsive.png)
 
@@ -74,7 +74,7 @@ _Trading Paradise_ is a marketplace for the [Animal Crossing: New Horizons (ACNH
 
 ## Design
 
-The site is designed to look familiar to ACNH. Users can be more comfortable with familiar environments, which will let them stay on the site longer and be more likely to end up trading. Colours, typography and images are chosen with that in mind.
+The site is designed to look familiar to _ACNH_. Users can be more comfortable with familiar environments, which will let them stay on the site longer and be more likely to end up trading. Colours, typography and images are chosen with that in mind.
 
 - Colour Scheme
   - Colours are adopted from speech bubbles in the game.
@@ -88,7 +88,7 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - Each hex colour code was found the following steps:
 
     1.  Take a screenshot on the game screen.
-    2.  Go to [HTML Color Codes](https://html-color-codes.info/colors-from-image/)
+    2.  Go to [HTML Color Codes](https://html-color-codes.info/colors-from-image/).
     3.  Place the mouse cursor where desired colours are.
 
     ![speech bubble](documentation/speech-bubble.png)
@@ -104,11 +104,11 @@ The site is designed to look familiar to ACNH. Users can be more comfortable wit
   - Fonts are adopted from the [ACNH official website](https://www.animal-crossing.com/new-horizons/) instead of in-game fonts due to licence fee.
     - Headings: [Zilla Slab](https://fonts.google.com/specimen/Zilla+Slab) is used with Serif as the fallback font. It is characterised by bold appearance and smooth curves, so it looks more contemporary and joyful than other serif types.
     - Paragraph: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin) is used in body text with Sans Serif as the fall back. It is often perceived as more friendly and warmer than other sans serif types.
-  - Fonts on the ACNH official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
+  - Fonts on the _ACNH_ official website are identified by Chrome extension [WhatFont](https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm) and [Chrome DevTools](https://developer.chrome.com/docs/devtools/).
 
 - Imagery
 
-  - Using ACNH imagery is important to make users comfortable by being similar to ACNH, whereas having unrelated imagery would be confusing.
+  - Using _ACNH_ imagery is important to make users comfortable by being similar to _ACNH_, whereas having unrelated imagery would be confusing.
   - Game Characters are used on the Home, About, Success and 404 page.
   - Item images are used on the Items page to help users recognise items easily even if they don't know the exact name.
   - A leaf pattern background is used throughout the site. The green leaf is representing an item when it's on the ground.
@@ -166,7 +166,7 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
 
       ![Hero section](documentation/features/home-hero.png)
 
-    - This section contains a screenshot of ACNH characters' greetings with a text overlay to allow the user to understand the purpose of the site at a glance.
+    - This section contains a screenshot of _ACNH_ characters' greetings with a text overlay to allow the user to understand the purpose of the site at a glance.
     - This section provides a button to the Items page for quick access.
   - Feature section
   
@@ -184,7 +184,7 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   - Less than 768px width devices show each section in a single column to optimise the layout.
 
 - Items page
-  - This page contains menu buttons, trading guide, contact box and item lists which are organised by trading types: Buy, Sell, Giveaway.
+  - This page contains menu buttons, trading guide, contact box and item lists which are organised by trading types(Buy, Sell, Giveaway).
 
   - Menu buttons
 
@@ -199,13 +199,6 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
   
     - This provides the user clear instructions on how to trade items with _Trading Paradise_.
 
-  - Item lists
-
-    ![Item lists](documentation/features/items-items.png)
-
-    - This includes each items’ image, name and price which the user would be highly interested in.
-    - Less than 768px width devices show item containers in two columns and between 768px and 1024px width devices show in three columns to optimise the layout.
-
   - Contact box
 
     ![Contact box](documentation/features/items-box.png)
@@ -213,6 +206,13 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
     - The box is fixed to the bottom right side of the screen for quick access.
     - It encourages the user to contact _Trading Paradise_ when they have found items they would like to trade.
     - The _Discord_ icon is linked to the _Discord_ channel and opens in a new tab to allow the user to return to _Trading Paradise_ more easily.
+
+  - Item lists
+
+    ![Item lists](documentation/features/items-items.png)
+
+    - This includes each items’ image, name and price which the user would be highly interested in.
+    - Less than 768px width devices show item containers in two columns and between 768px and 1024px width devices show in three columns to optimise the layout.
 
 - Contact page
   - This page contains a call-to-action carousel and contact form.
@@ -224,7 +224,7 @@ The site features a fully responsive design and contains 4 main pages(Home, Abou
     - This section features a carousel(slideshow) which catches the user’s attention where it might be overlooked with a simple static text.
     - This encourages the user to contact _Trading Paradise_.
 
-  - The Contact form
+  - Contact form
   
     ![Contact form](documentation/features/contact-form.png)
   
@@ -264,7 +264,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 
 - Internal chat system
   
-  Users are invited to the Discord channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
+  Users are invited to the _Discord_ channel to communicate in real-time with _Trading Paradise_ at the moment. An internal communication channel will allow users to communicate directly via the site without having to sign up for a new app or even visiting another site. However, I have focused on front-end development on this project and am not confident building a back-end yet. I would like to implement an internal chat system when I am more comfortable.
 
 [Back To **Table of Contents**](#table-of-contents)
 
@@ -296,9 +296,9 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
 - [Google Fonts](https://fonts.google.com/) was used to import Zilla Slab and Libre Franklin into the style.css file.
 - [Pixlr](https://pixlr.com/e/) was used to create the hero image on the Home page.
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/) was used to generate the privacy policy.
-- [Removebg](https://www.remove.bg/) was used to remove the background of the ACNH characters image for the hero image on the Home page.
+- [Removebg](https://www.remove.bg/) was used to remove the background of the _ACNH_ characters image for the hero image on the Home page.
 - [TinyPNG](https://tinypng.com/) was used to compress the leaf pattern background images.
-- [Upscalepics](https://upscalepics.com/) was used to enhance the quality of the ACNH characters image for the hero image on the Home page.
+- [Upscalepics](https://upscalepics.com/) was used to enhance the quality of the _ACNH_ characters image for the hero image on the Home page.
 - [Visual Studio Code](https://code.visualstudio.com/) was used to edit my code and create svg paths from svg image files.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to check the CSS validity.
 - [W3C Markup Validation Service](https://validator.w3.org/) was used to check the HTML markup validity.
@@ -408,7 +408,7 @@ This project is written in HTML5 and CSS3, so it does not have all the features 
   - Error: I was redirected to the Home page when clicking in the middle of the header bar.
   
     ![Header Error GIF](https://media.giphy.com/media/TnIQssRDkKfJpDUzBS/giphy.gif)
-  - Reason: The `header` element has two child elements: `a`(the logo) and `nav`(the navigation menu). A flex layout is used for the `header` and the `column` value is set to the `flex-direction`. The `a` element was taking up the whole header bar except the toggle button space. 
+  - Reason: The `header` element has two child elements: `a`(the logo link) and `nav`(the navigation menu). A flex layout is used for the `header` and the `column` value is set to the `flex-direction` property. The `a` element was taking up the whole header bar except the toggle button space. 
   - Fix: I added an `align-self: flex-start;` declaration to the `a` element.
   - [View Commit Details](https://github.com/sejungkwak/trading-paradise/commit/70640afad5c6fb76f477b9d511fcd0cde9eb9106)
 
@@ -525,9 +525,9 @@ These steps demonstrate how I cloned my repository to create a local copy on my 
 <br>
 
 ## Forking this Repository
-These steps demonstrate how to make a copy of this repository on your GitHub account to make changes without affecting this repository or to deploy the site yourself.
+These steps demonstrate how to make a copy of this repository on your _GitHub_ account to make changes without affecting this repository or to deploy the site yourself.
 
-  1. Log in to your GitHub account.
+  1. Log in to your _GitHub_ account.
   2. Navigate to [this Trading Paradise repository](https://github.com/sejungkwak/trading-paradise).
   3. Click the __fork__ button* on the top right side of the repository.
 
@@ -535,7 +535,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 
   ![Fork step 2 to 3](documentation/fork.png)
 
-  3. You should now have a copy of the original repository in your GitHub account.
+  3. You should now have a copy of the original repository in your _GitHub_ account.
   4. You can make a local clone from the copied repository on your computer using the steps demonstrated in [Making a Local Clone](#making-a-local-clone) and/or deploy to _GitHub Pages_ using the steps demonstrated in [GitHub Pages](#github-pages).
 
 [Back To **Table of Contents**](#table-of-contents)
@@ -554,18 +554,18 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 - Full browser width bars
   - Source: Chris Coyier's CSS-TRICKS article [Full Browser Width Bars](https://css-tricks.com/full-browser-width-bars/)
     - Using `before` and `after` pseudo elements for making background colour wider than maximum width of the element.
-  - I have used this technique to make the header, trade guide, item lists and contact form's background colour wider than 1400px, which I have set as the maximum width of the site.
+  - I have used this technique to make the header, trading guide, item lists and contact form's background colour wider than 1400px, which I have set as the maximum width of the site.
 - Sticky footer
 	- Source: Kevin Powell's YouTube video [Easy sticky footer - stop a footer from floating up a short page!](https://www.youtube.com/watch?v=yc2olxLgKLk) and the Gábor Móczik's comment on the video
-		- Using a `flex` property(to the main) and a `justify-self` property(to the footer) makes the footer fixed at the bottom of the screen even when there is not enough content on the page.
+		- Using a `flex` property(to `main`) and a `justify-self` property(to `footer`) makes the footer fixed at the bottom of the page even when there is not enough content on the page.
   - I have used this technique to make a sticky footer across the site.
 - Fixed header and jump links
 	- Source: Chris Coyier's CSS-TRICKS article [Fixed Headers and Jump Links? The Solution is scroll-margin-top](https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/)
       - Using a `scroll-margin-top` property to the linked element makes the whole linked content visible.
   - I have used this technique for the menu buttons on the Items page.
 - Vertical carousel
-	- Resource: Ziratsu's CSS Carousel(https://codepen.io/Ziratsu/pen/ZEKWaRv)
-      - Using an animation that scrolls through a number of words in a carousel format.
+	- Resource: Ziratsu's [CSS Carousel](https://codepen.io/Ziratsu/pen/ZEKWaRv)
+      - Making an animation using a `@keyframes` rule that scrolls through a number of words in a carousel format.
 	- I have used this technique to create a slideshow on the Contact page.
 - Refactoring
   - HTML attribute order
@@ -576,18 +576,18 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 	  - With the guidance of the above content, I have organised CSS properties by type as follows: 1. `content` property / 2. position and layout / 3. display and visibility / 4. clipping / 5. box model / 6. background / 7. typography / 8. animation and transition
 - 404 page
   - Source: [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
-    - Using a filename `404.html` makes a 404 error page display when the user tries to access nonexistent pages on my site.
+    - Using a filename `404.html` makes the 404 error page display when the user tries to access nonexistent pages on my site.
 
 <br>
 
 ## Content
 
 - I have used the README structure from Code Institute Solutions’ templates: [SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME) and [readme-template](https://github.com/Code-Institute-Solutions/readme-template).
-- I have found information about the island name length limitation of ACNH on [Animal Crossing World](https://animalcrossingworld.com/2020/03/10-character-island-names-confirmed-in-animal-crossing-new-horizons-opening-day-tutorial-details/). This information was used in the Contact page to create the island name validation.
+- I have found information about the island name length limitation of _ACNH_ on [Animal Crossing World](https://animalcrossingworld.com/2020/03/10-character-island-names-confirmed-in-animal-crossing-new-horizons-opening-day-tutorial-details/). This information was used in `contact.html` to create the island name validation.
 - I have used a privacy policy generated by [Privacy Policy Generator](https://www.privacypolicygenerator.info/).
 - I have found information about Libre Franklin font on [Hackernoon](https://hackernoon.com/tips-about-using-libre-franklin-a-versatile-font-for-friendly-brands-mo2t34hn). This information was used in the README.
 - I have found information about cloning and forking a repository from these documents: [Fork a repo
-](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on [GitHub Docs](https://docs.github.com/en) and [Deployment](https://github.com/Code-Institute-Solutions/SampleREADME#deployment) section of Code Institute’s [sample README](https://github.com/Code-Institute-Solutions/SampleREADME). This information was used in the README.
+](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on [GitHub Docs](https://docs.github.com/en) and [Deployment](https://github.com/Code-Institute-Solutions/SampleREADME#deployment) section of Code Institute Solutions’ [sample README](https://github.com/Code-Institute-Solutions/SampleREADME). This information was used in the README.
 
 <br>
 
@@ -601,37 +601,37 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
     - [Daisy Mae](https://animalcrossing.fandom.com/wiki/Daisy_Mae?file=Daisy_Mae_NH.png): The boar on the Home page
     - [Tortimer](https://animalcrossing.fandom.com/wiki/Tortimer?file=Tortimer_NLa.png): The tortoise on the Home page
     - [Pascal](https://animalcrossing.fandom.com/wiki/Pascal?file=Pascal-NH.png): The otter on the Success page
-    - [Redd](https://animalcrossing.fandom.com/wiki/Animal_Crossing:_City_Folk/Gallery?file=Redd.png): The fox on the 404 page
+    - [Redd](https://hero.fandom.com/wiki/Redd?file=ReddNL.png): The fox on the 404 page
 
-- All the item images on the Items page were sourced from [this spreadsheet](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1397507627) which is hosted on [Norviah's repository: acnh-images](https://github.com/Norviah/acnh-images).
+- All the item images on the Items page were sourced from [this spreadsheet](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1397507627) which is hosted on the Norviah's repository [acnh-images](https://github.com/Norviah/acnh-images).
 
-  - in order of appearance on the website
-    - [Nook Inc. rug](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1194392315): Row 106 / Column B in the file.
-    - [Nook miles ticket](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 145 / Column B in the file.
-    - [Present (gold)](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 213 / Column B in the file.
-    - [Adventure dress](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=714704098): Row 5 / Column B in the file.
-    - [Bell bag](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 13 / Column B in the file.
-    - [Astronaut suit](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 66 / Column B in the file.
-    - [Bonsai shelf](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 218 / Column B in the file.
-    - [Campsite sign](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 302 / Column B in the file.
-    - [Cherry's photo](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1076410742): Row 642 / Column B in the file.
-    - [Cinnamoroll stool](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 408 / Column B in the file.
-    - [Cinnamoroll tray](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=425288018): Row 190 / Column B in the file.
-    - [Familiar statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 17 / Column B in the file.
-    - [Heart-shaped bouquet](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=425288018): Row 490 / Column B in the file.
-    - [Nuptial ring pillow](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=425288018): Row 852 / Column B in the file.
-    - [Ancient statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 6 / Column B in the file.
-    - [Beautiful statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 10 / Column B in the file.
-    - [Gallant statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 21 / Column B in the file.
-    - [Great statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 26 / Column B in the file.
-    - [Informative statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 27 / Column B in the file.
-    - [Mystic statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 37 / Column B in the file.
-    - [Robust statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 44 / Column B in the file.
-    - [Valiant statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 60 / Column B in the file.
-    - [Animal city](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1055239961): Row 4 / Column B in the file.
-    - [Candy](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 50 / Column B in the file.
-    - [Fish pochette](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1695977424): Row 30 / Column B in the file.
-    - [Fossil](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 94 / Column B in the file.
+  - in order of appearance on the website (The row / column number is subject to change)
+    - [Nook Inc. rug](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1194392315): Row 106 / Column B on the sheet.
+    - [Nook miles ticket](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 145 / Column B on the sheet.
+    - [Present (gold)](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 213 / Column B on the sheet.
+    - [Adventure dress](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=714704098): Row 5 / Column B on the sheet.
+    - [Bell bag](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 13 / Column B on the sheet.
+    - [Astronaut suit](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 143 / Column B on the sheet.
+    - [Bonsai shelf](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 491 / Column B on the sheet.
+    - [Campsite sign](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 611 / Column B on the sheet.
+    - [Cherry's photo](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1076410742): Row 722 / Column B on the sheet.
+    - [Cinnamoroll stool](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1124134982): Row 828 / Column B on the sheet.
+    - [Cinnamoroll tray](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=425288018): Row 492 / Column B on the sheet.
+    - [Familiar statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 17 / Column B on the sheet.
+    - [Heart-shaped bouquet](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=425288018): Row 1390 / Column B on the sheet.
+    - [Nuptial ring pillow](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=425288018): Row 1871 / Column B on the sheet.
+    - [Ancient statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 6 / Column B on the sheet.
+    - [Beautiful statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 10 / Column B on the sheet.
+    - [Gallant statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 21 / Column B on the sheet.
+    - [Great statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 26 / Column B on the sheet.
+    - [Informative statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 27 / Column B on the sheet.
+    - [Mystic statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 37 / Column B on the sheet.
+    - [Robust statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 44 / Column B on the sheet.
+    - [Valiant statue](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=2038580021): Row 60 / Column B on the sheet.
+    - [Animal city](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1055239961): Row 4 / Column B on the sheet.
+    - [Candy](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 50 / Column B on the sheet.
+    - [Fish pochette](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1695977424): Row 83 / Column B on the sheet.
+    - [Fossil](https://docs.google.com/spreadsheets/d/1mo7myqHry5r_TKvakvIhHbcEAEQpSiNoNQoIS8sMpvM/edit#gid=1026478546): Row 94 / Column B on the sheet.
 
 - Images that were not mentioned above were created by me.
 
@@ -640,7 +640,7 @@ These steps demonstrate how to make a copy of this repository on your GitHub acc
 ## Inspiration
 
 - Item layout
-  - Each item is in a separate item container. Each container has an item image, name and price with the bell and nook miles ticket image. This layout is from a well-known ACNH trading website [Nookazon](https://nookazon.com/).
+  - Each item is in a separate item container. Each container has an item image, name and price with the bell and nook miles ticket image. This layout is from a well-known _ACNH_ trading website [Nookazon](https://nookazon.com/).
 
 - Accessibility
   - As a person who has not experienced any big accessibility issues while using the internet for decades, accessibility related elements or attributes were something that I just used because people said so. In the middle of the development I came across [Seren Davies talk: Death to icon fonts](https://www.youtube.com/watch?v=9xXBYcWgCHA). This talk made me improve the accessibility of my website.
